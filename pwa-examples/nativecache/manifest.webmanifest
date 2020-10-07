@@ -1,0 +1,30 @@
+{
+  "background_color": "purple",
+  "description": "Shows random fox pictures. Hey, at least it isn't cats.",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon/fox-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "Awesome fox pictures",
+  "short_name": "Foxes",
+  "start_url": "/pwa-examples/nativecache/index.html",
+  "scope": "/pwa-examples/nativecache/",
+  "yandex": {
+    "cache": {
+      "resources": [
+        "/pwa-examples/nativecache/",
+        "/pwa-examples/nativecache/index.html",
+        "/pwa-examples/nativecache/index.js",
+        "/pwa-examples/nativecache/style.css",
+        "/pwa-examples/nativecache/images/fox1.jpg",
+        "/pwa-examples/nativecache/images/fox2.jpg",
+        "/pwa-examples/nativecache/images/fox3.jpg",
+        "/pwa-examples/nativecache/images/fox4.jpg"
+      ]
+    }
+  }
+}
