@@ -18,8 +18,12 @@
     "app_version": 1,
     "cache": {
       "resources": [
-        "/pwa-examples/swnativecache/",
-        "/pwa-examples/swnativecache/index.html"
+        "/pwa-examples/swnativecache/index.js",
+        "/pwa-examples/swnativecache/style.css",
+        "/pwa-examples/swnativecache/images/fox1.jpg",
+        "/pwa-examples/swnativecache/images/fox2.jpg",
+        "/pwa-examples/swnativecache/images/fox3.jpg",
+        "/pwa-examples/swnativecache/images/fox4.jpg"
       ]
     }
   }
