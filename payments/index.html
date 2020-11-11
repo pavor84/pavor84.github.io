@@ -1,0 +1,61 @@
+<html>
+<head>
+<script type="text/javascript">
+async function canUseGooglePay() {
+    if (window.PaymentRequest) {
+        const methodData = [{
+            supportedMethods: 'https://google.com/pay'
+        }];
+        const details = {
+            total: {label: 'Total', amount: {currency: 'USD', value: '0.01'}}
+        };
+        const request = new PaymentRequest(methodData, details);
+        return await request.canMakePayment();
+    } else {
+        return false;
+    }
+}
+
+async function canUseApplePay() {
+    if (window.PaymentRequest) {
+        const methodData = [{
+            supportedMethods: 'https://apple.com/apple-pay'
+        }];
+        const details = {
+            total: {label: 'Total', amount: {currency: 'USD', value: '0.01'}}
+        };
+        const request = new PaymentRequest(methodData, details);
+        return await request.canMakePayment();
+    } else {
+        return false;
+    }
+}
+
+async function canUseYandexPay() {
+    if (window.PaymentRequest) {
+        const methodData = [{
+            supportedMethods: 'yandex',
+            data: { userEmail: '', paymentToken: '' }
+        }];
+        const details = {
+            total: {label: 'Total', amount: {currency: 'USD', value: '0.01'}}
+        };
+        const request = new PaymentRequest(methodData, details);
+        return await request.canMakePayment();
+    } else {
+        return false;
+    }
+}
+
+async function checkCanMakePayment(canMakePayment) {
+    const result = await canMakePayment();
+    window.alert("Result: " + result);
+}
+</script>
+</head>
+<body>
+<p><a href="#" onclick="checkCanMakePayment(canUseGooglePay)">canUseGooglePay</a></p>
+<p><a href="#" onclick="checkCanMakePayment(canUseApplePay)">canUseApplePay</a></p>
+<p><a href="#" onclick="checkCanMakePayment(canUseYandexPay)">canUseYandexPay</a></p>
+</body>
+</html>
