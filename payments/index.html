@@ -118,10 +118,10 @@ async function showApplePay() {
     const paymentRequest = new PaymentRequest([applePayMethod], detailsForShippingOption("ground"), options);
 
     paymentRequest.onmerchantvalidation = event => {
-        fetch("https://webkit.org/demos/payment-request/merchant-validation.php", {
-            body: JSON.stringify({ validationURL: event.validationURL }),
-            method: "POST",
-        }).then(response => event.complete(response.json()));
+        // fetch("merchant-validation.php", {
+        //     body: JSON.stringify({ validationURL: event.validationURL }),
+        //     method: "POST",
+        // }).then(response => event.complete(response.json()));
     };
 
     paymentRequest.onshippingaddresschange = event => {
