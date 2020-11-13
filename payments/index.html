@@ -53,6 +53,56 @@ async function checkCanMakePayment(canMakePayment) {
 }
 
 /**
+ * Source: https://developers.google.com/pay/api/web/guides/paymentrequest/tutorial
+ */
+async function showGooglePay() {
+    // Add support for the Google Pay API.
+    const methodData = [{
+        supportedMethods: 'https://google.com/pay',
+        data: {
+            environment: 'TEST',
+            apiVersion: 2,
+            apiVersionMinor: 0,
+            merchantInfo: {
+                // A merchant ID is available after approval by Google.
+                // 'merchantId':'01234567890123456789',
+                merchantName: 'Example Merchant'
+            },
+            allowedPaymentMethods: [{
+                type: 'CARD',
+                parameters: {
+                    allowedAuthMethods: ["PAN_ONLY", "CRYPTOGRAM_3DS"],
+                    allowedCardNetworks: ["MASTERCARD", "VISA"]
+                },
+                tokenizationSpecification: {
+                    type: 'PAYMENT_GATEWAY',
+                    // Check with your payment gateway on the parameters to pass.
+                    // @see {@link https://developers.google.com/pay/api/web/reference/request-objects#gateway}
+                    parameters: {
+                        'gateway': 'example',
+                        'gatewayMerchantId': 'exampleGatewayMerchantId'
+                    }
+                }
+            }]
+        }
+    }];
+
+    const details = {
+        total: {label: 'Test Purchase', amount: {currency: 'USD', value: '1.00'}}
+    };
+
+    const options = {
+        requestPayerEmail: true,
+        requestPayerName: true
+    };
+
+    const paymentRequest = new PaymentRequest(methodData, details, options);
+
+    const response = await paymentRequest.show();
+    response.complete("success");
+}
+
+/**
  * Source: https://webkit.org/blog/8182/introducing-the-payment-request-api-for-apple-pay/
  */
 async function showApplePay() {
@@ -145,7 +195,7 @@ async function showApplePay() {
 <p><a href="#" onclick="checkCanMakePayment(canUseApplePay)">canUseApplePay</a></p>
 <p><a href="#" onclick="checkCanMakePayment(canUseYandexPay)">canUseYandexPay</a></p>
 
-
+<p><a href="#" onclick="showGooglePay()">Show GooglePay</a></p>
 <p><a href="#" onclick="showApplePay()">Show ApplePay</a></p>
 
 
