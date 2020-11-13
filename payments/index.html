@@ -53,7 +53,7 @@ async function checkCanMakePayment(canMakePayment) {
 }
 
 /**
- * Source: https://developers.google.com/pay/api/web/guides/paymentrequest/tutorial
+ * Original Source: https://developers.google.com/pay/api/web/guides/paymentrequest/tutorial
  */
 async function showGooglePay() {
     // Add support for the Google Pay API.
@@ -88,100 +88,38 @@ async function showGooglePay() {
     }];
 
     const details = {
-        total: {label: 'Test Purchase', amount: {currency: 'USD', value: '1.00'}}
+        total: {label: 'Total', amount: {currency: 'RUB', value: '1.00'}}
     };
 
-    const options = {
-        requestPayerEmail: true,
-        requestPayerName: true
-    };
-
-    const paymentRequest = new PaymentRequest(methodData, details, options);
+    const paymentRequest = new PaymentRequest(methodData, details);
 
     const response = await paymentRequest.show();
     response.complete("success");
 }
 
 /**
- * Source: https://webkit.org/blog/8182/introducing-the-payment-request-api-for-apple-pay/
+ * Original Source: https://webkit.org/blog/8182/introducing-the-payment-request-api-for-apple-pay/
  */
 async function showApplePay() {
-    const applePayMethod = {
+    const methodData = [{
         supportedMethods: "https://apple.com/apple-pay",
         data: {
             version: 1,
             merchantIdentifier: "org.webkit.demo",
             merchantCapabilities: ["supports3DS", "supportsCredit", "supportsDebit"],
             supportedNetworks: ["amex", "discover", "masterCard", "visa"],
-            countryCode: "US",
+            countryCode: "RU",
         },
+    }];
+
+    const details = {
+        total: {label: 'Total', amount: {currency: 'RUB', value: '1.00'}}
     };
 
-    const detailsForShippingOption = selectedShippingOption => {
-        const shippingOptions = [
-            {
-                id: "ground",
-                label: "Ground Shipping",
-                amount: { value: "5.00", currency: "USD" },
-                overrideTotal: { value: "25.00", currency: "USD" },
-            },
-            {
-                id: "express",
-                label: "Express Shipping",
-                amount: { value: "10.00", currency: "USD" },
-                overrideTotal: { value: "30.00", currency: "USD" },
-            },
-        ];
-
-        var shippingOptionIndex = null;
-        for (var shippingOption in shippingOptions) {
-            if (shippingOptions[shippingOption].id !== selectedShippingOption)
-                continue;
-            shippingOptionIndex = shippingOption;
-            break;
-        }
-
-        if (!shippingOptionIndex)
-            return { };
-
-        shippingOptions[shippingOptionIndex].selected = true;
-
-        return {
-            total: {
-                label: "WebKit",
-                amount: shippingOptions[shippingOptionIndex].overrideTotal,
-            },
-            displayItems: [
-                {
-                    label: shippingOptions[shippingOptionIndex].label,
-                    amount: shippingOptions[shippingOptionIndex].amount,
-                },
-            ],
-            shippingOptions: shippingOptions,
-        };
-    };
-
-    const options = {
-        requestShipping: true,
-    };
-
-    const paymentRequest = new PaymentRequest([applePayMethod], detailsForShippingOption("ground"), options);
+    const paymentRequest = new PaymentRequest(methodData, details);
 
     paymentRequest.onmerchantvalidation = event => {
-        // fetch("merchant-validation.php", {
-        //     body: JSON.stringify({ validationURL: event.validationURL }),
-        //     method: "POST",
-        // }).then(response => event.complete(response.json()));
-    };
-
-    paymentRequest.onshippingaddresschange = event => {
-        const detailsUpdate = detailsForShippingOption(paymentRequest.shippingOption);
-        event.updateWith(detailsUpdate);
-    };
-
-    paymentRequest.onshippingoptionchange = event => {
-        const detailsUpdate = detailsForShippingOption(paymentRequest.shippingOption);
-        event.updateWith(detailsUpdate);
+        // fetch |event.validationURL| on your server and pass response to |event.complete|
     };
 
     const response = await paymentRequest.show();
@@ -189,19 +127,20 @@ async function showApplePay() {
 }
 
 /**
- * Source: https://yandex.ru/dev/turboapps/doc/api/1.x/payments.html
+ * Original Source: https://yandex.ru/dev/turboapps/doc/api/1.x/payments.html
  */
 async function showYandexPay() {
     const methodData = [{
         supportedMethods: 'yandex',
         data: {
             userEmail: '',
+            // Payment token should be acquired on your server from Yandex.Trust
             paymentToken: ''
         }
     }];
 
     const details = {
-        total: {label: 'Stub', amount: {currency: 'USD', value: '0.01'}}
+        total: {label: 'Total', amount: {currency: 'RUB', value: '1.00'}}
     };
 
     const paymentRequest = new PaymentRequest(methodData, details);
