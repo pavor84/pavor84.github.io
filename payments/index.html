@@ -188,6 +188,28 @@ async function showApplePay() {
     response.complete("success");
 }
 
+/**
+ * Source: https://yandex.ru/dev/turboapps/doc/api/1.x/payments.html
+ */
+async function showYandexPay() {
+    const methodData = [{
+        supportedMethods: 'yandex',
+        data: {
+            userEmail: '',
+            paymentToken: ''
+        }
+    }];
+
+    const details = {
+        total: {label: 'Stub', amount: {currency: 'USD', value: '0.01'}}
+    };
+
+    const paymentRequest = new PaymentRequest(methodData, details);
+
+    const response = await paymentRequest.show();
+    response.complete("success");
+}
+
 </script>
 </head>
 <body>
@@ -195,8 +217,9 @@ async function showApplePay() {
 <p><a href="#" onclick="checkCanMakePayment(canUseApplePay)">canUseApplePay</a></p>
 <p><a href="#" onclick="checkCanMakePayment(canUseYandexPay)">canUseYandexPay</a></p>
 
-<p><a href="#" onclick="showGooglePay()">Show GooglePay</a></p>
-<p><a href="#" onclick="showApplePay()">Show ApplePay</a></p>
+<p><a href="#" onclick="showGooglePay()">Show Google payment request</a></p>
+<p><a href="#" onclick="showApplePay()">Show Apple payment request</a></p>
+<p><a href="#" onclick="showYandexPay()">Show Yandex payment request</a></p>
 
 
 </body>
