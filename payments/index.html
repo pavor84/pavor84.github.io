@@ -34,8 +34,7 @@ async function canUseApplePay() {
 async function canUseYandexPay() {
     if (window.PaymentRequest) {
         const methodData = [{
-            supportedMethods: 'yandex',
-            data: { paymentToken: '' }
+            supportedMethods: 'yandex'
         }];
         const details = {
             total: {label: 'Total', amount: {currency: 'RUB', value: '0.00'}}
