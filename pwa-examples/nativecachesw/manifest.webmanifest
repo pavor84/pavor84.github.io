@@ -11,7 +11,7 @@
   ],
   "name": "Awesome fox pictures",
   "short_name": "Foxes",
-  "start_url": "/pwa-examples/nativecachesw/index.html",
+  "start_url": "/pwa-examples/nativecachesw/index.html?utm_source=a2hs",
   "scope": "/pwa-examples/nativecachesw/",
   "yandex": {
     "manifest_version": 1,
