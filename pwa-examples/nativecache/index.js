@@ -41,3 +41,43 @@ window.addEventListener('beforeinstallprompt', (e) => {
       });
   };
 });
+
+
+const navigateBtn = document.querySelector('.history-navigate');
+const navigateHashBtn = document.querySelector('.history-navigate-hash');
+const messengerDiv = document.querySelector('#messenger');
+
+function doOpenChat() {
+  return new Promise((resolve, reject) => {
+    if (messengerDiv.style.visibility != 'visible') {
+      messengerDiv.style.visibility = 'visible';
+      resolve();
+    } else {
+      reject();
+    }
+  });
+}
+
+function doCloseChat() {
+  messengerDiv.style.visibility = 'hidden';
+}
+
+function openChat(url) {
+  doOpenChat().then(() => { window.history.pushState({ isMessengerVisible: !0 }, url); });
+}
+
+navigateBtn.onclick = (e) => {
+  openChat("");
+};
+
+navigateHashBtn.onclick = (e) => {
+  openChat("#");
+};
+
+window.onpopstate = (e) => {
+  if (e.state && e.state.isMessengerVisible) {
+    doOpenChat();
+  } else {
+    doCloseChat();
+  }
+};
