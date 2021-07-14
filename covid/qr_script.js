@@ -1,0 +1,1 @@
+document.querySelector('img.vaccine-qr-img').src
