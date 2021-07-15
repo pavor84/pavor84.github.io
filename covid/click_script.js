@@ -1,12 +1,12 @@
 (function() {
-  if (!location.href.includes('from_alice') {
+  if (!location.href.includes('from_alice')) {
     return;
   }
 
   let selector;
-  if (location.href.startsWith('https://immune.mos.ru/rf')) {
+  if (location.href.includes('immune.mos.ru')) {
     selector = '.nlk-button[type="submit"]';
-  } else if (location.href.startsWith('https://www.gosuslugi.ru/10602/1')) {
+  } else if (location.href.includes('gosuslugi.ru')) {
     selector = '[href="https://www.gosuslugi.ru/10600/1"],[href="https://www.gosuslugi.ru/10601/1"]';
   } else {
     return;
