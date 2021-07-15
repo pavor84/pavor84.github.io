@@ -60,14 +60,14 @@
     });
   };
 
-  if (document.readyState === 'complete') {
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
     console.log('complete readyState');
     if (!selectAndMaybeClickButton(selector)) {
       addObserver();
     }
   } else {
     console.log('readyState: ' + document.readyState);
-    document.addEventListener('load', () => {
+    window.addEventListener('load', () => {
       console.log('load event');
       if (!selectAndMaybeClickButton(selector)) {
         addObserver();
