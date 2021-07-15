@@ -9,12 +9,17 @@
   } else if (location.href.includes('gosuslugi.ru')) {
     selector = '[href="https://www.gosuslugi.ru/10600/1"],[href="https://www.gosuslugi.ru/10601/1"]';
   } else {
+    console.log('selector not found');
     return;
   }
 
+  console.log('selector ' + selector);
+
   const selectAndMaybeClickButton = (selector) => {
+    console.log('selectAndMaybeClickButton');
     const button = document.querySelector(selector);
     if (button) {
+      console.log('click');
       button.click();
       return true;
     }
@@ -38,6 +43,7 @@
           } else {
             button = node.querySelector(selector);
             if (button) {
+              console.log('click2');
               button.click();
               observer.disconnect();
               return;
@@ -52,14 +58,17 @@
         childList: true,
         subtree: true,
     });
-  }
+  };
 
   if (document.readyState === 'complete') {
+    console.log('complete readyState');
     if (!selectAndMaybeClickButton(selector)) {
       addObserver();
     }
   } else {
+    console.log('readyState: ' + document.readyState);
     document.addEventListener('load', () => {
+      console.log('load event');
       if (!selectAndMaybeClickButton(selector)) {
         addObserver();
       }
