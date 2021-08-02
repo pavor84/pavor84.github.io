@@ -36,20 +36,13 @@
           if (node.nodeType !== Node.ELEMENT_NODE) {
             continue;
           }
-          if (node.matches(selector)) {
-            node.click();
+          if (node.matches(selector) || node.querySelector(selector)) {
+            console.log('setTimeout');
+            setTimeout(() => selectAndMaybeClickButton(selector), 100);
             observer.disconnect();
             return;
           } else {
-            button = node.querySelector(selector);
-            if (button) {
-              console.log('click');
-              setTimeout(() => button.click(), 100);
-              observer.disconnect();
-              return;
-            } else {
-              console.log('button not found');
-            }
+            console.log('button not found in mutation node');
           }
         }
       }
