@@ -37,8 +37,8 @@
             continue;
           }
           if (node.matches(selector) || node.querySelector(selector)) {
-            console.log('setTimeout');
-            setTimeout(() => selectAndMaybeClickButton(selector), 100);
+            console.log('post delayed click');
+            setTimeout(() => selectAndMaybeClickButton(selector), 1000);
             observer.disconnect();
             return;
           } else {
