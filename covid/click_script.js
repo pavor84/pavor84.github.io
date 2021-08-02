@@ -44,7 +44,7 @@
             button = node.querySelector(selector);
             if (button) {
               console.log('click');
-              button.click();
+              setTimeout(() => button.click(), 100);
               observer.disconnect();
               return;
             } else {
