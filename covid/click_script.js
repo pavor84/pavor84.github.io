@@ -14,14 +14,10 @@
   }
 
   const selectAndMaybeClickButton = (selector) => {
-    console.log('trying to find button');
     const button = document.querySelector(selector);
     if (button) {
-      console.log('click');
       button.click();
       return true;
-    } else {
-      console.log('button not found');
     }
     return false;
   };
@@ -37,12 +33,9 @@
             continue;
           }
           if (node.matches(selector) || node.querySelector(selector)) {
-            console.log('post delayed click');
             setTimeout(() => selectAndMaybeClickButton(selector), 1000);
             observer.disconnect();
             return;
-          } else {
-            console.log('button not found in mutation node');
           }
         }
       }
