@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Video Test</title>
+    </head>
+    <body>
+        <p>Tested video:</p>
+        <video id="player" controls src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4"></video>
+        <script>
+        var player = document.getElementById('player');
+        setTimeout(function() { console.log("trying to play"); player.play(); }, 10000);
+        </script>
+    </body>
+</html>
