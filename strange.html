@@ -1,9 +1,20 @@
 <html>
-<body>
-  <h1>Telegram</h1>
-  <input onclick="var x = window.open('https://www.yandex.ru/');setTimeout(function(){x.location='tg://resolve?domain=yandex_support_fake_bot'}, 1000)" type="button" value="Click here" />
+<body style="zoom: 300%;>
+  <h1>Redirect to Telegram on Yandex</h1>
+  <input onclick="var x = window.open('https://www.yandex.ru/');setTimeout(function(){x.location='tg://resolve?domain=yandex_support_fake_bot'}, 1000)" type="button" value="Open Telegram" />
   <br>
-  <h1>Apple Maps</h1>
-  <input onclick="var x = window.open('https://www.yandex.ru/');setTimeout(function(){x.location='maps://?address=One+Apple+Park+Way,Cupertino,United+States'}, 1000)" type="button" value="Apple Maps" />  
+
+  <h1>Redirect to Apple Maps on Yandex</h1>
+  <input onclick="var x = window.open('https://www.yandex.ru/');setTimeout(function(){x.location='maps://?address=One+Apple+Park+Way,Cupertino,United+States'}, 1000)" type="button" value="Open Apple Maps" />  
+
+  <h1>Redirect to Apple Maps on Same Origin</h1>
+  <input onclick="var x = window.open('https://pavor84.github.io/');setTimeout(function(){x.location='maps://?address=One+Apple+Park+Way,Cupertino,United+States'}, 1000)" type="button" value="Open Apple Maps" />  
+
+  <h1>Redirect to Apple Maps on Blank</h1>
+  <input onclick="var x = window.open('');setTimeout(function(){x.location='maps://?address=One+Apple+Park+Way,Cupertino,United+States'}, 1000)" type="button" value="Open Apple Maps" />  
+
+  <h1>Open Apple Maps in New Window</h1>
+  <input onclick="window.open('maps://?address=One+Apple+Park+Way,Cupertino,United+States');" type="button" value="Open Apple Maps" />  
+
 </body>
 </html>
