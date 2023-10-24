@@ -3,13 +3,24 @@
     <title>Test open deeplink</title>
   </head>
   <body>
-    <p><a href="chrome://version" target="_blank">Direct link to chrome://version</a></p>
-    <p><a href="browser://version" target="_blank">Direct link to browser://version</a></p>
+    <h3>Direct links to internal pages</h3>
+    <p><a href="chrome://version" target="_blank">Navigate to chrome://version</a></p>
+    <p><a href="browser://version" target="_blank">Navigate to browser://version</a></p>
+
+    <h3>Deeplinks to internal page as encoded host</h3>
+    <p><a href="ya-search-app-open://chrome%3A%2F%2Fversion" target="_blank">Open SearchApp with chrome://version as encoded host</a></p>
+    <p><a href="ya-search-app-open://browser%3A%2F%2Fversion" target="_blank">Open SearchApp with browser://version as encoded host</a></p>
+    <p><a href="yandexbrowser-open-url://chrome%3A%2F%2Fversion" target="_blank">Open Browser with chrome://version as encoded host</a></p>
+    <p><a href="yandexbrowser-open-url://browser%3A%2F%2Fversion" target="_blank">Open Browser with browser://version as encoded host</a></p>
+
+    <h3>Deeplinks to internal page as uri payload</h3>
+    <p><a href="ya-search-app-open://?uri=chrome%3A%2F%2Fversion" target="_blank">Open SearchApp with chrome://version as uri payload</a></p>
+    <p><a href="ya-search-app-open://?uri=browser%3A%2F%2Fversion" target="_blank">Open SearchApp with browser://version as uri payload</a></p>
+    <p><a href="yandexbrowser-open-url://?uri=chrome%3A%2F%2Fversion" target="_blank">Open Browser with chrome://version as uri payload</a></p>
+    <p><a href="yandexbrowser-open-url://?uri=browser%3A%2F%2Fversion" target="_blank">Open Browser with browser://version as uri payload</a></p>
+
+    <h3>Deeplinks to web sites</h3>
     <p><a href="yandexbrowser-open-url://?uri=https%3A%2F%2Fyandex.ru%2Fpogoda#todaywidget" target="_blank">Browser deeplink to Pogoda</a></p>
     <p><a href="ya-search-app-open://?uri=https%3A%2F%2Fyandex.ru%2Fpogoda#todaywidget" target="_blank">SearchApp deeplink to Pogoda</a></p>
-    <p><a href="yandexbrowser-open-url://?uri=chrome%3A%2F%2Fversion" target="_blank">Browser deeplink to chrome://version</a></p>
-    <p><a href="ya-search-app-open://?uri=chrome%3A%2F%2Fversion" target="_blank">SearchApp deeplink to chrome://version</a></p>
-    <p><a href="yandexbrowser-open-url://?uri=browser%3A%2F%2Fversion" target="_blank">Browser deeplink to browser://version</a></p>
-    <p><a href="ya-search-app-open://?uri=browser%3A%2F%2Fversion" target="_blank">SearchApp deeplink to browser://version</a></p>
   </body>
 </html>
