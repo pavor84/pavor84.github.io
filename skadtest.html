@@ -1,0 +1,2007 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Yandex.RTB -->
+    <script>window.yaContextCb=window.yaContextCb||[]</script>
+    <script src="https://yandex.ru/ads/system/context.js" async></script>
+</head>
+<body>
+<div id="container" style="width:300px; height: 600px;"></div>
+<script>
+window.yandex = window.yandex || {};
+window.yandex.ads = window.yandex.ads || {};
+
+window.yandex.ads.getSupportedSKAdNetworkIDs = function () {
+    return (new Promise(function (resolve, reject) {
+        resolve(['test', 'id']);
+    }));
+}
+window.yandex.ads.handleSKAdRequest = function () {
+    return (new Promise(function (resolve, reject) {
+        resolve('handled');
+    }));
+}
+
+window.yandex.ads.getSupportedSKAdNetworkIDs().then(function (ids) {
+    console.log(ids);
+})
+
+window.yaContextCb.push(()=>{
+    Ya.Context.AdvManager.render({
+        "blockId": "R-A-106712-81",
+        "renderTo": "container",
+        "data": {
+            "impressionData": {
+                "currency": "RUB",
+                "revenueUSD": "0.001276881",
+                "precision": "estimated",
+                "revenue": "0.109490000"
+            },
+            "eventConfirmationData": {
+                "PassportUID": "0",
+                "PageID": "106712",
+                "UniqID": "3629353831719849229",
+                "UniqIDSource": "NEW_GENERATED_YANDEX_UID",
+                "HitLogID": "3706828863562133924",
+                "Duid": "1663940953848074911",
+                "RtbBidReqID": "3706828863699759524",
+                "ImpID": "81",
+                "CryptaIDv2": "0"
+            },
+            "matchUrls": [
+                " https://px.arcspire.io/yndx?id=9d4cd41a-f59d-4815-8a89-9d30806f5389",
+                "https://acint.net/rmatch/?dp=151&r=https%3A%2F%2Fan.yandex.ru%2Fmapuid%2Fsapeis%2F%24%7BUSER_ID%7D",
+                "https://ads.betweendigital.com/match?bidder_id=43554&callback_url=https%3A%2F%2Fan.yandex.ru%2Fmapuid%2Fbetweendigitalis%2F%24%7BUSER_ID%7D",
+                "https://yandex.ru/an/mapuid/adobedmp/",
+                "https://yandex.ru/an/mapuid/google/?partner-tag=yandex_llc",
+                "https://yandex.ru/an/mapuid/google/?partner-tag=yandexcom",
+                "https://yandex.ru/an/mapuid/google/?partner-tag=yandexru",
+                "https://yandex.ru/an/mapuid/mailweb/",
+                "https://yandex.ru/an/mapuid/operacom/",
+                "https://yandex.ru/an/mapuid/videonowssp/",
+                "https://cm.a.mts.ru/cm/tech?flowId=0ff25d7e-e56b-471c-8825-9c24c8b56cdc",
+                "https://cm.tns-counter.ru/yacm",
+                "https://cr.frontend.weborama.fr/cr?key=yandex&url=https%3A%2F%2Fan.yandex.ru%2Fmapuid%2Fdmpweborama%2F{WEBO_CID}",
+                "https://dm.hybrid.ai/match?id=182",
+                "https://dm.hybrid.ai/yandexdmp-match",
+                "https://dmg.digitaltarget.ru/1/119/i/i?i=1719849229",
+                "https://dsp.mpartner.digital/dmp/syncsspdmp?sspid=4",
+                "https://euw-ice.360yield.com/server_match?partner_id=N&r=https%3A%2F%2Fan.yandex.ru%2Fmapuid%2Fazerionis%2F{PUB_USER_ID}",
+                "https://exchange.buzzoola.com/cookiesync/redirect/yandex?redirect_url=https%3A%2F%2Fan.yandex.ru%2Fmapuid%2Fbuzzooladspis%2F%24%7BUUID%7D",
+                "https://eye.targetads.io/sync/yandex/",
+                "https://gw-iad-bid.ymmobi.com/dsp/user/sync?dspid=eWFuZGV4X2RzcA==&dspuid=C0F31FE4715E8D69&callback=https%3A%2F%2Fyandex.ru%2Fan%2Fmapuid%2Fyeahmobissp%2F%7Bym_user_id%7D",
+                "https://kimberlite.io/rtb/sync/yandex",
+                "https://match.new-programmatic.com/userbind?src=yandex&pbf=1&gi=1",
+                "https://mitdmp.whiteboxdigital.ru/pixel?id=a&source=yandex&redirect=false&href=https%3A%2F%2Fan.yandex.ru%2Fmapuid%2Fqbitis%2F%7Bmiid%7D",
+                "https://nr.bidderstack.com/yandex/cm?user_id={partner_user_id}",
+                "https://profile.ssp.rambler.ru/sync3.302?pid=188",
+                "https://px.adhigh.net/p/cm/yandexssp",
+                "https://rtb-eu-warsaw.intent.ai/um/y",
+                "https://s.uuidksinc.net/match/501",
+                "https://shopnetic.com/api/rtb/dmp/pixel?partner=yandex",
+                "https://sm.rtb.mts.ru/p?ssp=yandex&id=map",
+                "https://sonar.semantiqo.com/dmp/scr.php",
+                "https://ssp.adriver.ru/cgi-bin/sync.cgi?dsp_id=109",
+                "https://ssp.adriver.ru/cgi-bin/sync.cgi?ssp_id=19",
+                "https://sync.bumlam.com/?src=yandex",
+                "https://sync.bumlam.com/?src=yandex2",
+                "https://sync.dmp.otm-r.com/match/yandexortb",
+                "https://sync.gonet-ads.com/match/yandex?id=[buyerUid]",
+                "https://sync.upravel.com/yandex/sync",
+                "https://x01.aidata.io/0.gif?pid=YANDEX",
+                "https://yandex-dmp-sync.rutarget.ru/sync",
+                "https://yandex-sync.rutarget.ru/sync"
+            ],
+            "visibilitySettings": {
+                "delay": 2000,
+                "bannerVisibilityPercent": 30
+            },
+            "direct": {
+                "ads": [
+                    {
+                        "images": [
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/x300",
+                                "300",
+                                "395",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 299,
+                                        "h": 394
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 138,
+                                            "w": 298,
+                                            "h": 93
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 43,
+                                            "w": 299,
+                                            "h": 168
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 35,
+                                            "w": 299,
+                                            "h": 299
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 133,
+                                            "w": 299,
+                                            "h": 103
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 296,
+                                            "h": 394
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 36,
+                                            "w": 299,
+                                            "h": 224
+                                        }
+                                    ]
+                                }
+                            ],
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/x1200",
+                                "570",
+                                "750",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 569,
+                                        "h": 749
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 263,
+                                            "w": 566,
+                                            "h": 177
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 81,
+                                            "w": 569,
+                                            "h": 320
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 67,
+                                            "w": 569,
+                                            "h": 568
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 253,
+                                            "w": 569,
+                                            "h": 196
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 562,
+                                            "h": 749
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 68,
+                                            "w": 569,
+                                            "h": 426
+                                        }
+                                    ]
+                                }
+                            ],
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/y90",
+                                "68",
+                                "90",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 68,
+                                        "h": 89
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 31,
+                                            "w": 68,
+                                            "h": 21
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 10,
+                                            "w": 68,
+                                            "h": 38
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 8,
+                                            "w": 68,
+                                            "h": 68
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 30,
+                                            "w": 68,
+                                            "h": 23
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 67,
+                                            "h": 89
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 8,
+                                            "w": 68,
+                                            "h": 51
+                                        }
+                                    ]
+                                }
+                            ],
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/y300",
+                                "228",
+                                "300",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 228,
+                                        "h": 300
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 105,
+                                            "w": 226,
+                                            "h": 71
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 32,
+                                            "w": 228,
+                                            "h": 128
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 27,
+                                            "w": 228,
+                                            "h": 227
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 101,
+                                            "w": 228,
+                                            "h": 78
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 225,
+                                            "h": 300
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 27,
+                                            "w": 228,
+                                            "h": 170
+                                        }
+                                    ]
+                                }
+                            ],
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/x450",
+                                "450",
+                                "592",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 449,
+                                        "h": 591
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 208,
+                                            "w": 447,
+                                            "h": 140
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 64,
+                                            "w": 449,
+                                            "h": 253
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 53,
+                                            "w": 449,
+                                            "h": 448
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 200,
+                                            "w": 449,
+                                            "h": 155
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 444,
+                                            "h": 591
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 54,
+                                            "w": 449,
+                                            "h": 336
+                                        }
+                                    ]
+                                }
+                            ],
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/x900",
+                                "570",
+                                "750",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 569,
+                                        "h": 749
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 263,
+                                            "w": 566,
+                                            "h": 177
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 81,
+                                            "w": 569,
+                                            "h": 320
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 67,
+                                            "w": 569,
+                                            "h": 568
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 253,
+                                            "w": 569,
+                                            "h": 196
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 562,
+                                            "h": 749
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 68,
+                                            "w": 569,
+                                            "h": 426
+                                        }
+                                    ]
+                                }
+                            ],
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/x180",
+                                "180",
+                                "237",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 180,
+                                        "h": 237
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 83,
+                                            "w": 179,
+                                            "h": 56
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 26,
+                                            "w": 180,
+                                            "h": 101
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 21,
+                                            "w": 180,
+                                            "h": 179
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 80,
+                                            "w": 180,
+                                            "h": 62
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 177,
+                                            "h": 237
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 21,
+                                            "w": 180,
+                                            "h": 135
+                                        }
+                                    ]
+                                }
+                            ],
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/x150",
+                                "150",
+                                "197",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 150,
+                                        "h": 197
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 69,
+                                            "w": 149,
+                                            "h": 47
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 21,
+                                            "w": 150,
+                                            "h": 84
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 18,
+                                            "w": 150,
+                                            "h": 149
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 67,
+                                            "w": 150,
+                                            "h": 52
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 148,
+                                            "h": 197
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 18,
+                                            "w": 150,
+                                            "h": 112
+                                        }
+                                    ]
+                                }
+                            ],
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/y180",
+                                "137",
+                                "180",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 137,
+                                        "h": 180
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 63,
+                                            "w": 136,
+                                            "h": 43
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 19,
+                                            "w": 137,
+                                            "h": 77
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 16,
+                                            "w": 137,
+                                            "h": 137
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 61,
+                                            "w": 137,
+                                            "h": 47
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 135,
+                                            "h": 180
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 16,
+                                            "w": 137,
+                                            "h": 102
+                                        }
+                                    ]
+                                }
+                            ],
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/y900",
+                                "570",
+                                "750",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 569,
+                                        "h": 749
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 263,
+                                            "w": 566,
+                                            "h": 177
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 81,
+                                            "w": 569,
+                                            "h": 320
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 67,
+                                            "w": 569,
+                                            "h": 568
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 253,
+                                            "w": 569,
+                                            "h": 196
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 562,
+                                            "h": 749
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 68,
+                                            "w": 569,
+                                            "h": 426
+                                        }
+                                    ]
+                                }
+                            ],
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/y150",
+                                "114",
+                                "150",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 114,
+                                        "h": 150
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 53,
+                                            "w": 113,
+                                            "h": 35
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 16,
+                                            "w": 114,
+                                            "h": 64
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 13,
+                                            "w": 114,
+                                            "h": 114
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 51,
+                                            "w": 114,
+                                            "h": 39
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 112,
+                                            "h": 150
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 14,
+                                            "w": 114,
+                                            "h": 85
+                                        }
+                                    ]
+                                }
+                            ],
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/x90",
+                                "90",
+                                "118",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 90,
+                                        "h": 118
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 42,
+                                            "w": 89,
+                                            "h": 28
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 13,
+                                            "w": 90,
+                                            "h": 51
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 11,
+                                            "w": 90,
+                                            "h": 90
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 40,
+                                            "w": 90,
+                                            "h": 31
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 89,
+                                            "h": 118
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 11,
+                                            "w": 90,
+                                            "h": 67
+                                        }
+                                    ]
+                                }
+                            ],
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/x600",
+                                "570",
+                                "750",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 569,
+                                        "h": 749
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 263,
+                                            "w": 566,
+                                            "h": 177
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 81,
+                                            "w": 569,
+                                            "h": 320
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 67,
+                                            "w": 569,
+                                            "h": 568
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 253,
+                                            "w": 569,
+                                            "h": 196
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 562,
+                                            "h": 749
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 68,
+                                            "w": 569,
+                                            "h": 426
+                                        }
+                                    ]
+                                }
+                            ],
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/y450",
+                                "342",
+                                "450",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 341,
+                                        "h": 449
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 158,
+                                            "w": 340,
+                                            "h": 106
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 49,
+                                            "w": 341,
+                                            "h": 192
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 40,
+                                            "w": 341,
+                                            "h": 341
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 152,
+                                            "w": 341,
+                                            "h": 118
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 337,
+                                            "h": 449
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 41,
+                                            "w": 341,
+                                            "h": 256
+                                        }
+                                    ]
+                                }
+                            ],
+                            [
+                                "https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/y600",
+                                "456",
+                                "600",
+                                {
+                                    "ColorWizBack": "#848584",
+                                    "ColorWizButton": "#969796",
+                                    "ColorWizButtonText": "#FFFFFF",
+                                    "ColorWizBackRight": "#87867AFF",
+                                    "smart-center": {
+                                        "x": 0,
+                                        "y": 0,
+                                        "w": 455,
+                                        "h": 599
+                                    },
+                                    "smart-centers": [
+                                        {
+                                            "x": 0,
+                                            "y": 210,
+                                            "w": 453,
+                                            "h": 142
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 65,
+                                            "w": 455,
+                                            "h": 256
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 54,
+                                            "w": 455,
+                                            "h": 454
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 202,
+                                            "w": 455,
+                                            "h": 157
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 0,
+                                            "w": 450,
+                                            "h": 599
+                                        },
+                                        {
+                                            "x": 0,
+                                            "y": 54,
+                                            "w": 455,
+                                            "h": 341
+                                        }
+                                    ]
+                                }
+                            ]
+                        ],
+                        "telNum": "+7 (495) 320-00-86",
+                        "ratings": {
+                            "maps_rating_float": "4.9",
+                            "maps_reviews_count": "572",
+                            "maps_reviews_link": "https://yandex.ru/maps/org/176690131290/reviews/"
+                        },
+                        "sprav_data": {
+                            "address": "Россия, Москва, Каширское шоссе, 3, корп. 2, стр. 9",
+                            "address_house": "3, корп. 2, стр. 9",
+                            "address_locality": "Москва",
+                            "address_street": "Каширское шоссе",
+                            "nearest_station": "Нагатинская",
+                            "urls": "[{\"Type\":0,\"Value\":\"http://atlonfm.ru/\",\"Legality\":0},{\"Type\":3,\"Value\":\"https://t.me/atlon_fm\",\"Legality\":0},{\"Type\":3,\"Value\":\"https://vk.com/atlon_fm\",\"Legality\":0},{\"Type\":3,\"Value\":\"https://www.instagram.com/atlonfm\",\"Legality\":0},{\"Type\":3,\"Value\":\"https://www.youtube.com/channel/UCwnTUdbDB8_zvtmobq-p9iw\",\"Legality\":0}]",
+                            "work_intervals": "[{\"day\":9,\"time_minutes_begin\":480,\"time_minutes_end\":1260}]"
+                        },
+                        "hideExternalData": false,
+                        "isSmartTga": false,
+                        "pCodeInfo": "asset_auction_enabled",
+                        "geoDistance": "",
+                        "geoDistanceRegular": "",
+                        "liked": "0",
+                        "adId": "72057610212744429",
+                        "oid": "200975770",
+                        "bannerFlags": "",
+                        "blockFavicon": "0",
+                        "region": "Москва",
+                        "floatMarketRating": -1,
+                        "hitLogId": "3706828863562133924",
+                        "algId": "3",
+                        "bannerCategories": [
+                            "200006921"
+                        ],
+                        "eventHash": "5554791523428889191",
+                        "isTurboBanner": false,
+                        "orderTags": [],
+                        "bannerLang": "1",
+                        "callUrl": "https://yandex.ru/an/count/WYGejI_zOoVX2Ld20RKG04FUTIOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6Ernb4yVU2a59ZTBROXneDT5Yq76qaCNjIHwJLf29pXQeIz-PsDlKbzW18Dq2j0vqHHQWTQ1hIW5Q4usH1MXDD7OfG6kYqLo0raGZbmAq9XeX2z1AODM426d6HUSj8Ej0rvIShub193nwK82WoEaIiRMLJKY90RVHr7qOu4kQDC7I1K4ua9Hu7WW1WnaSx0raIvSgPaIQx3VUF-S4InQlD29MRdO9Dd308GIM8M1u2Zmw2Nkq6jA5YrR3tXpIXOjMmvRUzHfzWnHPhMqFYf0WDDmcpTQ1hYa1R3605Qd9oCpEO4kKL67GKX3xMZdITi7Se-lw39a1kQwPBNtbmIgSUK6B8JUPCRg7CTyYJ12LwjbYCDtd1nPgrA9CCDFKwo2tv8jRi3N-C8qtvVtW3dBY_-qW9_xU3dBYpys99Fzzo4dxjKDEsfyTSj8opHPsPfa2igxhEfOspqXHREoZ6payWHIazmlehAyZVBJoPcQPBtijkwUj9tkx9bbjVYp2Wmqe30BU_NU48c0jWdvBwxfkBWBM8kYrlgqkqUtiindM8BtkgOJPdYWcTjCMPvgyLwpVp9to1m3Aru6CBiS90XFy_I03XWgkOkIAavcFcY6iKHquI2y297ktSHm9v4tja4J5aWa901NozldenRfBWC2IjD9DVHjUjAnYmm00~2",
+                        "vcardUrl": "https://yandex.ru/an/count/WlGejI_zOoVX2Lbt13KN0CCbaIOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6Ezoh5UddXZDtvZnAIKOpXgX1HaCvzCwTJYYUup_t58_QEIwre_PFL6hZqHk_R-YFKog5IgTEfrsYAlH351J29tS-UwO-89meGAH0SI85YXGeKfpeEJ6jdKyGpX7G-bfaDAH4NTi1KpPnxAqGbDGelIt6WLOJBGOTHmjPt9xaCMa5cUXiWRhqdOczJNs97G3IBK3hG5Ta0Le7kgOKe3NH65c0raHZbmAq9XhD1MXDD78fG6kY4R80hGHMJOYGPbnqtWAo3dHDoVcQ64J2emS528gSBX5RMzc4b1Xm6qtTXm6-f4aJB5qGX0D9YUU1432OmS7UGBPqgM96fCb-u_rpJh1ayKeZOkLcbs031nn2O1a2XgV0evEmHwiXNRXeDUpD8LsuQ3LiwLslqJT8aTNQzg082KB3RT9i7UYQ4i0M0rYHcepCx0osH4aL1Yq5iQ-L8sqNp3swhi-G6P3hcjdILnwimfaNj1XoancZUnYp21D4fNgs64pt-O656hKe4ymqzJh8BVdY5coDFqpZJNa_k8ES-7yxo8c_juES-7Dp8ib_7tBIVksGa_PdXvoqJBE5dLccWAphkewbpJDI51lxw4OEJo05wVq2Eklh21-jl9bPvijUo-vfwydUhabMcnzRy6032eE0T_yTeGXOYw3Vqhgkcuk0jGXwhM-hItGx-so6DKYlUofXjYUAYTsqnPacRwvKAfLNhD-CxNLTn_1jAFyQ2Uq76LsE4mGw_6iZ0muU2QjyXtj7-ziUeAgGQ0BcIehZJ2p69l-xs1UXPylC-xaKAxKCvGPhM51mgICJ29MaGqyV31SNet4SBkN8d4uwsV0cBYwETTiYbyeWVMPtDsgFXGq6tcn2ioOAthTv8adoLUsdk6oeaEoCNEk63b0p8Fh41AUN8a0ST1iV884yqnsIM70o8OcX4_enSlG2q9S0mRkNLlvYo1a0~2",
+                        "companyName": "Атлон ФМ",
+                        "metrika_snippet": {
+                            "metrika": {
+                                "counter": "76337476",
+                                "goals": {
+                                    "call": "make-call",
+                                    "route": "make-route",
+                                    "cta": "cta-button"
+                                }
+                            }
+                        },
+                        "socialUrls": [
+                            {
+                                "url": "https://t.me/atlon_fm",
+                                "type": "telegram"
+                            },
+                            {
+                                "url": "https://vk.com/atlon_fm",
+                                "type": "vkontakte"
+                            }
+                        ],
+                        "position": 1,
+                        "addInfo": {
+                            "type": "callouts",
+                            "callouts_list": [
+                                "Без предоплаты",
+                                "Работы + материалы",
+                                "Гарантия 5 лет",
+                                "Калькулятор ремонта"
+                            ],
+                            "skadnetwork_data": {
+                                version: "v1",
+                                networkId: "id",
+                                // campaign: "asdsa",
+                                // appItunesId: "dsds"
+                                campaign: 9,
+                                appItunesId: 1632443454,
+                            }
+                        },
+                        "vast": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<VAST version=\"3.0\" ya-uniformat=\"true\">\n  <Ad id=\"a34sdf\">\n    <InLine>\n      <AdSystem>Yabs Ad CPC Server</AdSystem>\n      <AdTitle>Interactive Direct In Video</AdTitle>\n      <Impression id=\"direct_impression_13\"><![CDATA[https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=13]]></Impression>\n      <Error><![CDATA[https://yandex.ru/an/jserr/3948?errmsg=auto-video-error]]></Error>\n      <Creatives>\n        <Creative id=\"1131672135\">\n          <Linear skipoffset=\"00:00:05\">\n            <Duration>00:00:15</Duration>\n            <TrackingEvents>\n              <Tracking event=\"start\"><![CDATA[https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=0]]></Tracking>\n              <Tracking event=\"firstQuartile\"><![CDATA[https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=1]]></Tracking>\n              <Tracking event=\"midpoint\"><![CDATA[https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=2]]></Tracking>\n              <Tracking event=\"thirdQuartile\"><![CDATA[https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=3]]></Tracking>\n              <Tracking event=\"complete\"><![CDATA[https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=4]]></Tracking>\n              <Tracking event=\"mute\"><![CDATA[https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=5]]></Tracking>\n              <Tracking event=\"unmute\"><![CDATA[https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=6]]></Tracking>\n              <Tracking event=\"pause\"><![CDATA[https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=7]]></Tracking>\n              <Tracking event=\"resume\"><![CDATA[https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=8]]></Tracking>\n              <Tracking event=\"skip\"><![CDATA[https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=9]]></Tracking>\n            </TrackingEvents>\n            <MediaFiles>\n              <MediaFile width=\"0\" height=\"0\" delivery=\"progressive\" type=\"application/javascript\" apiFramework=\"VPAID\"><![CDATA[https://yandex.ru/ads/system/vpaid_loader.js]]></MediaFile>\n            </MediaFiles>\n            <VideoClicks>\n              <ClickThrough>https://yandex.ru/an/count/WkmejI_zOoVX2Lbi1FKM02EbZYOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6Ezoh5UddXZDtvZnAIKOpXgX1HaCvzCwTJYYUup_t58_QEIwre_PFL6hZqHk_R-YFKog5IgTEfrsYAlH351J29tS-UwO-89meGAH0SI85YXGeKfpeEJ6jdKyGpX7G-bfaDAH4NTi1KpPnxAqGbDGelIt6WLOJBGOTHmjPt9xaCMa5cUXiWRhqdOczJNs97G3IBK3hG5Ta0Le7kgOKe3NH65c0raHZbmAq9XhD1MXDD78fG6kY4R80hGHMJOYGPbnqtWAo3dHDoVcQ64J2emS528gSBX5RMzc4b1Xm6qtTXm6-f4aJB5qGX0D9YUU1432OmS7UGBPqgM96fCb-u_rpJh1ayKeZOkLcbs031nn2O1a2XgV0evEmHwiXNRXeDUpD8LsuQ3LiwQcQiXHPhMqFYf0WDDmcpTQ1hYa1R3605Qd9oCpEO4kKL67GzkYwFaDcGAvhPajVUR0APrxGOiXDPepkOSmYJ12LwjbYCDtd1nPgrA9CCDFKwo2tv8jRi3N-C8qtvVtW3dBY_-qW9_xU3dBYpys99Fzzo4dxjKDEsfyTSj8opHPsPfa2igxhEfOspqXHREoZ6payWHIazmlehAyZVBJoPcQPBtijkwUj9tkx9bbjVanxi065GS2x_uvG1An5q6zfNTVDHS1Q1BtMjzKbkfrzDiCQfDSzbJ3R4yN4RjhYJ9CtLogLoYlMRyRskgvZ-4FAZm470GXbT3bE43lyQsDxWnnZknBPuuvyYHvXU82CGYeec2l-nfcc69lnxsBXWfwjD-_dMwp9ChGRx652uQQEJiXIabey_J84N8nkSBZa8lCqwIp36xq476jYYzmVWqIKtTyW7Wijc6spYL1DL2BVvd5qo5T5dkAOyK7ojMoj3JgPp83C4x-QdIyPxWKzyTSDTyjlI1aTcmZ9NYRqqyFH2_8k0G9ZHbgPGurF~2</ClickThrough>\n            </VideoClicks>\n            <AdParameters><![CDATA[{\n  \"HAS_BUTTON\": true,\n  \"HAS_DOMAIN\": true,\n  \"HAS_TITLE\": true,\n  \"HAS_BODY\": true,\n  \"HAS_AGE\": true,\n  \"TITLE_BACKGROUND_COLOR\": \"#000000\",\n  \"TITLE_TEXT_COLOR\": \"#ffffff\",\n  \"BODY_BACKGROUND_COLOR\": \"#000000\",\n  \"BODY_TEXT_COLOR\": \"#ffffff\",\n  \"BUTTON_COLOR\": \"#FFDC00\",\n  \"BUTTON_TEXT_COLOR\": \"#000000\",\n  \"HAS_DISCLAIMER\": true,\n  \"DISCLAIMER_BACKGROUND_COLOR\": \"#000000\",\n  \"DISCLAIMER_TEXT\": \"\",\n  \"DISCLAIMER_TEXT_COLOR\": \"#ffffff\",\n  \"AGE_BACKGROUND_COLOR\": \"#000000\",\n  \"AGE_TEXT_COLOR\": \"#ffffff\",\n  \"theme\": \"video-banner_theme_empty\",\n  \"duration\": 15,\n  \"mediaFiles\": [\n    {\n      \"bitrate\": null,\n      \"delivery\": \"progressive\",\n      \"fileSize\": 37776290,\n      \"framerate\": 60,\n      \"height\": null,\n      \"id\": \"master_34.m3u8\",\n      \"type\": \"application/vnd.apple.mpegurl\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/hls/master_34.m3u8\",\n      \"width\": null,\n      \"hasAudio\": true,\n      \"vmafAvg\": 96.33378601\n    },\n    {\n      \"bitrate\": 574,\n      \"codec\": \"avc1.4D4015,mp4a.40.2\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 1015238,\n      \"framerate\": 60,\n      \"height\": 240,\n      \"id\": \"H264_426_240_500.mp4\",\n      \"type\": \"video/mp4\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/mp4/H264_426_240_500.mp4\",\n      \"width\": 426,\n      \"hasAudio\": true,\n      \"vmafAvg\": 38.39118576\n    },\n    {\n      \"bitrate\": 1077,\n      \"codec\": \"avc1.4D401F,mp4a.40.2\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 1904662,\n      \"framerate\": 60,\n      \"height\": 360,\n      \"id\": \"H264_640_360_1000.mp4\",\n      \"type\": \"video/mp4\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/mp4/H264_640_360_1000.mp4\",\n      \"width\": 640,\n      \"hasAudio\": true,\n      \"vmafAvg\": 63.41853714\n    },\n    {\n      \"bitrate\": 2323,\n      \"codec\": \"avc1.64001F,mp4a.40.2\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 4107596,\n      \"framerate\": 60,\n      \"height\": 480,\n      \"id\": \"H264_854_480_2240.mp4\",\n      \"type\": \"video/mp4\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/mp4/H264_854_480_2240.mp4\",\n      \"width\": 854,\n      \"hasAudio\": true,\n      \"vmafAvg\": 79.71530914\n    },\n    {\n      \"bitrate\": 377,\n      \"codec\": \"avc1.4D400C,mp4a.40.2\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 666808,\n      \"framerate\": 60,\n      \"height\": 144,\n      \"id\": \"H264_256_144_300.mp4\",\n      \"type\": \"video/mp4\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/mp4/H264_256_144_300.mp4\",\n      \"width\": 256,\n      \"hasAudio\": true,\n      \"vmafAvg\": 3.232501984\n    },\n    {\n      \"bitrate\": 4176,\n      \"codec\": \"avc1.640020,mp4a.40.2\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 7384877,\n      \"framerate\": 60,\n      \"height\": 720,\n      \"id\": \"H264_1280_720_4060.mp4\",\n      \"type\": \"video/mp4\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/mp4/H264_1280_720_4060.mp4\",\n      \"width\": 1280,\n      \"hasAudio\": true,\n      \"vmafAvg\": 90.23461151\n    },\n    {\n      \"bitrate\": 6949,\n      \"codec\": \"avc1.64002A,mp4a.40.2\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 12287097,\n      \"framerate\": 60,\n      \"height\": 1080,\n      \"id\": \"H264_1920_1080_7000.mp4\",\n      \"type\": \"video/mp4\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/mp4/H264_1920_1080_7000.mp4\",\n      \"width\": 1920,\n      \"hasAudio\": true,\n      \"vmafAvg\": 96.33378601\n    },\n    {\n      \"bitrate\": 566,\n      \"codec\": \"vp8,vorbis\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 1003224,\n      \"framerate\": 60,\n      \"height\": 240,\n      \"id\": \"VP8_426_240_500.webm\",\n      \"type\": \"video/webm\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/webm/VP8_426_240_500.webm\",\n      \"width\": 426,\n      \"hasAudio\": true,\n      \"vmafAvg\": 25.97848129\n    },\n    {\n      \"bitrate\": 1037,\n      \"codec\": \"vp8,vorbis\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 1836785,\n      \"framerate\": 60,\n      \"height\": 360,\n      \"id\": \"VP8_640_360_1000.webm\",\n      \"type\": \"video/webm\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/webm/VP8_640_360_1000.webm\",\n      \"width\": 640,\n      \"hasAudio\": true,\n      \"vmafAvg\": 49.72835159\n    },\n    {\n      \"bitrate\": 2428,\n      \"codec\": \"vp8,vorbis\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 4297346,\n      \"framerate\": 60,\n      \"height\": 480,\n      \"id\": \"VP8_854_480_2500.webm\",\n      \"type\": \"video/webm\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/webm/VP8_854_480_2500.webm\",\n      \"width\": 854,\n      \"hasAudio\": true,\n      \"vmafAvg\": 66.03049469\n    },\n    {\n      \"bitrate\": 468,\n      \"codec\": \"vp8,vorbis\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 828998,\n      \"framerate\": 60,\n      \"height\": 144,\n      \"id\": \"VP8_256_144_400.webm\",\n      \"type\": \"video/webm\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/webm/VP8_256_144_400.webm\",\n      \"width\": 256,\n      \"hasAudio\": true,\n      \"vmafAvg\": 1.841052413\n    },\n    {\n      \"bitrate\": 4783,\n      \"codec\": \"vp8,vorbis\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 8468263,\n      \"framerate\": 60,\n      \"height\": 720,\n      \"id\": \"VP8_1280_720_5000.webm\",\n      \"type\": \"video/webm\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/webm/VP8_1280_720_5000.webm\",\n      \"width\": 1280,\n      \"hasAudio\": true,\n      \"vmafAvg\": 76.42549133\n    },\n    {\n      \"bitrate\": 7674,\n      \"codec\": \"vp8,vorbis\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 13584499,\n      \"framerate\": 60,\n      \"height\": 1080,\n      \"id\": \"VP8_1920_1080_8000.webm\",\n      \"type\": \"video/webm\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/webm/VP8_1920_1080_8000.webm\",\n      \"width\": 1920,\n      \"hasAudio\": true,\n      \"vmafAvg\": 82.38626862\n    },\n    {\n      \"bitrate\": 466,\n      \"codec\": \"vp09.00.20.08.00.02.02.02.00,vorbis\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 825331,\n      \"framerate\": 60,\n      \"height\": 240,\n      \"id\": \"VP9_426_240_400.webm\",\n      \"type\": \"video/webm\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/webm/VP9_426_240_400.webm\",\n      \"width\": 426,\n      \"hasAudio\": true,\n      \"vmafAvg\": 43.16596985\n    },\n    {\n      \"bitrate\": 765,\n      \"codec\": \"vp09.00.21.08.00.02.02.02.00,vorbis\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 1354346,\n      \"framerate\": 60,\n      \"height\": 360,\n      \"id\": \"VP9_640_360_700.webm\",\n      \"type\": \"video/webm\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/webm/VP9_640_360_700.webm\",\n      \"width\": 640,\n      \"hasAudio\": true,\n      \"vmafAvg\": 66.3150177\n    },\n    {\n      \"bitrate\": 1155,\n      \"codec\": \"vp09.00.30.08.00.02.02.02.00,vorbis\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 2045641,\n      \"framerate\": 60,\n      \"height\": 480,\n      \"id\": \"VP9_854_480_1100.webm\",\n      \"type\": \"video/webm\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/webm/VP9_854_480_1100.webm\",\n      \"width\": 854,\n      \"hasAudio\": true,\n      \"vmafAvg\": 78.67137909\n    },\n    {\n      \"bitrate\": 266,\n      \"codec\": \"vp09.00.10.08.00.02.02.02.00,vorbis\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 471117,\n      \"framerate\": 60,\n      \"height\": 144,\n      \"id\": \"VP9_256_144_200.webm\",\n      \"type\": \"video/webm\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/webm/VP9_256_144_200.webm\",\n      \"width\": 256,\n      \"hasAudio\": true,\n      \"vmafAvg\": 5.259590626\n    },\n    {\n      \"bitrate\": 4152,\n      \"codec\": \"vp09.00.40.08.00.02.02.02.00,vorbis\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 7350660,\n      \"framerate\": 60,\n      \"height\": 1080,\n      \"id\": \"VP9_1920_1080_4100.webm\",\n      \"type\": \"video/webm\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/webm/VP9_1920_1080_4100.webm\",\n      \"width\": 1920,\n      \"hasAudio\": true,\n      \"vmafAvg\": 96.60770416\n    },\n    {\n      \"bitrate\": 2328,\n      \"codec\": \"vp09.00.31.08.00.02.02.02.00,vorbis\",\n      \"delivery\": \"progressive\",\n      \"fileSize\": 4122011,\n      \"framerate\": 60,\n      \"height\": 720,\n      \"id\": \"VP9_1280_720_2300.webm\",\n      \"type\": \"video/webm\",\n      \"url\": \"https://strm.yandex.ru/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/webm/VP9_1280_720_2300.webm\",\n      \"width\": 1280,\n      \"hasAudio\": true,\n      \"vmafAvg\": 90.15932465\n    },\n    {\n      \"bitrate\": null,\n      \"delivery\": \"progressive\",\n      \"fileSize\": 34028603,\n      \"framerate\": 60,\n      \"height\": null,\n      \"id\": \"manifest.mpd\",\n      \"type\": \"application/dash+xml\",\n      \"url\": \"https://strm.yandex.ru/vod/vh-canvas-converted/vod-content/3505474579183006337/001c5aba-8e6d-4fd7-b236-84eb6605ac9c/kaltura/desc_693d65a317a5462fd0e2e61f61716903/v9Z95mBHJixA/manifest.mpd\",\n      \"width\": null,\n      \"hasAudio\": true,\n      \"vmafAvg\": 96.33378601\n    }\n  ],\n  \"socialAdvertising\": false,\n  \"AUCTION_DC_PARAMS\": {\n    \"data_params\": {\n      \"1\": {\n        \"click_url\": {\n          \"action_button\": \"https://yandex.ru/an/count/WkmejI_zOoVX2Lbi1FKM02EbZYOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6Ezoh5UddXZDtvZnAIKOpXgX1HaCvzCwTJYYUup_t58_QEIwre_PFL6hZqHk_R-YFKog5IgTEfrsYAlH351J29tS-UwO-89meGAH0SI85YXGeKfpeEJ6jdKyGpX7G-bfaDAH4NTi1KpPnxAqGbDGelIt6WLOJBGOTHmjPt9xaCMa5cUXiWRhqdOczJNs97G3IBK3hG5Ta0Le7kgOKe3NH65c0raHZbmAq9XhD1MXDD78fG6kY4R80hGHMJOYGPbnqtWAo3dHDoVcQ64J2emS528gSBX5RMzc4b1Xm6qtTXm6-f4aJB5qGX0D9YUU1432OmS7UGBPqgM96fCb-u_rpJh1ayKeZOkLcbs031nn2O1a2XgV0evEmHwiXNRXeDUpD8LsuQ3LiwQcQiXHPhMqFYf0WDDmcpTQ1hYa1R3605Qd9oCpEO4kKL67GzkYwFaDcGAvhPajVUR0APrxGOiXDPepkOSmYJ12LwjbYCDtd1nPgrA9CCDFKwo2tv8jRi3N-C8qtvVtW3dBY_-qW9_xU3dBYpys99Fzzo4dxjKDEsfyTSj8opHPsPfa2igxhEfOspqXHREoZ6payWHIazmlehAyZVBJoPcQPBtijkwUj9tkx9bbjVanxi065GS2x_uvG1An5q6zfNTVDHS1Q1BtMjzKbkfrzDiCQfDSzbJ3R4yN4RjhYJ9CtLogLoYlMRyRskgvZ-4FAZm470GXbT3bE43lyQsDxWnnZknBPuuvyYHvXU82CGYeec2l-nfcc69lnxsBXWfwjD-_dMwp9ChGRx652uQQEJiXIabey_J84N8nkSBZa8lCqwIp36xq476jYYzmVWqIKtTyW7Wijc6spYL1DL2BVvd5qo5T5dkAOyK7ojMoj3JgPp83C4x-QdIyPxWKzyTSDTyjlI1aTcmZ9NYRqqyFH2_8k0G9ZHbgPGurF~2\"\n        }\n      },\n      \"misc\": {\n        \"object_id\": \"1\",\n        \"bidreqid\": \"3706828863699759524\",\n        \"vmap_request_id\": \"0\",\n        \"pageId\": \"106712\",\n        \"impId\": \"81\",\n        \"productType\": \"direct\",\n        \"campaignid\": \"0\",\n        \"layout_type\": \"clickable_video\",\n        \"socialAdvertising\": false\n      }\n    }\n  },\n  \"playbackParameters\": {\n    \"showSkipButton\": true,\n    \"skipDelay\": 5,\n    \"lang\": \"ru\"\n  },\n  \"encounters\": [\n    \"https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=14\"\n  ],\n  \"trackingEvents\": {\n    \"start\": [\n      \"https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=11\"\n    ],\n    \"trueView\": [\n      \"https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=19\"\n    ],\n    \"returnAfterClickThrough\": [],\n    \"showHp\": [\n      \"https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=21\"\n    ],\n    \"clickHp\": [\n      \"https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=22\"\n    ],\n    \"adsFinish\": [\n      \"https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=24\"\n    ]\n  },\n  \"isStock\": false,\n  \"firstFrame\": {\n    \"images\": [\n      {\n        \"type\": \"image/jpeg\",\n        \"width\": 1920,\n        \"height\": 1080,\n        \"url\": \"https://avatars.mds.yandex.net/get-vh/5283769/2a0000018fede211befe3312b08bc0952575/orig\"\n      }\n    ]\n  }\n}]]></AdParameters>\n          </Linear>\n          <CreativeExtensions>\n            <CreativeExtension type=\"meta\">\n              <yastrm:prefix xmlns:yastrm=\"http://strm.yandex.ru/schema/vast\"><![CDATA[video_6661be80211a34d4427c4444]]></yastrm:prefix>\n            </CreativeExtension>\n          </CreativeExtensions>\n        </Creative>\n      </Creatives>\n      <Extensions>\n        <Extension type=\"controls\">\n          <control id=\"adlabel\" layout=\"1\"/>\n          <control id=\"countdown\" layout=\"1\"/>\n          <control id=\"soundbtn\" layout=\"1\"/>\n        </Extension>\n      </Extensions>\n    </InLine>\n  </Ad>\n</VAST>",
+                        "vastType": "native-video",
+                        "videoWidth": 1920,
+                        "videoHeight": 1080,
+                        "bmcategoryId": "200006921",
+                        "domainId": "25902509",
+                        "clientId": "92089251",
+                        "clientType": 1,
+                        "clientTin": "7726469525",
+                        "clientName": "Общество с ограниченной ответственностью «Атлон ФМ»",
+                        "clientAlternativeTin": "",
+                        "isInCollection": false,
+                        "companyLocation": {
+                            "X": "37.631577",
+                            "Y": "55.671966",
+                            "X1": "37.627526",
+                            "X2": "37.635736",
+                            "Y1": "55.669696",
+                            "Y2": "55.674336"
+                        },
+                        "isFakeBody": false,
+                        "isFakeTitle": false,
+                        "pathUrl": "https://yandex.ru/an/count/WkmejI_zOoVX2Lbj1FKM03EbZYOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6Ezoh5UddXZDtvZnAIKOpXgX1HaCvzCwTJYYUup_t58_QEIwre_PFL6hZqHk_R-YFKog5IgTEfrsYAlH351J29tS-UwO-89meGAH0SI85YXGeKfpeEJ6jdKyGpX7G-bfaDAH4NTi1KpPnxAqGbDGelIt6WLOJBGOTHmjPt9xaCMa5cUXiWRhqdOczJNs97G3IBK3hG5Ta0Le7kgOKe3NH65c0raHZbmAq9XhD1MXDD78fG6kY4R80hGHMJOYGPbnqtWAo3dHDoVcQ64J2emS528gSBX5RMzc4b1Xm6qtTXm6-f4aJB5qGX0D9YUU1432OmS7UGBPqgM96fCb-u_rpJh1ayKeZOkLcbs031nn2O1a2XgV0evEmHwiXNRXeDUpD8LsuQ3LiwQcQiXHPhMqFYf0WDDmcpTQ1hYa1R3605Qd9oCpEO4kKL67GzkYwFaDcGAvhPajVUR0APrxGOiXDPepkOSmYJ12LwjbYCDtd1nPgrA9CCDFKwo2tv8jRi3N-C8qtvVtW3dBY_-qW9_xU3dBYpys99Fzzo4dxjKDEsfyTSj8opHPsPfa2igxhEfOspqXHREoZ6payWHIazmlehAyZVBJoPcQPBtijkwUj9tkx9bbjVkonFDY0mY3WtNz7A0BM8kYtjAxhvY9WBO9Uwzlg4jtEFfjX3TBhdagOxObYOZTjSQR9cokLIkKLwpTZUrtNCNmYvRUAeEaceyjnWZlyQ-DxWnnZknBPvOxyYHvXU82CGYeec2i0nvcd69loxs81WvwjD-_dMwpAChGRx652uQQEJkXIacey_J8CN8oESBZq8dCrwIp36xqC76jZYzmWWyIKtTym7Wijc6wpYL9DL2hVvd64o5TbdkAO0KBoDMsj3Jgfp83C4z-QdJSPxWLDyTTDTykFI1aTcmp9NYhqqyFL2_8s0m9ZHbgPGurF~2",
+                        "url": "https://yandex.ru/an/count/WkmejI_zOoVX2Lbi1FKM02EbZYOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6Ezoh5UddXZDtvZnAIKOpXgX1HaCvzCwTJYYUup_t58_QEIwre_PFL6hZqHk_R-YFKog5IgTEfrsYAlH351J29tS-UwO-89meGAH0SI85YXGeKfpeEJ6jdKyGpX7G-bfaDAH4NTi1KpPnxAqGbDGelIt6WLOJBGOTHmjPt9xaCMa5cUXiWRhqdOczJNs97G3IBK3hG5Ta0Le7kgOKe3NH65c0raHZbmAq9XhD1MXDD78fG6kY4R80hGHMJOYGPbnqtWAo3dHDoVcQ64J2emS528gSBX5RMzc4b1Xm6qtTXm6-f4aJB5qGX0D9YUU1432OmS7UGBPqgM96fCb-u_rpJh1ayKeZOkLcbs031nn2O1a2XgV0evEmHwiXNRXeDUpD8LsuQ3LiwQcQiXHPhMqFYf0WDDmcpTQ1hYa1R3605Qd9oCpEO4kKL67GzkYwFaDcGAvhPajVUR0APrxGOiXDPepkOSmYJ12LwjbYCDtd1nPgrA9CCDFKwo2tv8jRi3N-C8qtvVtW3dBY_-qW9_xU3dBYpys99Fzzo4dxjKDEsfyTSj8opHPsPfa2igxhEfOspqXHREoZ6payWHIazmlehAyZVBJoPcQPBtijkwUj9tkx9bbjVanxi065GS2x_uvG1An5q6zfNTVDHS1Q1BtMjzKbkfrzDiCQfDSzbJ3R4yN4RjhYJ9CtLogLoYlMRyRskgvZ-4FAZm470GXbT3bE43lyQsDxWnnZknBPuuvyYHvXU82CGYeec2l-nfcc69lnxsBXWfwjD-_dMwp9ChGRx652uQQEJiXIabey_J84N8nkSBZa8lCqwIp36xq476jYYzmVWqIKtTyW7Wijc6spYL1DL2BVvd5qo5T5dkAOyK7ojMoj3JgPp83C4x-QdIyPxWKzyTSDTyjlI1aTcmZ9NYRqqyFH2_8k0G9ZHbgPGurF~2",
+                        "externalClickTrackingUrls": [],
+                        "sitelinks": [
+                            {
+                                "url": "https://yandex.ru/an/count/WjSejI_zOoVX2LbJ0qqM0BCbaIOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6ErmSGaiY_1Z9qCcXJzidTpvxfZuWd2X0f41n8WMA52XId73cpfn7ASbenX0ro6WeXzwvqmd5S_pddk9HEyUbTjJ-YKfjF7hZzmtzSKgbKEdKwRHBL8L-Y89Ca5X26a5qBJ8QKg9kTy2KJHnxAmGbDKflYt6WrKIBGSVHGXQt9tbCMa4cEbkWBdrdOczJNs87W7GBq3hG5Lc0re6kAGLeJJH65g0rqTYb0As9HdC1MXEDN0hGccY4B40hWLKJ8gGP5vstWAm3NLDolYO6aV3eGG628gTBnDPM_X3s7xpU0zU4b1Xm6qtTXm6-f4aJB5qGX0D9YUU1432OmS7UGBPqgM96fCb-u_rpJh1ayKeZOkLcbs031nn2O1a2XgV0evEmHwiXNRXeDUpD8LsuQ3LiwQcQiXHPhMqFYf0WDDmcpTQ1hYa1R3605Qd9oCpEO4kKL67GzkYwFaDcGAvhPajVUR0APrxGOiXDPepkOSmYJ12LwjbYCDtd1nPgrA9CCDFKwo2tv8jRi3N-C8qtvVtW3dBY_-qW9_xU3dBYpys99Fzzo4dxjKDEsfyTSj8opHPsPfa2igxhEfOspqXHREoZ6payWHIazmlehAyZVBJoPcQPBtijkwUj9tkx9bbjVjo01njG60Iy--y8HS1Q1FsMrdNTN0IiHT1hVLjTejlPPpEiGNhTKmcpFL5CxAOjpZHvSwLIgRnY_MPih-iw1gOBvI_XaO116LsE4mGl_DrDYB7J4h5OHcRpTuHoiRJBs6tGXW85WtegiQuaXVJvpe5qCShJ8OkKt3TAImpUu0BfM35SpE5ds4oysNY1YUrUDlpbgqhzSgtFN0rvcYmaV33s1PDaXXUdfTK_LydmEUN4PITmruT3ojHQNKWHEw4ViOzUO6q9440uQUNc1hW1~2",
+                                "title": "Калькулятор",
+                                "targetUrl": "https://atlonfm.ru/?cm_id=100975770_5334364176_16174816493_48450083583_48450083583_localhost:8080_context_type1_no_desktop_none_213&roistat=direct1_context_16174816493_%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%BD%D0%BE%D0%B9%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%8B&roistat_referrer=localhost:8080&roistat_pos=none_0&rs_stat=1258&yclid=5338836042561617919#go_quiz"
+                            },
+                            {
+                                "url": "https://yandex.ru/an/count/WjWejI_zOoVX2LbS0rKM08Dba2OQbKeGJD3dSxcpP_kTEs-uy_KxNc-umoqo4b8AiYRLITQX8oBg25OTQVI6-kJEPy_K1uGJ1OWKA4waG942HOeJpjoPyoWb6SqOeWOP3UNGEtSweNYE_znJF6hdkDIEsZzHgOr7R_o-eJzEgHGgdJgTTecgq0zHa0aIIqWZYAv5HaDArAyTC6KJnzuAGKcDqjjY76WrqMBGSRIGnUr97fDMa8dE5gXBtvdOszINs04WtGAq3dH55g1re6jA0LeJZP45Q4qqTYb0QwBHN83MH2EN0hGc6Y4Bq4fWrOG8QSP5voqWwq3Nb9olYK4aF7fGWA38wHAnjPLDI8a1jz7KVHZWIveqmT85GJYGb7WU20636Hpi3MHBbofcH9hiDzu_vmHB5gyq8bPkTWasSC0X19OXO7WAF3e9UxGQqeMBLiFU7DA5YrR3bfwgAKkHrThse0W9GiDjqcmTw9eIm1O3M96QZCpi3BP4IHK6RO-kwpDa1kIwPhRqbGUhSEO5BORSPCRe7iOimWHHgPuj1jDzVc2XHYtA13DDlGvoIxwu1LlZ3zDuKzuFxY0d_jyESkBlxI0d_joSIFBVXvoqNplafFtP8ISjqsnXPvOf8EkwhcDfyumKnSO-kf734qX1Uh-0plewmaShRsQM-RBNidlQUhAtQvBLviS-7cn0OH3mxhyZ505h4VHRMjTrSn6m5a6lzMrrYMvddysm1kbrJoNCzaGniPksEDFapPLAfVAAzPknlQxh69WTA7-F4sM6CheS9mWn_0H0Ts-CiJs9h5X6tlaxWhhujijmDqW7XQgREfsLhcHg-jHbatGnt-ama9GC6wLV5fzwbNJi31TVy6Di9bvkl81YkrTmV_bgMBy1rMUkj3ojbV71bbgsaYROdio0W9LbTNbUCimBTEAl1-wMPqWPExOBoPudzDFhqGloMm84HbTQcKDDNG00~2",
+                                "title": "Наши работы",
+                                "targetUrl": "https://atlonfm.ru/?cm_id=100975770_5334364176_16174816493_48450083583_48450083583_localhost:8080_context_type1_no_desktop_none_213&roistat=direct1_context_16174816493_%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%BD%D0%BE%D0%B9%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%8B&roistat_referrer=localhost:8080&roistat_pos=none_0&rs_stat=5367&yclid=5338836042561617919#examples-section"
+                            },
+                            {
+                                "url": "https://yandex.ru/an/count/WjaejI_zOoVX2LbS0rqM08Eba2OQbKeGJD3dSxcpP_kTEs-uy_KxNc-umoqo4b8AiYRLITQX8oBg25QTAIwT-kJEPy_K1uGJ1OWKA4waG942HOeJpjoPyoWb6SqOeWOP3UNGEtSweNYE_znJF6hdkDIEsZzHgOr7R_o-eJzEgHGgdJgTTecgq0zHa0aIIqWZYAv5HaDArAyTC6KJnzuAGKcDqjjY76WrqMBGSRIGnUr97fDMa8dE5gXBtvdOszINs04WtGAq3dH55g1re6jA0LeJZP45Q4qqTYb0QwBHN83MH2EN0hGc6Y4Bq4fWrOG8QSP5voqWwq3Nb9olYK4aF7fGWA38wHAnjPLDI8a1jz7KVHZWIveqmT85GJYGb7WU20636Hpi3MHBbofcH9hiDzu_vmHB5gyq8bPkTWasSC0X19OXO7WAF3e9UxGQqeMBLiFU7DA5YrR3bfwgAKkHrThse0W9GiDjqcmTw9eIm1O3M96QZCpi3BP4IHK6RO-kwpDa1kIwPhRqbGUhSEO5BORSPCRe7iOimWHHgPuj1jDzVc2XHYtA13DDlGvoIxwu1LlZ3zDuKzuFxY0d_jyESkBlxI0d_joSIFBVXvoqNplafFtP8ISjqsnXPvOf8EkwhcDfyumKnSO-kf734qX1Uh-0plewmaShRsQM-RBNidlQUhAtQvBLviSgFDY0mY3WtNz7A0BM8kYtjAxhvY9WBO9Uwzlg4jtEFfjX3TBhdagOxObYOZTjSQR9cokLIkKLwpTZUrtNCJ0xKFu19Y3WJKQNumG1CVm4G7TlZB4zYQnOHjxvEuAw-BRBS3T81uMgcpgTbQvaQlhKPPDqCT_fC92K31kbNnQVUfLqx0mNN_1ZR2PURho0OhjNS7_vQbY_0TLdhhGyhPNnmPPQjf8cs9xCW82LPNLvNZBC2tJYhmVkbcT86Jks2ycU9_JJwz4Bybi214PNMfb3JLq0~2",
+                                "title": "Отзывы",
+                                "targetUrl": "https://atlonfm.ru/?cm_id=100975770_5334364176_16174816493_48450083583_48450083583_localhost:8080_context_type1_no_desktop_none_213&roistat=direct1_context_16174816493_%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%BD%D0%BE%D0%B9%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%8B&roistat_referrer=localhost:8080&roistat_pos=none_0&rs_stat=9749&yclid=5338836042561617919#examples-section"
+                            },
+                            {
+                                "url": "https://yandex.ru/an/count/WjWejI_zOoVX2LbS0rKM08Dba2OQbKeGJD3dSxcpP_kTEs-uy_KxNc-umoqo4b8AiYRLITQX8oBg25OTf_EE-kJEPy_K1uGJ1OWKA4waG942HOeJpjoPyoWb6SqOeWOP3UNGEtSweNYE_znJF6hdkDIEsZzHgOr7R_o-eJzEgHGgdJgTTecgq0zHa0aIIqWZYAv5HaDArAyTC6KJnzuAGKcDqjjY76WrqMBGSRIGnUr97fDMa8dE5gXBtvdOszINs04WtGAq3dH55g1re6jA0LeJZP45Q4qqTYb0QwBHN83MH2EN0hGc6Y4Bq4fWrOG8QSP5voqWwq3Nb9olYK4aF7fGWA38wHAnjPLDI8a1jz7KVHZWIveqmT85GJYGb7WU20636Hpi3MHBbofcH9hiDzu_vmHB5gyq8bPkTWasSC0X19OXO7WAF3e9UxGQqeMBLiFU7DA5YrR3bfwgAKkHrThse0W9GiDjqcmTw9eIm1O3M96QZCpi3BP4IHK6RO-kwpDa1kIwPhRqbGUhSEO5BORSPCRe7iOimWHHgPuj1jDzVc2XHYtA13DDlGvoIxwu1LlZ3zDuKzuFxY0d_jyESkBlxI0d_joSIFBVXvoqNplafFtP8ISjqsnXPvOf8EkwhcDfyumKnSO-kf734qX1Uh-0plewmaShRsQM-RBNidlQUhAtQvBLviSmFDY0mY3WtNz7A0BM8kYtjAxhvY9WBO9Uwzlg4jtEFfjX3TBhdagOxObYOZTjSQR9cokLIkKLwpTZUrtNCJ0xKFwhgjYMZ2x72G8n_0H0Ts-CiJs9h5X6tlaxWhhujijmDqW7XQgREfsLhcHg-jHbatGnt-ama9GC6wLV5fzwbNJi31TVy6Di9bvkl81YkrTmV_bgMBy1rMUkj3ojbV71bbgsaYROdio0W9LbTNbUCimBTEAl1-wMPqWPExOBoPudzDFhqGloMm84HbTQcKDDNG00~2",
+                                "title": "Вызов замерщика",
+                                "targetUrl": "https://atlonfm.ru/?cm_id=100975770_5334364176_16174816493_48450083583_48450083583_localhost:8080_context_type1_no_desktop_none_213&roistat=direct1_context_16174816493_%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%BD%D0%BE%D0%B9%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%8B&roistat_referrer=localhost:8080&roistat_pos=none_0&rs_stat=6300&yclid=5338836042561617919#examples-section"
+                            }
+                        ],
+                        "linkTail": "=WT0ejI_zOoVX2LbH0HKE05CPOoOOe0243gkFnWEwq230BG3pG7X1CFacv4OyEIbFeB3jDD9NTigUQeUyr7V6qETpkRDd-vqxRxZpLJPnxAqGbDGelIt6WLOJBGOTHmjPt9xaCMa5cUXiWRhqdOczJNs97G3IBK3hG5Ta0Le7kgOKe3NH65c0raHZbmAq9XhD1MXDD78fG6kY4R80hGHMJOYGPbnqtWAo3dHDoVcQ64J2emS528gSBX5RMzc4b1Xm6qtTXm6-_fmJB5cyqeXOkTabsC01Xn1OTeQ0uIdmw2JiqMf85ovQ3NjpI1SkMWrRUggcB4LMQzk38YG83RT9itMWQqe0MmnWHHYGwvhPqbSLoXNElA35a9lC6Dt3c4MO82hLiyLWkiko9hU3t98lRi7M-CCqtfJtWpl8YV-tWvpuUuUSj5yxvAJzMGixiqmllHoUG0hIkwyZVBJoPcQPBtijkwUj9tkx9bbjVcn0OH3mxhyZ505h4VHRMjTrSn6m5a6lzMrrYMvddysm1kbrJoNCzaGniPksI5zmGS-d3X3y3yUUHlaNmx9-XrA-YTkUEMGOdRdYw0ghfKSr7H8NjTom-_IWykMNNaaQ83jEEHWpQm00~2",
+                        "abuseUrl": "https://yandex.ru/an/abuse/WDOejI_z8oVX2Ld-JGO04mih9XgLIgLIgGJ1LC80EauLQT84InS4uK1IudaW10ncSB0sUf3aN5NO8cHK4Gvc1HwTX54G-revqdR1h6pYs5iXAAbHUbkC0wqcMWmoPHvC9dkBC45KgcUBmNIV7rYeKOiomKnJZyCJI45wPvRvihThajNcnmOK1W7l_Zj24R0MGR-bTLqt5m5h4VHQJoNCzaGniPksU3JJvCsLIgNoYlMRiPMJog-MpP8ZeyjnWWVyhXvi13nFpY-xl0zrTmcUJjm7kgT3uFu7~2",
+                        "advertInfoUrl": "https://yandex.ru/ads/advertiser_info/WDOejI_z8oVX2Ld-JGO04mih9XgLIgLIgGJ1LC80EauLQT84InS4uK1IudaW10ncSB0sUf3aN5NO8cHK4Gvc1HwTX54G-revqdR1h6pYs5iXAAbHUbkC0wqcMWmoPHvC9dkBC45KgcUBmNIV7rYeKOiomKnJZyCJI45wPvRvihThajNcnmOK1W7l_Zj24R0MGR-bTLqt5m5h4VHQJoNCzaGniPksU3JJvCsLIgNoYlMRiPMJog-MpP8ZeyjnWWVyhXvi13nFpY-xl0zrTmcUJjm7kgT3uFu7~2",
+                        "falseClick": "https://yandex.ru/an/count/WXOejI_zOoVX2Lce0KKG0BDTSoOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6Ernb4yVU2a59ZTBROXneDT5Yq76qaCNjIHwJLf29pXQeIz-PsDlKbzW18Dq2j0vqHHQWTQ1hIW5Q4usH1MXDD7OfG6kYqLo0raGZbmAq9XeX2z1AODM426d6HUSj8Ej0rvIShub193nwK82WoEaIiRML6xq7hWafCU0scheF0tn9aoPOkY081v8IpmCXO323Wxs1REbInOn8a_t6--USOCdYbKR4oiqkmGOEE8J0CWGCJu579s6FLaEwSD5gs9j3kd3HQjZIKpLbAR9QsnuK8K5ek4sQhGDTKmBOOW0hKfEHcPt1bYYfmg3jqNLzXio0NDVCbhxoO1NElA35a9lC6Dt3c6yH9eXAzMmncExp0mirQb4cc6dgTP1RyiKjs1f_cCQRydvm1pdn_tQG4t_la9FsQuUSj3zhOMUMwQMN0hAkwpgMDiz8KMpienivF84KfFSBwAol8toqycPccIzxBRkdhITxkoPPRNviG64GyEw_8nG1Qn7qMrhNTNCHi1P1h_LjTObkPv_Di0RfTKybpFP4CR6RjZZJvCsLIgNoYlMRiRskWp7GNENleUG15HbTZXC44VpZ80C61AwYoWgHcU-M8QnHtM4GOM8OB6Z0unoKwveOHNPbXr50vk7nHH0Nh2dxWMClhJorapC0~2",
+                        "adv_type": "0",
+                        "phraseId": "48450083583",
+                        "price_info": {
+                            "discount": "",
+                            "currency": "",
+                            "prefix": "",
+                            "old": "",
+                            "price": ""
+                        },
+                        "secondTitle": "",
+                        "path": "ремонт-квартир",
+                        "permalink": "176690131290",
+                        "age": "",
+                        "body": "Оставьте заявку на бесплатный выезд инженера-сметчика и зафиксируйте цены в смете",
+                        "domain": "atlonfm.ru",
+                        "targetUrl": "https://atlonfm.ru/?utm_source=yandex-direct&utm_medium=cpc&utm_campaign=5.0%20-%20%D0%A0%D0%A1%D0%AF%20%D0%9C%D1%81%D0%BA&utm_term=%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%BD%D0%BE%D0%B9%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%8B&cm_id=100975770_5334364176_16174816493_48450083583_48450083583_localhost:8080_context_type1_no_desktop_none_213&roistat=direct1_context_16174816493_%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%BD%D0%BE%D0%B9%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%8B&roistat_referrer=localhost:8080&roistat_pos=none_0&y_ref=localhost:8080&yclid=5338836042561617919",
+                        "title": "Ремонт квартир в Москве - Выезд инженера-сметчика - 0 р.",
+                        "warning": "",
+                        "punyDomain": "atlonfm.ru",
+                        "faviconWidth": "120",
+                        "faviconHeight": "120",
+                        "metro": "Нагатинская",
+                        "FirstFrameParameters": [
+                            {
+                                "Url": "https://avatars.mds.yandex.net/get-vh/5283769/2a0000018fede211befe3312b08bc0952575/orig",
+                                "Type": "image/jpeg",
+                                "Width": "1920",
+                                "Height": "1080"
+                            }
+                        ],
+                        "deviceType": 6,
+                        "blockId": 3948,
+                        "actionButton": "https://yandex.ru/an/count/WkqejI_zOoVX2Lbj1FqM03FbZYOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6Ezoh5UddXZDtvZnAIKOpXgX1HaCvzCwTJYYUup_t58_QEIwre_PFL6hZqHk_R-YFKog5IgTEfrsYAlH351J29tS-UwO-89meGAH0SI85YXGeKfpeEJ6jdKyGpX7G-bfaDAH4NTi1KpPnxAqGbDGelIt6WLOJBGOTHmjPt9xaCMa5cUXiWRhqdOczJNs97G3IBK3hG5Ta0Le7kgOKe3NH65c0raHZbmAq9XhD1MXDD78fG6kY4R80hGHMJOYGPbnqtWAo3dHDoVcQ64J2emS528gSBX5RMzc4b1Xm6qtTXm6-f4aJB5qGX0D9YUU1432OmS7UGBPqgM96fCb-u_rpJh1ayKeZOkLcbs031nn2O1a2XgV0evEmHwiXNRXeDUpD8LsuQ3LiwQcQiXHPhMqFYf0WDDmcpTQ1hYa1R3605Qd9oCpEO4kKL67GzkYwFaDcGAvhPajVUR0APrxGOiXDPepkOSmYJ12LwjbYCDtd1nPgrA9CCDFKwo2tv8jRi3N-C8qtvVtW3dBY_-qW9_xU3dBYpys99Fzzo4dxjKDEsfyTSj8opHPsPfa2igxhEfOspqXHREoZ6payWHIazmlehAyZVBJoPcQPBtijkwUj9tkx9bbjVkppFDY0mY3WtNz7A0BM8kYtjAxhvY9WBO9Uwzlg4jtEFfjX3TBhdagOxObYOZTjSQR9cokLIkKLwpTZUrtNCNmYvTyX0BLGHfVZ104x_6lZUuCSOxiIsUME_8aUONY0Z48gA9Wh0CUPfnYRykzY0OEUhJVlvrkioZAq6-nXGk6cZaxeKf9gFFqo35oCZd2uz29pDUaimnkz31nhOulS88F4bDtVC1uBBPXkiubIJLGgt-PnXCXNPPxYc052yZLjhGqwgSo0p1FVcfqt6Uu5JV7NJNVBZqWP7PiCoLugzDF3rGloDWC2OqPQcKEDJm00~2",
+                        "uniq": "17927658662801004997",
+                        "hidePermalinkInfo": false,
+                        "vmap_request_id": "0",
+                        "templateId": 410,
+                        "hasNaverPayData": false,
+                        "pageId": "106712",
+                        "minDisplayNewMarketRating": "40",
+                        "isNeuralPicture": false,
+                        "surveyConfig": {},
+                        "bannerWidth": 0,
+                        "addHyperlocalAsset": false,
+                        "creativeId": "C0",
+                        "popup": false,
+                        "bidreqid": "3706828863699759524",
+                        "impId": "81",
+                        "callToAction": {
+                            "url": "",
+                            "value": "Подробнее"
+                        },
+                        "requestRegion": "ru",
+                        "sourceDomain": "partner-code.yandex.ru",
+                        "campaignid": "200975770",
+                        "directTitle": {
+                            "url": "https://direct.yandex.ru/?partner",
+                            "title": "Реклама"
+                        },
+                        "productType": "direct",
+                        "agencyClientId": "0",
+                        "titleUrl": "https://yandex.ru/an/count/WkmejI_zOoVX2Lbi1FKM02EbZYOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6Ezoh5UddXZDtvZnAIKOpXgX1HaCvzCwTJYYUup_t58_QEIwre_PFL6hZqHk_R-YFKog5IgTEfrsYAlH351J29tS-UwO-89meGAH0SI85YXGeKfpeEJ6jdKyGpX7G-bfaDAH4NTi1KpPnxAqGbDGelIt6WLOJBGOTHmjPt9xaCMa5cUXiWRhqdOczJNs97G3IBK3hG5Ta0Le7kgOKe3NH65c0raHZbmAq9XhD1MXDD78fG6kY4R80hGHMJOYGPbnqtWAo3dHDoVcQ64J2emS528gSBX5RMzc4b1Xm6qtTXm6-f4aJB5qGX0D9YUU1432OmS7UGBPqgM96fCb-u_rpJh1ayKeZOkLcbs031nn2O1a2XgV0evEmHwiXNRXeDUpD8LsuQ3LiwQcQiXHPhMqFYf0WDDmcpTQ1hYa1R3605Qd9oCpEO4kKL67GzkYwFaDcGAvhPajVUR0APrxGOiXDPepkOSmYJ12LwjbYCDtd1nPgrA9CCDFKwo2tv8jRi3N-C8qtvVtW3dBY_-qW9_xU3dBYpys99Fzzo4dxjKDEsfyTSj8opHPsPfa2igxhEfOspqXHREoZ6payWHIazmlehAyZVBJoPcQPBtijkwUj9tkx9bbjVjo11njG60Iy--y8HS1Q1FsMrdNTN0IiHT1hVLjTejlPPpEiGNhTKmcpFL5CxAOjpZHvSwLIgRnY_MPih-iwXZ-a_7VYqGqPNOuJ13lyQsDxWnnZknBPuuvyYHvXU82CGYeec2l-nfcc69lnxsBXWfwjD-_dMwp9ChGRx652uQQEJiXIabey_J84N8nkSBZa8lCqwIp36xq476jYYzmVWqIKtTyW7Wijc6spYL1DL2BVvd5qo5T5dkAOyK7ojMoj3JgPp83C4x-QdIyPxWKzyTSDTyjlI1aTcmZ9NYRqqyFH2_8k0G9ZHbgPGurF~2?q=",
+                        "clientRegion": "Москва",
+                        "isAbandonedCartBanner": false,
+                        "isGeoPinPage": false,
+                        "closeCounter": "https://yandex.ru/an/count/542/8343029804209351606",
+                        "sourceInterface": "direct",
+                        "bannerHeight": 0,
+                        "erid": "j1SUnK1R4pMe7fjmr",
+                        "sad": "",
+                        "semanticCorrespondenceType": 0,
+                        "S2SEnabled": false,
+                        "bs_data": {
+                            "addInfo": {
+                                "type": "callouts",
+                                "callouts_list": [
+                                    "Без предоплаты",
+                                    "Работы + материалы",
+                                    "Гарантия 5 лет",
+                                    "Калькулятор ремонта"
+                                ]
+                            },
+                            "adId": "72057610212744429",
+                            "bannerFlags": "",
+                            "clientAlternativeTin": "",
+                            "clientId": "92089251",
+                            "clientName": "Общество с ограниченной ответственностью «Атлон ФМ»",
+                            "clientTin": "7726469525",
+                            "clientType": 1,
+                            "isSmartTga": false,
+                            "pCodeInfo": "asset_auction_enabled"
+                        },
+                        "constructor_data": {
+                            "Video": {
+                                "FirstFrameParameters": [
+                                    {
+                                        "Url": "https://avatars.mds.yandex.net/get-vh/5283769/2a0000018fede211befe3312b08bc0952575/orig",
+                                        "Type": "image/jpeg",
+                                        "Width": "1920",
+                                        "Height": "1080"
+                                    }
+                                ]
+                            }
+                        },
+                        "direct_data": {
+                            "banner_proto": {
+                                "ComputedFields": {
+                                    "HrefText": "ремонт-квартир",
+                                    "Permalink": {
+                                        "status": {
+                                            "phones": [
+                                                {
+                                                    "country_code": 7,
+                                                    "subscriber_number": "3200086",
+                                                    "city_code": 495
+                                                }
+                                            ],
+                                            "publishing_status": 1
+                                        }
+                                    }
+                                },
+                                "GrutObject": {
+                                    "status": {
+                                        "materialized_fields": {
+                                            "active_permalink_assign_type": 2,
+                                            "active_permalink_id": "176690131290"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "assetStatuses": null,
+                        "coloredSkinTheme": {
+                            "isLight": true,
+                            "themeIndicator": "light",
+                            "themeVariant": "default",
+                            "themePalette": "Default",
+                            "variables": {
+                                "background": "#fff",
+                                "buttonText": "#ffffff",
+                                "buttonBackground": "#3d85f5",
+                                "labelBackground": "rgba(255, 255, 255, 0.8)",
+                                "warningColor": "rgba(61,63,67,0.3)",
+                                "floorAdBorder": "#e8eaf0",
+                                "disclamerOpacity": "1",
+                                "adBgColor": "#ffffff",
+                                "smartTileCarouselButtonsColor": "#ffffff",
+                                "mixBlendMode": "multyply",
+                                "defaultBorderColor": "rgba(163, 172, 191, 0.15)",
+                                "defaultBackground": "#f8fafb",
+                                "rmpGridAdLabelBackground": "rgba(37, 39, 41, 0.08)",
+                                "rmpGridBackground": "#f7f7f8",
+                                "primary": "rgb(37, 39, 41)",
+                                "secondary": "rgba(37, 39, 41, 0.77)",
+                                "tertiary": "rgba(37, 39, 41, 0.49)",
+                                "quaternary": "rgba(37, 39, 41, 0.13)",
+                                "link": "#1877f2"
+                            }
+                        },
+                        "renderedAssets": [
+                            "video",
+                            "domain",
+                            "title",
+                            "rating",
+                            "body",
+                            "sitelinks",
+                            "button"
+                        ],
+                        "renderedDirectAssets": [
+                            "video",
+                            "domain",
+                            "title",
+                            "rating",
+                            "body",
+                            "sitelinks",
+                            "button"
+                        ]
+                    }
+                ],
+                "directTitle": {
+                    "title": "Реклама",
+                    "url": "https://direct.yandex.ru/?partner"
+                },
+                "ssr": {
+                    "html": "<div data-container=\"outer\" class=\"s9bf97561 v3aea7129\"><div class=\"re9821e68\"><div class=\"ne74acd49\"></div><div data-id=\"72057610212744429\" data-ad-id=\"72057610212744429\" data-name=\"adWrapper\" lang=\"ru\" class=\"x2f588569 oa5bf2808\"><div class=\"rf9b007a af8c0ee75 oa5bf2808\"><div data-name=\"adaptiveConstructorAd\" id=\"id4246731719849230113\" class=\"n1b3c561e\"><div class=\"t90a02585 b22a72d00\"><div class=\"ta60e7fac mddca31eb re160dad\"><div data-block-name=\"video\" data-backpack=\"168.75\" class=\"t87367ed1 eb7d27621\"><div class=\"d5451b24b v5eb95f89 nd93341f0\"><a href=\"https://yandex.ru/an/count/WkmejI_zOoVX2Lbi1FKM02EbZYOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6Ezoh5UddXZDtvZnAIKOpXgX1HaCvzCwTJYYUup_t58_QEIwre_PFL6hZqHk_R-YFKog5IgTEfrsYAlH351J29tS-UwO-89meGAH0SI85YXGeKfpeEJ6jdKyGpX7G-bfaDAH4NTi1KpPnxAqGbDGelIt6WLOJBGOTHmjPt9xaCMa5cUXiWRhqdOczJNs97G3IBK3hG5Ta0Le7kgOKe3NH65c0raHZbmAq9XhD1MXDD78fG6kY4R80hGHMJOYGPbnqtWAo3dHDoVcQ64J2emS528gSBX5RMzc4b1Xm6qtTXm6-f4aJB5qGX0D9YUU1432OmS7UGBPqgM96fCb-u_rpJh1ayKeZOkLcbs031nn2O1a2XgV0evEmHwiXNRXeDUpD8LsuQ3LiwQcQiXHPhMqFYf0WDDmcpTQ1hYa1R3605Qd9oCpEO4kKL67GzkYwFaDcGAvhPajVUR0APrxGOiXDPepkOSmYJ12LwjbYCDtd1nPgrA9CCDFKwo2tv8jRi3N-C8qtvVtW3dBY_-qW9_xU3dBYpys99Fzzo4dxjKDEsfyTSj8opHPsPfa2igxhEfOspqXHREoZ6payWHIazmlehAyZVBJoPcQPBtijkwUj9tkx9bbjVanxi065GS2x_uvG1An5q6zfNTVDHS1Q1BtMjzKbkfrzDiCQfDSzbJ3R4yN4RjhYJ9CtLogLoYlMRyRskgvZ-4FAZm470GXbT3bE43lyQsDxWnnZknBPuuvyYHvXU82CGYeec2l-nfcc69lnxsBXWfwjD-_dMwp9ChGRx652uQQEJiXIabey_J84N8nkSBZa8lCqwIp36xq476jYYzmVWqIKtTyW7Wijc6spYL1DL2BVvd5qo5T5dkAOyK7ojMoj3JgPp83C4x-QdIyPxWKzyTSDTyjlI1aTcmZ9NYRqqyFH2_8k0G9ZHbgPGurF~2\" target=\"_blank\" data-asset-click=\"image\" class=\"kfe5a504c peaa8a828 q16179b9c\"><div data-name=\"adaptiveImageContainer\" data-x=\"0.49912280701754386\" data-y=\"0.32133333333333336\" data-width=\"570\" data-height=\"750\" class=\"n5a97ba2e w9f969ea\"><div class=\"k80519a7a\"><div data-name=\"adaptiveImageTransform\" class=\"u22486ac6 c83cd604b\"><img data-name=\"adaptiveImage\" src=\"https://avatars.mds.yandex.net/get-direct/4369439/IXsAjX_MZgTssy4CC2C8gQ/x1200\" elementtiming=\"tgo-ssr-image\" class=\"re31a2f8e\" /></div></div></div></a><div style=\"position: absolute; pointer-events: none; overflow: hidden; top: -1.014px; right: -1.8px; bottom: -1.014px; left: -1.8px; z-index: 2;\" data-name=\"slot\"><div style=\"display: none; backdrop-filter: blur(50px); overflow: hidden; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;\" data-name=\"canvas-blur-container\"></div><div data-name=\"video-first-frame\" style=\"position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; pointer-events: none; display: block; overflow: hidden; opacity: 1; transition: opacity 1s;\"><div style=\"background-image: url(&quot;https://avatars.mds.yandex.net/get-vh/5283769/2a0000018fede211befe3312b08bc0952575/orig&quot;); position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; background-position: center; background-repeat: no-repeat; background-size: cover;\"></div><div style=\"background-image: url(&quot;https://avatars.mds.yandex.net/get-vh/5283769/2a0000018fede211befe3312b08bc0952575/orig&quot;); position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; background-position: center; background-repeat: no-repeat; background-size: contain; backdrop-filter: blur(50px);\"></div></div><video muted volume=\"0\" playsInline webkit-playsinline pip=\"false\" data-name=\"video-slot\" style=\"position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;\"></video><a data-name=\"video-slot-clicker\" target=\"_blank\" rel=\"nofollow noreferrer\" href=\"https://atlonfm.ru/?utm_source=yandex-direct&amp;utm_medium=cpc&amp;utm_campaign=5.0%20-%20%D0%A0%D0%A1%D0%AF%20%D0%9C%D1%81%D0%BA&amp;utm_term=%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%BD%D0%BE%D0%B9%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%8B&amp;cm_id=100975770_5334364176_16174816493_48450083583_48450083583_localhost:8080_context_type1_no_desktop_none_213&amp;roistat=direct1_context_16174816493_%D1%80%D0%B5%D0%BC%D0%BE%D0%BD%D1%82%20%D0%BE%D0%B4%D0%BD%D0%BE%D0%BA%D0%BE%D0%BC%D0%BD%D0%B0%D1%82%D0%BD%D0%BE%D0%B9%20%D0%BA%D0%B2%D0%B0%D1%80%D1%82%D0%B8%D1%80%D1%8B&amp;roistat_referrer=localhost:8080&amp;roistat_pos=none_0&amp;y_ref=localhost:8080&amp;yclid=5338836042561617919\" style=\"position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; pointer-events: auto; cursor: pointer;\"></a></div><div data-name=\"vas-sound-control-container\" class=\"p737df537 u8db04847\"><svg data-name=\"vas-sound-control-unmute\" class=\"ec0b9ca3c\" width=\"26\" height=\"24\" viewBox=\"0 0 26 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M3.6102 4L2.5 5.3281L7.1447 9.24H3.6369V14.4411H7.6026L11.5763 18.342H12.9063V14.0928L19.92 20C19.92 20 20.22 19.7081 20.5402 19.3595C20.7822 19.0889 21.1225 18.6632 21.1225 18.6632L3.6102 4ZM16.517 12.4121L18.5193 14.0985C18.7468 13.3716 18.865 12.6115 18.865 11.84C18.865 9.9248 18.1361 8.0778 16.8106 6.6395L15.0795 8.1271C16.0262 9.1558 16.5476 10.4744 16.5476 11.84C16.5476 12.0319 16.5373 12.2228 16.517 12.4121ZM20.3337 15.6266L22.1247 17.1351C23.0226 15.5036 23.5 13.693 23.5 11.8401C23.5 8.969 22.3529 6.1984 20.2708 4.0389L18.5397 5.459C20.2441 7.2263 21.1826 9.4926 21.1826 11.8401C21.1826 13.1524 20.8896 14.4387 20.3337 15.6266ZM9.9814 6.9075L12.9063 9.371V5.3392H11.5763L9.9814 6.9075Z\" fill=\"#F2F2F2\"></path></svg><svg data-name=\"vas-sound-control-mute\" class=\"ec0b9ca3c\" width=\"26\" height=\"24\" viewBox=\"0 0 26 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M20.263 4.06C22.3437 6.21903 23.49 8.98903 23.49 11.8595C23.49 14.731 22.3437 17.501 20.263 19.66L18.533 18.2392C20.2363 16.4723 21.1742 14.2075 21.1742 11.8595C21.1742 9.51251 20.2363 7.24671 18.533 5.47979L20.263 4.06ZM7.61007 9.25997L11.5741 5.36002H12.9034V18.36H11.5741L7.60318 14.4599H3.64001V9.25997H7.61007ZM18.858 11.8594C18.858 9.94462 18.1297 8.09802 16.8051 6.66003L15.0751 8.14731C16.0212 9.17579 16.5422 10.4941 16.5422 11.8594C16.5422 13.2259 16.0212 14.5442 15.0751 15.5727L16.8051 17.06C18.1297 15.6219 18.858 13.7754 18.858 11.8594Z\" fill=\"#F2F2F2\"></path></svg></div></div><div data-test=\"AdKebabAndLabel--adLabelContent\" data-label class=\"w3b92d3e7 i218dc44e ib0f5ce6f w659303c4 r31e4fc0d\"><span>Реклама</span></div><div data-close data-new-adtune=\"true\" data-sticky-adtune=\"false\" age language=\"1\" adLabelClassName=\"i218dc44e ib0f5ce6f\" class=\"s1333676e r1dc0613b nacd50733 lbdd444ac\"><div class=\"j812ed0b w659303c4 x56f8fccf\"></div><div class=\"n49e32245 w659303c4\"><svg width=\"8\" height=\"20\" viewBox=\"0 0 8 20\" fill=\"white\" xmlns=\"http://www.w3.org/2000/svg\"><circle cx=\"4\" cy=\"4\" r=\"1.5\"></circle><circle cx=\"4\" cy=\"10\" r=\"1.5\"></circle><circle cx=\"4\" cy=\"16\" r=\"1.5\"></circle></svg></div></div></div><div data-block-name=\"domain\" data-backpack=\"30\" class=\"t87367ed1 j63b0810f rfa8f4951 odd25066e\"><a href=\"https://yandex.ru/an/count/WkmejI_zOoVX2Lbi1FKM02EbZYOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6Ezoh5UddXZDtvZnAIKOpXgX1HaCvzCwTJYYUup_t58_QEIwre_PFL6hZqHk_R-YFKog5IgTEfrsYAlH351J29tS-UwO-89meGAH0SI85YXGeKfpeEJ6jdKyGpX7G-bfaDAH4NTi1KpPnxAqGbDGelIt6WLOJBGOTHmjPt9xaCMa5cUXiWRhqdOczJNs97G3IBK3hG5Ta0Le7kgOKe3NH65c0raHZbmAq9XhD1MXDD78fG6kY4R80hGHMJOYGPbnqtWAo3dHDoVcQ64J2emS528gSBX5RMzc4b1Xm6qtTXm6-f4aJB5qGX0D9YUU1432OmS7UGBPqgM96fCb-u_rpJh1ayKeZOkLcbs031nn2O1a2XgV0evEmHwiXNRXeDUpD8LsuQ3LiwQcQiXHPhMqFYf0WDDmcpTQ1hYa1R3605Qd9oCpEO4kKL67GzkYwFaDcGAvhPajVUR0APrxGOiXDPepkOSmYJ12LwjbYCDtd1nPgrA9CCDFKwo2tv8jRi3N-C8qtvVtW3dBY_-qW9_xU3dBYpys99Fzzo4dxjKDEsfyTSj8opHPsPfa2igxhEfOspqXHREoZ6payWHIazmlehAyZVBJoPcQPBtijkwUj9tkx9bbjVanxi065GS2x_uvG1An5q6zfNTVDHS1Q1BtMjzKbkfrzDiCQfDSzbJ3R4yN4RjhYJ9CtLogLoYlMRyRskgvZ-4FAZm470GXbT3bE43lyQsDxWnnZknBPuuvyYHvXU82CGYeec2l-nfcc69lnxsBXWfwjD-_dMwp9ChGRx652uQQEJiXIabey_J84N8nkSBZa8lCqwIp36xq476jYYzmVWqIKtTyW7Wijc6spYL1DL2BVvd5qo5T5dkAOyK7ojMoj3JgPp83C4x-QdIyPxWKzyTSDTyjlI1aTcmZ9NYRqqyFH2_8k0G9ZHbgPGurF~2\" target=\"_blank\" data-asset-click=\"domain\" class=\"e2077c01\"><img data-favicon src=\"https://favicon.yandex.net/favicon/atlonfm.ru?size=32&amp;stub=2\" alt class=\"c6790ad20 bb8a2d548 g484cf517\" /><div class=\"r3653c59e\"><div id=\"id5556721719849230114\" data-scroller data-autoplay data-autoplay-duration=\"500\" class=\"n3e77a723\"><span class=\"wb998823c l315a5f2 edba16481\">atlonfm.ru</span></div></div></a></div><div data-block-name=\"title\" data-backpack=\"114\" class=\"t87367ed1 j63b0810f rfa8f4951 i3cc3a02b\"><div class=\"nf5277318\"><a href=\"https://yandex.ru/an/count/WkmejI_zOoVX2Lbi1FKM02EbZYOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6Ezoh5UddXZDtvZnAIKOpXgX1HaCvzCwTJYYUup_t58_QEIwre_PFL6hZqHk_R-YFKog5IgTEfrsYAlH351J29tS-UwO-89meGAH0SI85YXGeKfpeEJ6jdKyGpX7G-bfaDAH4NTi1KpPnxAqGbDGelIt6WLOJBGOTHmjPt9xaCMa5cUXiWRhqdOczJNs97G3IBK3hG5Ta0Le7kgOKe3NH65c0raHZbmAq9XhD1MXDD78fG6kY4R80hGHMJOYGPbnqtWAo3dHDoVcQ64J2emS528gSBX5RMzc4b1Xm6qtTXm6-f4aJB5qGX0D9YUU1432OmS7UGBPqgM96fCb-u_rpJh1ayKeZOkLcbs031nn2O1a2XgV0evEmHwiXNRXeDUpD8LsuQ3LiwQcQiXHPhMqFYf0WDDmcpTQ1hYa1R3605Qd9oCpEO4kKL67GzkYwFaDcGAvhPajVUR0APrxGOiXDPepkOSmYJ12LwjbYCDtd1nPgrA9CCDFKwo2tv8jRi3N-C8qtvVtW3dBY_-qW9_xU3dBYpys99Fzzo4dxjKDEsfyTSj8opHPsPfa2igxhEfOspqXHREoZ6payWHIazmlehAyZVBJoPcQPBtijkwUj9tkx9bbjVanxi065GS2x_uvG1An5q6zfNTVDHS1Q1BtMjzKbkfrzDiCQfDSzbJ3R4yN4RjhYJ9CtLogLoYlMRyRskgvZ-4FAZm470GXbT3bE43lyQsDxWnnZknBPuuvyYHvXU82CGYeec2l-nfcc69lnxsBXWfwjD-_dMwp9ChGRx652uQQEJiXIabey_J84N8nkSBZa8lCqwIp36xq476jYYzmVWqIKtTyW7Wijc6spYL1DL2BVvd5qo5T5dkAOyK7ojMoj3JgPp83C4x-QdIyPxWKzyTSDTyjlI1aTcmZ9NYRqqyFH2_8k0G9ZHbgPGurF~2\" target=\"_blank\" data-asset-click=\"title\" class=\"re63acf6b\"><div class=\"p9bd45fe9 t6e21548e iffc9b6c8\"><span class=\"wb998823c q27d60b7\">Ремонт квартир в Москве - Выезд инженера-сметчика - 0 р.</span></div></a></div></div><div data-block-name=\"rating\" data-backpack=\"38\" class=\"t87367ed1 j63b0810f rfa8f4951 efef3caf\"><div class=\"gf15873c0\"><div class=\"g8c55b20d ed2f5534c\"><div class=\"ke50be83a\"><span class=\"dc8c20bb2 l6efffc6d\">4,9</span></div><div class=\"ke50be83a\"><div class=\"p36bc4720 j2c5a190\"><div class=\"pb6d87f28 ybc75fe m340a9245\"><div class=\"m6b9757f2\"><span class=\"d55e6080f\"><svg viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M8 12.57l-3.85 2.34a.6.6 0 01-.9-.64L4.3 9.88.88 6.94a.6.6 0 01.34-1.05l4.49-.37 1.74-4.15a.6.6 0 011.1 0l1.74 4.16 4.49.36a.6.6 0 01.34 1.05L11.7 9.88l1.04 4.39a.6.6 0 01-.9.64L8 12.57z\" fill=\"currentColor\"/></svg></span></div></div></div></div><div class=\"ke50be83a\"><span class=\"y94724b66 k17ddbd02\">Рейтинг организации</span></div></div><div class=\"mf3c60542\"><div data-tooltip data-tooltip-target-id=\"id3019571719849230115\"><svg viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10ZM18 10C18 5.58172 14.4183 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10ZM9.4618 15.5036C8.4367 15.5036 8.1001 14.8763 8.1001 14.2949C8.1001 14.0501 8.1766 13.6829 8.2378 13.4687L9.3088 8.8568H8.05518C7.89415 8.8568 7.77512 8.70679 7.81172 8.54997L7.88758 8.22499C7.91944 8.08852 8.02962 7.98421 8.16762 7.95987L11.0055 7.45931C11.3602 7.39675 11.6627 7.71836 11.5786 8.06853L10.1411 14.0502C10.1198 14.1388 10.1648 14.23 10.2481 14.267C10.3259 14.3015 10.4172 14.2798 10.471 14.2139L11.6358 12.789C11.7395 12.662 11.9221 12.6334 12.0598 12.7224C12.2122 12.8211 12.2529 13.0261 12.1498 13.1755L11.4508 14.1878C10.7164 15.2588 10.0432 15.5036 9.4618 15.5036ZM9.80005 5.6417C9.80005 6.1466 10.1978 6.575 10.9016 6.575C11.5901 6.575 12.095 6.1925 12.248 5.5805C12.2786 5.4581 12.2939 5.3204 12.2939 5.2133C12.2939 4.7084 11.8961 4.28 11.1923 4.28C10.5191 4.28 9.99895 4.6625 9.84595 5.2745C9.81535 5.3969 9.80005 5.5346 9.80005 5.6417Z\" fill=\"rgba(37, 39, 41, 0.77)\"></path></svg></div><div id=\"id3019571719849230115\" class=\"ed92a596f j99a73e66\"><div class=\"db80df36c\"><div>На основе <strong>572</strong> отзывов<br>Отзывы предоставлены сервисом Яндекс.Карты</div><a href=\"https://yandex.ru/maps/org/176690131290/reviews/\" target=\"_blank\" class=\"a8037ede1\">Перейти к отзывам</a></div><div data-tooltip-arrow><svg width=\"24\" height=\"8\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 8c6 0 9-8 12-8s6 8 12 8H0z\" fill=\"#fff\"/></svg></div></div></div></div></div><div data-block-name=\"body\" data-backpack=\"66\" class=\"t87367ed1 j63b0810f rfa8f4951 qb9aba523\"><div class=\"nf5277318\"><a href=\"https://yandex.ru/an/count/WkmejI_zOoVX2Lbi1FKM02EbZYOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6Ezoh5UddXZDtvZnAIKOpXgX1HaCvzCwTJYYUup_t58_QEIwre_PFL6hZqHk_R-YFKog5IgTEfrsYAlH351J29tS-UwO-89meGAH0SI85YXGeKfpeEJ6jdKyGpX7G-bfaDAH4NTi1KpPnxAqGbDGelIt6WLOJBGOTHmjPt9xaCMa5cUXiWRhqdOczJNs97G3IBK3hG5Ta0Le7kgOKe3NH65c0raHZbmAq9XhD1MXDD78fG6kY4R80hGHMJOYGPbnqtWAo3dHDoVcQ64J2emS528gSBX5RMzc4b1Xm6qtTXm6-f4aJB5qGX0D9YUU1432OmS7UGBPqgM96fCb-u_rpJh1ayKeZOkLcbs031nn2O1a2XgV0evEmHwiXNRXeDUpD8LsuQ3LiwQcQiXHPhMqFYf0WDDmcpTQ1hYa1R3605Qd9oCpEO4kKL67GzkYwFaDcGAvhPajVUR0APrxGOiXDPepkOSmYJ12LwjbYCDtd1nPgrA9CCDFKwo2tv8jRi3N-C8qtvVtW3dBY_-qW9_xU3dBYpys99Fzzo4dxjKDEsfyTSj8opHPsPfa2igxhEfOspqXHREoZ6payWHIazmlehAyZVBJoPcQPBtijkwUj9tkx9bbjVanxi065GS2x_uvG1An5q6zfNTVDHS1Q1BtMjzKbkfrzDiCQfDSzbJ3R4yN4RjhYJ9CtLogLoYlMRyRskgvZ-4FAZm470GXbT3bE43lyQsDxWnnZknBPuuvyYHvXU82CGYeec2l-nfcc69lnxsBXWfwjD-_dMwp9ChGRx652uQQEJiXIabey_J84N8nkSBZa8lCqwIp36xq476jYYzmVWqIKtTyW7Wijc6spYL1DL2BVvd5qo5T5dkAOyK7ojMoj3JgPp83C4x-QdIyPxWKzyTSDTyjlI1aTcmZ9NYRqqyFH2_8k0G9ZHbgPGurF~2\" target=\"_blank\" data-asset-click=\"body\" class=\"re63acf6b\"><div class=\"peac9992a y7709d049 c95c4d08b\"><span class=\"wb998823c q27d60b7\">Оставьте заявку на бесплатный выезд инженера-сметчика и зафиксируйте цены в смете</span></div></a></div></div><div data-block-name=\"sitelinks\" data-backpack=\"95\" class=\"t87367ed1 j63b0810f rfa8f4951 jc64b59e8\"><div class=\"pfbd9a9df\"><a href=\"https://yandex.ru/an/count/WjSejI_zOoVX2LbJ0qqM0BCbaIOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6ErmSGaiY_1Z9qCcXJzidTpvxfZuWd2X0f41n8WMA52XId73cpfn7ASbenX0ro6WeXzwvqmd5S_pddk9HEyUbTjJ-YKfjF7hZzmtzSKgbKEdKwRHBL8L-Y89Ca5X26a5qBJ8QKg9kTy2KJHnxAmGbDKflYt6WrKIBGSVHGXQt9tbCMa4cEbkWBdrdOczJNs87W7GBq3hG5Lc0re6kAGLeJJH65g0rqTYb0As9HdC1MXEDN0hGccY4B40hWLKJ8gGP5vstWAm3NLDolYO6aV3eGG628gTBnDPM_X3s7xpU0zU4b1Xm6qtTXm6-f4aJB5qGX0D9YUU1432OmS7UGBPqgM96fCb-u_rpJh1ayKeZOkLcbs031nn2O1a2XgV0evEmHwiXNRXeDUpD8LsuQ3LiwQcQiXHPhMqFYf0WDDmcpTQ1hYa1R3605Qd9oCpEO4kKL67GzkYwFaDcGAvhPajVUR0APrxGOiXDPepkOSmYJ12LwjbYCDtd1nPgrA9CCDFKwo2tv8jRi3N-C8qtvVtW3dBY_-qW9_xU3dBYpys99Fzzo4dxjKDEsfyTSj8opHPsPfa2igxhEfOspqXHREoZ6payWHIazmlehAyZVBJoPcQPBtijkwUj9tkx9bbjVjo01njG60Iy--y8HS1Q1FsMrdNTN0IiHT1hVLjTejlPPpEiGNhTKmcpFL5CxAOjpZHvSwLIgRnY_MPih-iw1gOBvI_XaO116LsE4mGl_DrDYB7J4h5OHcRpTuHoiRJBs6tGXW85WtegiQuaXVJvpe5qCShJ8OkKt3TAImpUu0BfM35SpE5ds4oysNY1YUrUDlpbgqhzSgtFN0rvcYmaV33s1PDaXXUdfTK_LydmEUN4PITmruT3ojHQNKWHEw4ViOzUO6q9440uQUNc1hW1~2\" target=\"_blank\" data-asset-click=\"sitelinks\" class=\"t83949f8d x68f06d0f\"><div class=\"u4a356ccd f9976f66c lbdf535ae\"><span class=\"wb998823c q27d60b7\">Калькулятор</span></div><div class=\"ga380f401\"><style>.t83949f8d:hover path{fill: undefined}</style><svg width=\"7\" height=\"10.666666666666666\" viewBox=\"0 0 7 12\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M5.8 6.00001L6.13941 6.33942C6.32686 6.15197 6.32686 5.84805 6.13941 5.6606L5.8 6.00001ZM0.660589 1.53942L5.46059 6.33942L6.13941 5.6606L1.33941 0.860601L0.660589 1.53942ZM5.46059 5.6606L0.660589 10.4606L1.33941 11.1394L6.13941 6.33942L5.46059 5.6606Z\" fill=\"rgb(37, 39, 41)\"></path></svg></div></a><a href=\"https://yandex.ru/an/count/WjWejI_zOoVX2LbS0rKM08Dba2OQbKeGJD3dSxcpP_kTEs-uy_KxNc-umoqo4b8AiYRLITQX8oBg25OTQVI6-kJEPy_K1uGJ1OWKA4waG942HOeJpjoPyoWb6SqOeWOP3UNGEtSweNYE_znJF6hdkDIEsZzHgOr7R_o-eJzEgHGgdJgTTecgq0zHa0aIIqWZYAv5HaDArAyTC6KJnzuAGKcDqjjY76WrqMBGSRIGnUr97fDMa8dE5gXBtvdOszINs04WtGAq3dH55g1re6jA0LeJZP45Q4qqTYb0QwBHN83MH2EN0hGc6Y4Bq4fWrOG8QSP5voqWwq3Nb9olYK4aF7fGWA38wHAnjPLDI8a1jz7KVHZWIveqmT85GJYGb7WU20636Hpi3MHBbofcH9hiDzu_vmHB5gyq8bPkTWasSC0X19OXO7WAF3e9UxGQqeMBLiFU7DA5YrR3bfwgAKkHrThse0W9GiDjqcmTw9eIm1O3M96QZCpi3BP4IHK6RO-kwpDa1kIwPhRqbGUhSEO5BORSPCRe7iOimWHHgPuj1jDzVc2XHYtA13DDlGvoIxwu1LlZ3zDuKzuFxY0d_jyESkBlxI0d_joSIFBVXvoqNplafFtP8ISjqsnXPvOf8EkwhcDfyumKnSO-kf734qX1Uh-0plewmaShRsQM-RBNidlQUhAtQvBLviS-7cn0OH3mxhyZ505h4VHRMjTrSn6m5a6lzMrrYMvddysm1kbrJoNCzaGniPksEDFapPLAfVAAzPknlQxh69WTA7-F4sM6CheS9mWn_0H0Ts-CiJs9h5X6tlaxWhhujijmDqW7XQgREfsLhcHg-jHbatGnt-ama9GC6wLV5fzwbNJi31TVy6Di9bvkl81YkrTmV_bgMBy1rMUkj3ojbV71bbgsaYROdio0W9LbTNbUCimBTEAl1-wMPqWPExOBoPudzDFhqGloMm84HbTQcKDDNG00~2\" target=\"_blank\" data-asset-click=\"sitelinks\" class=\"t83949f8d x68f06d0f\"><div class=\"c67b19e22 qff68050c o12acd583\"><span class=\"wb998823c q27d60b7\">Наши работы</span></div><div class=\"ga380f401\"><style>.t83949f8d:hover path{fill: undefined}</style><svg width=\"7\" height=\"10.666666666666666\" viewBox=\"0 0 7 12\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M5.8 6.00001L6.13941 6.33942C6.32686 6.15197 6.32686 5.84805 6.13941 5.6606L5.8 6.00001ZM0.660589 1.53942L5.46059 6.33942L6.13941 5.6606L1.33941 0.860601L0.660589 1.53942ZM5.46059 5.6606L0.660589 10.4606L1.33941 11.1394L6.13941 6.33942L5.46059 5.6606Z\" fill=\"rgb(37, 39, 41)\"></path></svg></div></a></div></div><div data-block-name=\"button\" data-backpack=\"58\" class=\"t87367ed1 j63b0810f rfa8f4951 x94934e2d\"><a href=\"https://yandex.ru/an/count/WkmejI_zOoVX2Lbi1FKM02EbZYOQbKgbKga4mGHzFfSxUxRVkVE6Er-_u_M6Ezoh5UddXZDtvZnAIKOpXgX1HaCvzCwTJYYUup_t58_QEIwre_PFL6hZqHk_R-YFKog5IgTEfrsYAlH351J29tS-UwO-89meGAH0SI85YXGeKfpeEJ6jdKyGpX7G-bfaDAH4NTi1KpPnxAqGbDGelIt6WLOJBGOTHmjPt9xaCMa5cUXiWRhqdOczJNs97G3IBK3hG5Ta0Le7kgOKe3NH65c0raHZbmAq9XhD1MXDD78fG6kY4R80hGHMJOYGPbnqtWAo3dHDoVcQ64J2emS528gSBX5RMzc4b1Xm6qtTXm6-f4aJB5qGX0D9YUU1432OmS7UGBPqgM96fCb-u_rpJh1ayKeZOkLcbs031nn2O1a2XgV0evEmHwiXNRXeDUpD8LsuQ3LiwQcQiXHPhMqFYf0WDDmcpTQ1hYa1R3605Qd9oCpEO4kKL67GzkYwFaDcGAvhPajVUR0APrxGOiXDPepkOSmYJ12LwjbYCDtd1nPgrA9CCDFKwo2tv8jRi3N-C8qtvVtW3dBY_-qW9_xU3dBYpys99Fzzo4dxjKDEsfyTSj8opHPsPfa2igxhEfOspqXHREoZ6payWHIazmlehAyZVBJoPcQPBtijkwUj9tkx9bbjVanxi065GS2x_uvG1An5q6zfNTVDHS1Q1BtMjzKbkfrzDiCQfDSzbJ3R4yN4RjhYJ9CtLogLoYlMRyRskgvZ-4FAZm470GXbT3bE43lyQsDxWnnZknBPuuvyYHvXU82CGYeec2l-nfcc69lnxsBXWfwjD-_dMwp9ChGRx652uQQEJiXIabey_J84N8nkSBZa8lCqwIp36xq476jYYzmVWqIKtTyW7Wijc6spYL1DL2BVvd5qo5T5dkAOyK7ojMoj3JgPp83C4x-QdIyPxWKzyTSDTyjlI1aTcmZ9NYRqqyFH2_8k0G9ZHbgPGurF~2\" target=\"_blank\" data-asset-click=\"button\" data-test=\"button\" class=\"me97dc4d0 oa80b04ce\"><span class=\"wb998823c\">Узнать больше</span></a></div></div></div></div></div></div></div></div>",
+                    "css": ".re9821e68{width: 300px; min-width: 300px; height: 600px; box-sizing: border-box; background-color: #ffffff; color: #3d3f43; font-size: 13px; line-height: 1.23; font-weight: normal; font-family: YS Text Variable, YS Text, Arial, sans-serif; overflow: hidden; margin: auto; transform: translateZ(0); border-radius: 0px;}.ne74acd49{width: 300px; height: 600px; box-sizing: border-box; position: absolute; pointer-events: none; z-index: 2; border-radius: 0px; border-left: 1px solid #F1F3F5; border-right: 1px solid #F1F3F5; border-top: 1px solid #F1F3F5; border-bottom: 1px solid #F1F3F5;}.oa5bf2808{z-index: 0;}.s9bf97561{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;z-index:1;position:relative}.f5f330496{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}.v3aea7129{max-height: 100%; max-width: 100%; flex-direction: column; min-height: 600px; justify-content: space-between; margin: auto;}.m4e6227ca{min-height: 5px;}.x2f588569{position:relative;display:block;width:100%;height:100%;border-radius:inherit}.o6687c221{right:0;z-index:2}.o6687c221,.r92a17a4e{position:absolute;top:0}.r92a17a4e{display:block;height:100%;width:100%;left:0;z-index:0;cursor:pointer}.r14742612{cursor:default;pointer-events:all;position:absolute;top:0;right:0;z-index:1000}.rf9b007a{pointer-events:none;width:100%;height:100%}.rf9b007a:hover .invisible-button-icon{opacity:.25}.af8c0ee75{pointer-events:auto}.n1b3c561e{position:relative;cursor:default;width:100%;height:100%;-webkit-box-sizing:border-box;box-sizing:border-box;font-style:normal}.t86cd4d08 *{-webkit-transition:all 0s!important;-o-transition:all 0s!important;transition:all 0s!important;-webkit-animation:\"none\"!important;animation:\"none\"!important}.ie8b8a19c{position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;height:100%;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1}.ie8b8a19c>div{-webkit-box-flex:0;-ms-flex:none;flex:none}.ld74b97f0{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;height:100%;-webkit-box-sizing:border-box;box-sizing:border-box}.t90a02585{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;position:relative;height:100%;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.d21597a8b{width:100%;height:100%}.h7a788d72.i5c676179{top:0;left:0;width:100%;background-color:#fff}.h7a788d72 .i55621991{display:none}.ue0c53a60,.j7b71cc31{background-color:#e5eeff}.ue0c53a60.i5c676179,.j7b71cc31.i5c676179{top:0;left:0;width:100%;height:100%}.ue0c53a60 .i55621991,.j7b71cc31 .i55621991{display:none}.ue0c53a60{background-color:#1e1e1e}.n488e71c4,.h5b9775d5{background-color:#fff;border-radius:12px}.n488e71c4.i5c676179,.h5b9775d5.i5c676179{top:0;left:0;width:100%;height:100%}.n488e71c4 .i55621991,.h5b9775d5 .i55621991{display:none}.n488e71c4{background-color:#2f2f32}.aa7855de8 .i55621991{width:100%;height:100%;-o-object-fit:cover;object-fit:cover;-webkit-filter:none;filter:none}.jac94f1d0.i5c676179,.jac94f1d0 .i55621991{top:0;left:0;width:100%;overflow:hidden}.jac94f1d0 .i55621991{-webkit-transform:rotate(180deg) scaleX(-1);transform:rotate(180deg) scaleX(-1)}.jac94f1d0 .d21597a8b{width:100%;height:100%;-webkit-mask:linear-gradient(180deg,hsla(0,0%,100%,.6),hsla(0,0%,100%,0) 150px);mask:linear-gradient(180deg,hsla(0,0%,100%,.6),hsla(0,0%,100%,0) 150px)}.veb0d1df4.i5c676179,.veb0d1df4 .i55621991{left:0;bottom:0;width:100%;overflow:hidden}.veb0d1df4 .i55621991{-webkit-transform:rotate(180deg) scaleX(-1);transform:rotate(180deg) scaleX(-1)}.veb0d1df4 .d21597a8b{-webkit-mask:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,.6)),color-stop(90%,hsla(0,0%,100%,0)));-webkit-mask:linear-gradient(180deg,hsla(0,0%,100%,.6),hsla(0,0%,100%,0) 90%);mask:-webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,.6)),color-stop(90%,hsla(0,0%,100%,0)));mask:linear-gradient(180deg,hsla(0,0%,100%,.6),hsla(0,0%,100%,0) 90%)}.r4f512f9b.i5c676179,.r4f512f9b .i55621991{top:0;right:0;height:100%;overflow:hidden}.r4f512f9b .i55621991{-webkit-transform:scaleX(-1);transform:scaleX(-1)}.r4f512f9b .d21597a8b{-webkit-mask:linear-gradient(270deg,hsla(0,0%,100%,.6),hsla(0,0%,100%,0) 150px);mask:linear-gradient(270deg,hsla(0,0%,100%,.6),hsla(0,0%,100%,0) 150px)}.u95569ec0.i5c676179,.u95569ec0 .i55621991{top:0;left:0;height:100%;overflow:hidden}.u95569ec0 .i55621991{-webkit-transform:scaleX(-1);transform:scaleX(-1)}.u95569ec0 .d21597a8b{-webkit-mask:linear-gradient(90deg,hsla(0,0%,100%,.6),hsla(0,0%,100%,0) 150px);mask:linear-gradient(90deg,hsla(0,0%,100%,.6),hsla(0,0%,100%,0) 150px)}.l817469d8{background:-o-linear-gradient(162deg,#ffb6b9 0,#ffb6b9 35%,#fae3d9 calc(35% + 1px),#fae3d9 45%,#bbded6 calc(45% + 1px),#bbded6 65%,#61c0bf calc(65% + 1px),#61c0bf 100%),hsla(0,0%,100%,.13333);background:linear-gradient(288deg,#ffb6b9,#ffb6b9 35%,#fae3d9 calc(35% + 1px),#fae3d9 45%,#bbded6 calc(45% + 1px),#bbded6 65%,#61c0bf calc(65% + 1px),#61c0bf),hsla(0,0%,100%,.13333);background-blend-mode:overlay}.l817469d8 .i55621991{display:none}.tbb2725fb{background:-o-linear-gradient(211.28deg,#ebff00 0,#7700d5 100%),-o-linear-gradient(25.18deg,#ad00ff 0,red 100%),-o-linear-gradient(24.97deg,#0ff 0,red 99.79%),-o-radial-gradient(50%,67.08% 100%,at 0,#ff00c7 0,#1400ff 100%),-o-radial-gradient(100%,100% 140%,at 0,#5ed500 0,#20a 100%);background:linear-gradient(238.72deg,#ebff00,#7700d5),linear-gradient(64.82deg,#ad00ff,red),linear-gradient(65.03deg,#0ff,red 99.79%),radial-gradient(67.08% 100% at 50%,at 0,#ff00c7 0,#1400ff 100%),radial-gradient(100% 140% at 100%,at 0,#5ed500 0,#20a 100%);background:-o-linear-gradient(211.28deg,#ebff00 0,#7700d5 100%),-o-linear-gradient(25.18deg,#ad00ff 0,red 100%),-o-linear-gradient(24.97deg,#0ff 0,red 99.79%),-o-radial-gradient(50% 0,67.08% 100%,#ff00c7 0,#1400ff 100%),-o-radial-gradient(100% 0,100% 140%,#5ed500 0,#20a 100%);background:linear-gradient(238.72deg,#ebff00,#7700d5),linear-gradient(64.82deg,#ad00ff,red),linear-gradient(65.03deg,#0ff,red 99.79%),radial-gradient(67.08% 100% at 50% 0,#ff00c7 0,#1400ff 100%),radial-gradient(100% 140% at 100% 0,#5ed500 0,#20a 100%);background-blend-mode:color-dodge,difference,lighten,color-dodge,normal}.tbb2725fb .i55621991{display:none}.k44cfe01a{background:-o-linear-gradient(211.28deg,#ebff00 0,#8f00ff 100%),-o-linear-gradient(25.18deg,#ad00ff 0,red 100%),-o-linear-gradient(24.97deg,#0ff 0,red 99.79%),-o-radial-gradient(50%,67.08% 100%,at 100%,#ff00c7 0,#50005e 100%),-o-radial-gradient(100%,100% 140%,at 0,#5ed500 0,#20a 100%);background:linear-gradient(238.72deg,#ebff00,#8f00ff),linear-gradient(64.82deg,#ad00ff,red),linear-gradient(65.03deg,#0ff,red 99.79%),radial-gradient(67.08% 100% at 50%,at 100%,#ff00c7 0,#50005e 100%),radial-gradient(100% 140% at 100%,at 0,#5ed500 0,#20a 100%);background:-o-linear-gradient(211.28deg,#ebff00 0,#8f00ff 100%),-o-linear-gradient(25.18deg,#ad00ff 0,red 100%),-o-linear-gradient(24.97deg,#0ff 0,red 99.79%),-o-radial-gradient(50% 100%,67.08% 100%,#ff00c7 0,#50005e 100%),-o-radial-gradient(100% 0,100% 140%,#5ed500 0,#20a 100%);background:linear-gradient(238.72deg,#ebff00,#8f00ff),linear-gradient(64.82deg,#ad00ff,red),linear-gradient(65.03deg,#0ff,red 99.79%),radial-gradient(67.08% 100% at 50% 100%,#ff00c7 0,#50005e 100%),radial-gradient(100% 140% at 100% 0,#5ed500 0,#20a 100%);background-blend-mode:color-dodge,difference,lighten,color-dodge,normal}.k44cfe01a .i55621991{display:none}.pf2671d3d{background:-o-linear-gradient(left,hsla(0,0%,100%,0),hsla(0,0%,100%,0)),-o-radial-gradient(0,100% 244.46%,at 0,#cf0 0,#ff027c 100%),-o-radial-gradient(0,100% 244.46%,at 0,#cf0 0,#ff027c 100%),-o-radial-gradient(50%,50% 122.23%,at 50%,#9aa4ff 0,#306c00 100%),-o-radial-gradient(0,100.45% 245.58%,at 0,#000afe 0,#70ff00 100%),-o-linear-gradient(322.57deg,#7b0007 0,#8f73ff 100%);background:linear-gradient(90deg,hsla(0,0%,100%,0),hsla(0,0%,100%,0)),radial-gradient(100% 244.46% at 0,at 0,#cf0 0,#ff027c 100%),radial-gradient(100% 244.46% at 0,at 0,#cf0 0,#ff027c 100%),radial-gradient(50% 122.23% at 50%,at 50%,#9aa4ff 0,#306c00 100%),radial-gradient(100.45% 245.58% at 0,at 0,#000afe 0,#70ff00 100%),linear-gradient(127.43deg,#7b0007,#8f73ff);background:-o-linear-gradient(left,hsla(0,0%,100%,0),hsla(0,0%,100%,0)),-o-radial-gradient(0 0,100% 244.46%,#cf0 0,#ff027c 100%),-o-radial-gradient(0 0,100% 244.46%,#cf0 0,#ff027c 100%),-o-radial-gradient(50% 50%,50% 122.23%,#9aa4ff 0,#306c00 100%),-o-radial-gradient(0 0,100.45% 245.58%,#000afe 0,#70ff00 100%),-o-linear-gradient(322.57deg,#7b0007 0,#8f73ff 100%);background:linear-gradient(90deg,hsla(0,0%,100%,0),hsla(0,0%,100%,0)),radial-gradient(100% 244.46% at 0 0,#cf0 0,#ff027c 100%),radial-gradient(100% 244.46% at 0 0,#cf0 0,#ff027c 100%),radial-gradient(50% 122.23% at 50% 50%,#9aa4ff 0,#306c00 100%),radial-gradient(100.45% 245.58% at 0 0,#000afe 0,#70ff00 100%),linear-gradient(127.43deg,#7b0007,#8f73ff);background-blend-mode:overlay,screen,color-dodge,overlay,difference,normal}.pf2671d3d .i55621991{display:none}.mfe17585c{background:-o-linear-gradient(left,#fff,hsla(0,0%,100%,0)),-o-radial-gradient(50%,50% 123.47%,at 50%,#00ff94 0,#720059 100%),-o-linear-gradient(328.72deg,#669600 0,red 100%),-o-linear-gradient(bottom,#0029ff 0,#8fff00 100%),-o-radial-gradient(100%,100% 164.72%,at 100%,#6100ff 0,#00ff57 100%),-o-radial-gradient(0,100% 148.07%,at 0,#fff500 0,#51d500 100%);background:linear-gradient(90deg,#fff,hsla(0,0%,100%,0)),radial-gradient(50% 123.47% at 50%,at 50%,#00ff94 0,#720059 100%),linear-gradient(121.28deg,#669600,red),linear-gradient(1turn,#0029ff,#8fff00),radial-gradient(100% 164.72% at 100%,at 100%,#6100ff 0,#00ff57 100%),radial-gradient(100% 148.07% at 0,at 0,#fff500 0,#51d500 100%);background:-o-linear-gradient(left,#fff,hsla(0,0%,100%,0)),-o-radial-gradient(50% 50%,50% 123.47%,#00ff94 0,#720059 100%),-o-linear-gradient(328.72deg,#669600 0,red 100%),-o-linear-gradient(bottom,#0029ff 0,#8fff00 100%),-o-radial-gradient(100% 100%,100% 164.72%,#6100ff 0,#00ff57 100%),-o-radial-gradient(0 0,100% 148.07%,#fff500 0,#51d500 100%);background:linear-gradient(90deg,#fff,hsla(0,0%,100%,0)),radial-gradient(50% 123.47% at 50% 50%,#00ff94 0,#720059 100%),linear-gradient(121.28deg,#669600,red),linear-gradient(1turn,#0029ff,#8fff00),radial-gradient(100% 164.72% at 100% 100%,#6100ff 0,#00ff57 100%),radial-gradient(100% 148.07% at 0 0,#fff500 0,#51d500 100%);background-blend-mode:overlay,screen,color-dodge,overlay,difference,normal}.mfe17585c .i55621991{display:none}.y37ca147f{background:#fff;border:1px solid rgba(0,0,0,.05);-webkit-box-sizing:border-box;box-sizing:border-box}.y37ca147f .i55621991{display:none}.p6200cc3{background-image:-o-linear-gradient(15deg,#b6b6fb 0,#d8b6f1 3%,#efb9e5 9%,#fdbfda 20%,#ffccd5 36%,#ffd6d1 58%,#ffded1 78%,#ffebdc 91%,#fdf4e8 97%,#fefdf6 100%);background-image:linear-gradient(75deg,#b6b6fb,#d8b6f1 3%,#efb9e5 9%,#fdbfda 20%,#ffccd5 36%,#ffd6d1 58%,#ffded1 78%,#ffebdc 91%,#fdf4e8 97%,#fefdf6);-webkit-animation:acf6fdbe4 10s ease-in-out infinite;animation:acf6fdbe4 10s ease-in-out infinite}.p6200cc3 .i55621991{display:none}.a9229cf60{background-image:-o-linear-gradient(45deg,#d5d5e6 0,#e3d7ef 11%,#f4d2ef 22%,#ffd1ea 33%,#ffd1df 44%,#ffd0cc 56%,#ffd2b3 67%,#ffdb9e 78%,#ffe98f 89%,#fff585 100%);background-image:linear-gradient(45deg,#d5d5e6,#e3d7ef 11%,#f4d2ef 22%,#ffd1ea 33%,#ffd1df 44%,#ffd0cc 56%,#ffd2b3 67%,#ffdb9e 78%,#ffe98f 89%,#fff585);-webkit-animation:acf6fdbe4 10s ease-in-out infinite;animation:acf6fdbe4 10s ease-in-out infinite}.a9229cf60 .i55621991{display:none}.mc5892a01{background-image:-o-linear-gradient(170deg,#afaffd 0,#afb7fe 3%,#b4c2fd 7%,#bacbfc 12%,#c2d4fa 21%,#ceddf8 35%,#cecbf6 59%,#dcb8ea 80%,#eca1d1 91%,#f88baa 97%,#f87c7c 100%);background-image:linear-gradient(280deg,#afaffd,#afb7fe 3%,#b4c2fd 7%,#bacbfc 12%,#c2d4fa 21%,#ceddf8 35%,#cecbf6 59%,#dcb8ea 80%,#eca1d1 91%,#f88baa 97%,#f87c7c);-webkit-animation:acf6fdbe4 10s ease-in-out infinite;animation:acf6fdbe4 10s ease-in-out infinite}.mc5892a01 .i55621991{display:none}.ue82a69a6{background-image:-o-linear-gradient(120deg,#ff8f8f 0,#ffa585 6%,#fdb87c 16%,#f2cf82 28%,#e2e594 40%,#d1f8af 52%,#f7e591 64%,#ffcf94 75%,#ffb7a8 85%,#ffadd3 94%,#feaefd 100%);background-image:linear-gradient(330deg,#ff8f8f,#ffa585 6%,#fdb87c 16%,#f2cf82 28%,#e2e594 40%,#d1f8af 52%,#f7e591 64%,#ffcf94 75%,#ffb7a8 85%,#ffadd3 94%,#feaefd);-webkit-animation:acf6fdbe4 10s ease-in-out infinite;animation:acf6fdbe4 10s ease-in-out infinite}.ue82a69a6 .i55621991{display:none}.pb40bcb47{background-image:-o-linear-gradient(335deg,#b7b5e8 0,#bfbdeb 7%,#c6c4ed 19%,#ceccf0 32%,#d6d4f2 45%,#dedcf4 59%,#e9e7f8 71%,#f0effa 83%,#f8f7fd 93%,#fff 100%);background-image:linear-gradient(115deg,#b7b5e8,#bfbdeb 7%,#c6c4ed 19%,#ceccf0 32%,#d6d4f2 45%,#dedcf4 59%,#e9e7f8 71%,#f0effa 83%,#f8f7fd 93%,#fff);-webkit-animation:acf6fdbe4 10s ease-in-out infinite;animation:acf6fdbe4 10s ease-in-out infinite}.pb40bcb47 .i55621991{display:none}.e40158de4{background-image:-o-linear-gradient(35deg,#f9a4e5 0,#faade7 7%,#fcbbec 18%,#fdc4ee 34%,#fdcef1 55%,#fed7f4 73%,#ffe1f6 84%,#ffebf9 92%,#fff5fc 97%,#fff 100%);background-image:linear-gradient(55deg,#f9a4e5,#faade7 7%,#fcbbec 18%,#fdc4ee 34%,#fdcef1 55%,#fed7f4 73%,#ffe1f6 84%,#ffebf9 92%,#fff5fc 97%,#fff);-webkit-animation:acf6fdbe4 10s ease-in-out infinite;animation:acf6fdbe4 10s ease-in-out infinite}.e40158de4 .i55621991{display:none}.q7374e885{background-image:-o-linear-gradient(35deg,#70ff94 0,#85ff9f 31%,#99ffac 49%,#a8ffb7 63%,#b8ffc2 73%,#c7ffce 81%,#d6ffdb 87%,#e5ffe8 93%,#f0fff1 97%,#fff 100%);background-image:linear-gradient(55deg,#70ff94,#85ff9f 31%,#99ffac 49%,#a8ffb7 63%,#b8ffc2 73%,#c7ffce 81%,#d6ffdb 87%,#e5ffe8 93%,#f0fff1 97%,#fff);-webkit-animation:acf6fdbe4 10s ease-in-out infinite;animation:acf6fdbe4 10s ease-in-out infinite}.q7374e885 .i55621991{display:none}.faca5742a{background-image:-o-linear-gradient(320deg,#f5c689 0,#f7cd97 6%,#f9d29f 15%,#fbd8ad 29%,#fcdfba 50%,#fee5c8 71%,#feecd7 84%,#fff3e6 91%,#fff8f0 97%,#fff 100%);background-image:linear-gradient(130deg,#f5c689,#f7cd97 6%,#f9d29f 15%,#fbd8ad 29%,#fcdfba 50%,#fee5c8 71%,#feecd7 84%,#fff3e6 91%,#fff8f0 97%,#fff);-webkit-animation:acf6fdbe4 10s ease-in-out infinite;animation:acf6fdbe4 10s ease-in-out infinite}.faca5742a .i55621991{display:none}.a7886d5cb{background-image:-o-linear-gradient(225deg,#b4f218 0,#bff344 6%,#c8f462 15%,#d3f679 29%,#dcf791 50%,#e4f9a9 71%,#ebfbbc 84%,#f3fcd4 91%,#f9fde7 97%,#fff 100%);background-image:linear-gradient(225deg,#b4f218,#bff344 6%,#c8f462 15%,#d3f679 29%,#dcf791 50%,#e4f9a9 71%,#ebfbbc 84%,#f3fcd4 91%,#f9fde7 97%,#fff);-webkit-animation:acf6fdbe4 10s ease-in-out infinite;animation:acf6fdbe4 10s ease-in-out infinite}.a7886d5cb .i55621991{display:none}.f63fbd953{background-image:-o-linear-gradient(225deg,#ff7af4 0,#ff8af5 15%,#ff99f7 26%,#ffa8f8 35%,#ffb8f9 44%,#ffc7fa 52%,#ffd6fc 61%,#ffe5fd 69%,#fff0fe 80%,#fff 100%);background-image:linear-gradient(225deg,#ff7af4,#ff8af5 15%,#ff99f7 26%,#ffa8f8 35%,#ffb8f9 44%,#ffc7fa 52%,#ffd6fc 61%,#ffe5fd 69%,#fff0fe 80%,#fff);-webkit-animation:acf6fdbe4 10s ease-in-out infinite;animation:acf6fdbe4 10s ease-in-out infinite}.f63fbd953 .i55621991{display:none}@-webkit-keyframes acf6fdbe4{0%{-webkit-filter:hue-rotate(0deg);filter:hue-rotate(0deg)}50%{-webkit-filter:hue-rotate(100deg);filter:hue-rotate(100deg)}to{-webkit-filter:hue-rotate(0deg);filter:hue-rotate(0deg)}}@keyframes acf6fdbe4{0%{-webkit-filter:hue-rotate(0deg);filter:hue-rotate(0deg)}50%{-webkit-filter:hue-rotate(100deg);filter:hue-rotate(100deg)}to{-webkit-filter:hue-rotate(0deg);filter:hue-rotate(0deg)}}.i5c676179{position:absolute;width:100%;height:100%}.i55621991{position:absolute;-webkit-filter:blur(15px);filter:blur(15px)}.ta60e7fac{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}.o1e29f157{background:rgba(0,0,0,.2)}.k17eb3f68{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-negative:1;flex-shrink:1}.e3c498fd0{position:absolute;top:6px;right:4px}.j63b0810f{-webkit-transition:-webkit-filter .1s ease-in;transition:-webkit-filter .1s ease-in;-o-transition:filter .1s ease-in;transition:filter .1s ease-in;transition:filter .1s ease-in,-webkit-filter .1s ease-in}.j63b0810f:hover{-webkit-filter:brightness(120%) contrast(120%);filter:brightness(120%) contrast(120%)}.rfa8f4951:hover{-webkit-filter:brightness(80%) contrast(180%);filter:brightness(80%) contrast(180%)}.mddca31eb{justify-content: flex-start;}.k78eac48c{background-color: #848584;}.re160dad{flex-direction: column;}.i218dc44e.ib0f5ce6f{top: 4px; left: 4px;}@supports (-webkit-touch-callout:none){.u1329c5e9{font-family:-apple-system!important}}.b22a72d00{padding-bottom: 24px;}.t87367ed1{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;-ms-flex-negative:0;flex-shrink:0}.r66a74d24 a{cursor:default}.eb7d27621{padding-left: 0px; padding-right: 0px; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; justify-content: flex-start; height: 168.75px; width: 300px;}.d5451b24b{position:relative;-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;height:100%;opacity:.999;pointer-events:auto}.nd93341f0{overflow:hidden}.o55cac54b:after,.o55cac54b:before{content:\"\";width:20px;height:100%;top:0;bottom:0;right:0;position:absolute;z-index:3;pointer-events:all}.o55cac54b:before{left:0}.vdb77ffb2{position:absolute;top:8px;left:8px}.vdb77ffb2 [data-name=social-ad-label]{border-radius:3px}.kfe5a504c{width:100%;height:100%}.kfe5a504c,.mf5332d88{position:absolute;z-index:2}.mf5332d88{display:block;overflow:hidden;top:0;right:0;bottom:0;left:0}.q39931bfa{position:absolute;bottom:4px;right:4px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;max-width:80%;z-index:2}.q39931bfa>[data-name=badge]:not(:first-child){margin-top:4px}.j1f0775ea{-webkit-mask:-webkit-gradient(linear,left top,left bottom,color-stop(98%,#fff),to(hsla(0,0%,100%,0)));-webkit-mask:linear-gradient(180deg,#fff 98%,hsla(0,0%,100%,0));mask:-webkit-gradient(linear,left top,left bottom,color-stop(98%,#fff),to(hsla(0,0%,100%,0)));mask:linear-gradient(180deg,#fff 98%,hsla(0,0%,100%,0))}.q16179b9c [data-name=adaptiveImage]{-webkit-transition:-webkit-transform .1s ease-in;transition:-webkit-transform .1s ease-in;-o-transition:transform .1s ease-in;transition:transform .1s ease-in;transition:transform .1s ease-in,-webkit-transform .1s ease-in}.q16179b9c:hover [data-name=adaptiveImage]{-webkit-transform:scale(1.05);transform:scale(1.05)}.peaa8a828{display: none;}.n5a97ba2e{position:relative;width:100%;height:100%}.n5a97ba2e:after{content:\"\";display:block;position:absolute;top:0;right:0;bottom:0;left:0}.w4c462b80:after{background:-webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(9.4%,rgba(0,0,0,.006)),color-stop(17.6%,rgba(0,0,0,.024)),color-stop(24.8%,rgba(0,0,0,.052)),color-stop(31.2%,rgba(0,0,0,.088)),color-stop(37%,rgba(0,0,0,.13)),color-stop(42.4%,rgba(0,0,0,.176)),color-stop(47.5%,rgba(0,0,0,.225)),color-stop(52.5%,rgba(0,0,0,.275)),color-stop(57.6%,rgba(0,0,0,.324)),color-stop(63%,rgba(0,0,0,.37)),color-stop(68.8%,rgba(0,0,0,.412)),color-stop(75.2%,rgba(0,0,0,.448)),color-stop(82.4%,rgba(0,0,0,.476)),color-stop(90.6%,rgba(0,0,0,.494)),to(rgba(0,0,0,.5)));background:-o-linear-gradient(top,transparent 0,rgba(0,0,0,.006) 9.4%,rgba(0,0,0,.024) 17.6%,rgba(0,0,0,.052) 24.8%,rgba(0,0,0,.088) 31.2%,rgba(0,0,0,.13) 37%,rgba(0,0,0,.176) 42.4%,rgba(0,0,0,.225) 47.5%,rgba(0,0,0,.275) 52.5%,rgba(0,0,0,.324) 57.6%,rgba(0,0,0,.37) 63%,rgba(0,0,0,.412) 68.8%,rgba(0,0,0,.448) 75.2%,rgba(0,0,0,.476) 82.4%,rgba(0,0,0,.494) 90.6%,rgba(0,0,0,.5));background:linear-gradient(180deg,transparent,rgba(0,0,0,.006) 9.4%,rgba(0,0,0,.024) 17.6%,rgba(0,0,0,.052) 24.8%,rgba(0,0,0,.088) 31.2%,rgba(0,0,0,.13) 37%,rgba(0,0,0,.176) 42.4%,rgba(0,0,0,.225) 47.5%,rgba(0,0,0,.275) 52.5%,rgba(0,0,0,.324) 57.6%,rgba(0,0,0,.37) 63%,rgba(0,0,0,.412) 68.8%,rgba(0,0,0,.448) 75.2%,rgba(0,0,0,.476) 82.4%,rgba(0,0,0,.494) 90.6%,rgba(0,0,0,.5))}.cdfbe2066 .n5a97ba2e:after{content:\"\";display:block;position:absolute;top:0;right:0;bottom:0;left:0}.k80519a7a{position:relative}.df90dd099{height:100%}.u22486ac6{position:absolute;top:0;left:0}.t4b331345{height:100%;padding-top:0!important;-webkit-transform:none!important;transform:none!important}.re31a2f8e{position:absolute;left:0;top:0;width:100%;height:100%}.udc9db5ed{-o-object-fit:cover;object-fit:cover}.xceccba2a{-webkit-box-sizing:border-box;box-sizing:border-box;color:#c8ff00}.xceccba2a,.xceccba2a:after{position:absolute;border:3px solid currentColor}.xceccba2a:after{content:\"\";width:6px;height:6px;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);border-radius:50%}.s45a79f30{background:-o-linear-gradient(45deg,#fff 25%,transparent 25%,transparent 74%,#fff 75%,#fff),-o-linear-gradient(45deg,#fff 25%,transparent 25%,transparent 74%,#fff 75%,#fff);background:linear-gradient(45deg,#fff 25%,transparent 0,transparent 74%,#fff 75%,#fff),linear-gradient(45deg,#fff 25%,transparent 0,transparent 74%,#fff 75%,#fff);background-size:20px 20px;background-position:0 0,10px 10px;background-color:#f33}.c83cd604b{transform: translate(0%, -10.72666667%); width: 100%; padding-top: 131.57894737%;}.w9f969ea{background: #fff;}.p737df537{position:absolute;top:10px;left:10px;z-index:3;cursor:pointer}.p737df537:before{content:\"\";width:44px;height:44px;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.p737df537:hover{-webkit-filter:drop-shadow(0 2px 3px rgba(0,0,0,.2));filter:drop-shadow(0 2px 3px rgba(0,0,0,.2))}.u8db04847{top:20px}.ec0b9ca3c{display:none}.kdd607cae{position:absolute;bottom:4px;left:4px;display:-webkit-box;display:-ms-flexbox;display:flex;grid-gap:2px;gap:2px}.r1dc0613b{cursor:pointer;position:absolute;top:4px;right:4px;z-index:10}.r1dc0613b.f9d3d779e,.r1dc0613b.naa710fd2{position:relative;top:unset;right:unset}.r1dc0613b.m7c900d5b{overflow:hidden}.s1333676e.r1dc0613b{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;pointer-events:auto;border-radius:50%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}.s1333676e.r1dc0613b:before{content:\"\";position:absolute;top:-4px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.s1333676e.r1dc0613b.naa710fd2{height:12px;border-radius:16px}.s1333676e.r1dc0613b.naa710fd2 .n49e32245{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.s1333676e.r1dc0613b.naa710fd2:before{top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}.s1333676e.r1dc0613b.f9d3d779e:before{top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}.s1333676e.r1dc0613b.h356fcbf5:hover{background-color:unset!important}.s1333676e.r1dc0613b:hover .j812ed0b{opacity:.8}.s1333676e.r1dc0613b.tb62e0ec0 .j812ed0b{background-color:#fff;opacity:.8}.s1333676e.r1dc0613b.tb62e0ec0 .n49e32245 svg{fill:#575c66}.s1333676e.r1dc0613b.e175ba258 .j812ed0b,.s1333676e.r1dc0613b.vbe3246ba .j812ed0b{background:none}.s1333676e.r1dc0613b.e175ba258:hover{background-color:#e9e9e9}.s1333676e.r1dc0613b.vbe3246ba:hover{background-color:rgba(248,250,255,.2)}.s1333676e.r1dc0613b .n49e32245 svg{fill:var(--tertiary-color)}.s1333676e.v165e2d5{width:12px;height:12px}.s1333676e.v165e2d5:before{width:28px;height:28px}.s1333676e.v165e2d5 .n49e32245{-webkit-transform:scale(.6);transform:scale(.6)}.s1333676e.l953da26d{width:16px;height:16px}.s1333676e.l953da26d:before{width:32px;height:32px}.s1333676e.l953da26d .n49e32245{-webkit-transform:scale(.8);transform:scale(.8)}.s1333676e.nacd50733{width:24px;height:24px}.s1333676e.nacd50733:before{width:42px;height:42px}.s1333676e.o2b8fd212{width:28px;height:28px}.s1333676e.o2b8fd212:before{width:42px;height:42px}.s1333676e.u393e36ca{width:32px;height:32px}.s1333676e.u393e36ca:before{width:48px;height:48px}.j812ed0b{height:100%;width:100%;position:absolute;top:0;left:0;z-index:-1;border-radius:inherit;-webkit-transition:opacity .15s;-o-transition:opacity .15s;transition:opacity .15s;-webkit-transition:background-color .5s ease-in-out;-o-transition:background-color .5s ease-in-out;transition:background-color .5s ease-in-out;color:var(--secondary-color);background:var(--label-bg-color)}.j812ed0b.w659303c4:hover{opacity:.5}.j812ed0b.rfb7b16a6:hover{opacity:.9}.j812ed0b.hdf3eb641{background:none}.s1333676e .n49e32245{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;pointer-events:none;-webkit-transition:fill .5s ease-in-out;-o-transition:fill .5s ease-in-out;transition:fill .5s ease-in-out}.s1333676e .n49e32245 svg{fill:var(--tertiary-color)}@-webkit-keyframes i85b4932b{0%,to{opacity:0;visibility:hidden}4%,96%{visibility:visible;opacity:1}}@keyframes i85b4932b{0%,to{opacity:0;visibility:hidden}4%,96%{visibility:visible;opacity:1}}.beff41dc2{margin-left:2px;pointer-events:auto;font-family:inherit;position:relative;-ms-flex-item-align:center;align-self:center}.w3b92d3e7>.beff41dc2:first-child{margin-left:0}.beff41dc2.ee8c50514{margin-right:2px;margin-left:0}.w3b92d3e7>.beff41dc2.ee8c50514:first-child{margin-right:0}.w3b92d3e7{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;position:absolute;left:4px;top:4px;z-index:10;font-family:YS Text Variable,Helvetica,Arial,sans-serif;white-space:nowrap;height:12px;line-height:normal;-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 4px;border-radius:16px;font-size:8px;text-transform:uppercase;letter-spacing:.125em;pointer-events:none;text-decoration:none;-webkit-transition:color .5s ease-in-out;-o-transition:color .5s ease-in-out;transition:color .5s ease-in-out;color:var(--secondary-color);background:var(--label-bg-color)}.w3b92d3e7.tb8388f7e{position:unset}.w3b92d3e7.cb349d25{padding:0 1px 0 4px}.w3b92d3e7.ee8c50514.cb349d25{padding:0 4px 0 1px}.w3b92d3e7.mb9f93ef1,.w3b92d3e7.ee8c50514.mb9f93ef1{padding:0}.w3b92d3e7>a{text-decoration:none;color:inherit}.w3b92d3e7.tb62e0ec0{color:rgba(87,92,102,.8);background-color:hsla(0,0%,100%,.8)}.w3b92d3e7.j9dd37c07,.w3b92d3e7.u4bee803b{top:auto;left:auto;right:0;bottom:0;background:none;text-shadow:none;font-size:7px;padding:0;height:auto;opacity:.8;-webkit-backdrop-filter:none;backdrop-filter:none}.w3b92d3e7.hdf3eb641{background:none}.w3b92d3e7.b7110917{max-width:calc(100% - 42px)}.w3b92d3e7:empty{display:none}.fcf293388{margin:0 2px}.w3b92d3e7>.fcf293388:first-child{display:none}.x74171044{text-decoration:none;pointer-events:auto;color:inherit}.r31e4fc0d{--secondary-color: rgba(255, 255, 255, 0.86); --label-bg-color: rgba(35, 35, 37, 0.36);}.lbdd444ac{--tertiary-color: rgba(255, 255, 255, 0.6);}.x56f8fccf{--secondary-color: rgba(255, 255, 255, 0.86); --label-bg-color: rgba(35, 35, 37, 0.36);}.odd25066e{padding-left: 24px; padding-right: 24px; padding-top: 0px; padding-bottom: 0px; margin-top: 14px; justify-content: flex-start; width: 300px;}.e2077c01{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:inherit;text-decoration:inherit;max-width:100%}.e2077c01.ld7f7bd78{margin-left:auto}.d2121e076{margin-right:6px}.bb8a2d548{-ms-flex-item-align:center;align-self:center}.e537eba18{-ms-flex-negative:0;flex-shrink:0}.l315a5f2{overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;max-width:100%;pointer-events:auto}.ybc05f23b{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;width:18px;height:18px;border-radius:3px;background:#fff}.edba16481{font-size: 14px; color: rgb(37, 39, 41);}.c6790ad20{width: 16px !important; height: 16px !important; margin-right: 6px;}.x9af5b80a{width: 18px !important; height: 18px !important; margin-right: 6px;}.g484cf517{display:block;width:16px;height:16px}.qc58eb9d9{display:block;width:32px;height:32px}.de6b9cf79{display:block;width:48px;height:48px}.i17151d23{display:block;width:60px;height:60px}.hc5aae3ad{background-color:#fff;border-radius:2px}.r3653c59e{overflow:hidden;pointer-events:all}.n3e77a723{overflow-x:auto;scrollbar-width:none}.n3e77a723::-webkit-scrollbar{display:none}.s98407695{-webkit-mask-image:-webkit-gradient(linear,left top,right top,color-stop(0,transparent),color-stop(1em,#000),color-stop(#000),to(transparent));-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 1em,#000 calc(100% - 1em),transparent);mask-image:-webkit-gradient(linear,left top,right top,color-stop(0,transparent),color-stop(1em,#000),color-stop(#000),to(transparent));mask-image:linear-gradient(90deg,transparent 0,#000 1em,#000 calc(100% - 1em),transparent);-webkit-mask-size:100%;mask-size:100%;-webkit-mask-position:0;mask-position:0;-webkit-transition:-webkit-mask-image .3s;transition:-webkit-mask-image .3s;-o-transition:mask-image .3s;transition:mask-image .3s;transition:mask-image .3s,-webkit-mask-image .3s}.s98407695.ja2cf8dc2{-webkit-mask-image:-webkit-gradient(linear,left top,right top,color-stop(0,#000),color-stop(#000),to(transparent));-webkit-mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 1em),transparent);mask-image:-webkit-gradient(linear,left top,right top,color-stop(0,#000),color-stop(#000),to(transparent));mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 1em),transparent)}.s98407695.le9e67d99{-webkit-mask-image:-webkit-gradient(linear,left top,right top,color-stop(0,transparent),color-stop(1em,#000),to(#000));-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 1em,#000);mask-image:-webkit-gradient(linear,left top,right top,color-stop(0,transparent),color-stop(1em,#000),to(#000));mask-image:linear-gradient(90deg,transparent 0,#000 1em,#000)}.wb998823c{display:inline}.nae991b6d{word-wrap:break-word;-webkit-hyphens:auto;hyphens:auto}.i3cc3a02b{padding-left: 24px; padding-right: 24px; padding-top: 0px; padding-bottom: 0px; margin-top: 6px; justify-content: flex-start; width: 300px;}.re63acf6b{pointer-events:auto;position:relative;max-width:100%;color:inherit;text-decoration:inherit;font-weight:inherit;-webkit-hyphens:manual;hyphens:manual;letter-spacing:normal;line-height:inherit}.nf5277318{font-size:0;max-width:100%}.ye82d8aa4{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.q27d60b7{color:inherit;text-decoration:inherit;font-weight:inherit;-webkit-hyphens:manual;hyphens:manual;letter-spacing:normal;line-height:inherit;max-width:100%}.iffc9b6c8{font-size: 24px; line-height: 27px; font-weight: bold; color: rgb(37, 39, 41);} .p9bd45fe9.t6e21548e:hover{color: rgb(37, 39, 41); transition: all 150ms ease 0ms;}.efef3caf{padding-left: 24px; padding-right: 24px; padding-top: 0px; padding-bottom: 0px; margin-top: 14px; justify-content: flex-start; width: 300px;}.gf15873c0{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;position:relative}.gf15873c0>.mf3c60542{-ms-flex-item-align:center;align-self:center;margin-left:8px}.gf15873c0 .ke50be83a{margin-right:5px}.gf15873c0 .ke50be83a:last-of-type{margin-right:0}.g8c55b20d{-ms-flex-wrap:nowrap;flex-wrap:nowrap;background:-webkit-gradient(linear,left bottom,left top,from(rgba(250,252,255,.5)),to(rgba(250,252,255,.5))),rgba(21,24,30,.1);background:-o-linear-gradient(bottom,rgba(250,252,255,.5),rgba(250,252,255,.5)),rgba(21,24,30,.1);background:linear-gradient(0deg,rgba(250,252,255,.5),rgba(250,252,255,.5)),rgba(21,24,30,.1);border-radius:8px;padding:4px 8px}.g8c55b20d,.ke50be83a{display:-webkit-box;display:-ms-flexbox;display:flex}.ke50be83a{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.p36bc4720{margin-bottom:4px}.p36bc4720.j2c5a190{display:-webkit-box;display:-ms-flexbox;display:flex;margin-bottom:0}.p36bc4720.j2c5a190 .ybc75fe{width:12px;height:12px;padding-left:0}.p36bc4720 .ybc75fe{line-height:1;display:inline-block;height:16px;width:80px}.dc8c20bb2{color:#575c66;text-align:center;font-size:16px;line-height:1;width:24px}.y94724b66{font-size:14px;line-height:1;color:rgba(32,53,96,.35)}.mf3c60542{cursor:pointer;-ms-flex-item-align:start;align-self:flex-start;line-height:1;display:inline-block}.mf3c60542 svg{width:16px;height:16px}.id4dfe126{line-height:1}.db80df36c{font-size:12px;line-height:14px}.db80df36c .a8037ede1{display:inline-block;margin-top:8px;text-decoration:underline;color:inherit}.c8e44c596{width:100%;padding:12px}.c8e44c596 .ke50be83a{margin-right:16px}.c8e44c596 .ke50be83a:last-of-type{margin-right:0;margin-left:auto}.c8e44c596 .dc8c20bb2{font-size:40px;line-height:36px;width:60px}.c8e44c596 .mf3c60542 svg{width:20px;height:20px}.j99a73e66{padding:8px 12px;background-color:#37f;-webkit-box-shadow:0 2px 4px rgba(0,21,64,.1);box-shadow:0 2px 4px rgba(0,21,64,.1);border-radius:8px;color:#fff}.j99a73e66 [data-tooltip-arrow] svg path{fill:#37f}.ed2f5534c{background: linear-gradient(0deg, rgba(250, 252, 255, 0.5), rgba(250, 252, 255, 0.5)), rgba(21, 24, 30, 0.1);}.l6efffc6d{color: rgba(37, 39, 41, 0.77);}.pb6d87f28{position:relative;font-weight:700;font-family:YS Text Variable,SF,Roboto,Helvetica,sans-serif}.pb6d87f28 .b1cdafa69,.pb6d87f28 .m6b9757f2{left:0}.pb6d87f28.xfa5fdeab .d55e6080f,.pb6d87f28.xfa5fdeab .d55e6080f svg{padding:0 .5px;display:-webkit-box;display:-ms-flexbox;display:flex}.pb6d87f28.xfa5fdeab .tcc4f169a{padding-top:1px}.pb6d87f28.cc5bc6c09{padding-left:0;padding-right:0;padding-top:16px}.pb6d87f28.cc5bc6c09 .b1cdafa69,.pb6d87f28.cc5bc6c09 .m6b9757f2{left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}.m340a9245{padding-left:16px}.v6f5c0cb,.v6f5c0cb .tcc4f169a{color:#fff}.q4fb81b29{color:#000}.q4fb81b29 .tcc4f169a{color:#414141}.tcc4f169a{font-size:14px;color:#fff;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-top:3px;padding-left:3px}.tcc4f169a,.b1cdafa69,.m6b9757f2{display:-webkit-box;display:-ms-flexbox;display:flex}.b1cdafa69,.m6b9757f2{width:inherit;height:inherit;color:#e1e3e3;position:absolute;top:0}.pb1761f31,.p2735242a{color:#fff}.m6b9757f2{color:#ffd11d;overflow:hidden}.r6423f250.q4fb81b29 .b1cdafa69{color:rgba(0,0,0,.3)}.r6423f250.v6f5c0cb .b1cdafa69{color:hsla(0,0%,100%,.3)}.r6423f250.bd41880e3 .b1cdafa69{color:hsla(0,0%,100%,.3);color:var(--rating-star-empty-color,hsla(0,0%,100%,.3))}.r6423f250.q4fb81b29 .m6b9757f2{color:#000}.r6423f250.v6f5c0cb .m6b9757f2{color:#fff}.r6423f250.bd41880e3 .m6b9757f2{color:#fff;color:var(--rating-star-filled-color,#fff)}.d55e6080f,.d55e6080f svg{width:auto;height:inherit}.k17ddbd02{color: rgba(37, 39, 41, 0.77);}.ed92a596f{display:none;position:absolute;-webkit-box-sizing:border-box;box-sizing:border-box;z-index:10}.ed92a596f [data-tooltip-arrow]{display:block;position:absolute;width:24px;height:8px}.ed92a596f [data-tooltip-arrow] svg{position:absolute;top:0;left:0}.ed92a596f[data-show=true]{display:block}.qb9aba523{padding-left: 24px; padding-right: 24px; padding-top: 0px; padding-bottom: 0px; margin-top: 6px; justify-content: flex-start; width: 300px;}.c95c4d08b{font-size: 16px; line-height: 20px; color: rgba(37, 39, 41, 0.77);} .jc64b59e8{padding-left: 24px; padding-right: 24px; padding-top: 0px; padding-bottom: 0px; margin-top: 14px; justify-content: flex-start; width: 300px;}.pfbd9a9df{pointer-events:auto;width:100%}.pfbd9a9df,.t83949f8d{position:relative}.t83949f8d{display:block;border-bottom:solid rgba(7,9,12,.1);-webkit-box-sizing:border-box;box-sizing:border-box;color:inherit;text-decoration:inherit}.t83949f8d:last-child{border-bottom:none}.ga380f401{position:absolute;right:0;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.x68f06d0f{border-width: 1px; border-color: rgba(37, 39, 41, 0.13);}.lbdf535ae{font-size: 16px; line-height: 20px; color: rgb(37, 39, 41); padding-top: 10px; padding-right: 20px; padding-bottom: 10px; border-width: 1px; delimiter-color: rgba(37, 39, 41, 0.13);}.o12acd583{font-size: 16px; line-height: 20px; color: rgb(37, 39, 41); padding-top: 10px; padding-right: 20px; padding-bottom: 10px; border-width: 1px; delimiter-color: rgba(37, 39, 41, 0.13);}.x94934e2d{padding-left: 24px; padding-right: 24px; padding-top: 4px; padding-bottom: 0px; margin-top: auto; justify-content: flex-start; width: 300px;}.me97dc4d0{pointer-events:auto;position:relative;text-decoration:inherit;font-weight:inherit;letter-spacing:normal;line-height:inherit;text-align:center;-webkit-box-sizing:border-box;box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;white-space:nowrap}.me97dc4d0.uca2a477d{margin-left:auto}.y4fefc0b3{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.b28df3528:before{content:\"\";position:absolute;width:100px;height:100%}.oa80b04ce{height: 40px; line-height: 38px; font-size: 16px; favicon-size: 16px; favicon-margin-right: 6px; width: 100%; background: #3d7bf5; color: #ffffff; border-radius: 4px; border-color: transparent; border-width: 1px; border-style: solid; padding-right: 20px; padding-left: 20px;} .oa80b04ce:hover{border-color: transparent; border-width: 1px; border-style: solid; transition: all 500ms ease-out 0ms;}",
+                    "salt": "qjpG6pWZSs",
+                    "encoding": "raw",
+                    "timing": {
+                        "htmlRenderTiming": 10942.831039428711,
+                        "cssRenderTiming": 122.10369110107422,
+                        "constructorBpCreateResourceTree": 292.42706298828125,
+                        "constructorBpGetBestBpVariant": 5455.554008483887,
+                        "constructorFirstBp": 5757.355690002441
+                    }
+                }
+            },
+            "rtbAuctionInfo": {
+                "bidReqId": 3706828863699759600,
+                "bidReqIdStr": "3706828863699759524",
+                "bsGeneratedUniqID": "3629353831719849229",
+                "dspId": 1
+            },
+            "common": {
+                "pageId": "106712",
+                "deviceType": "6",
+                "sspBidId": "",
+                "isStaff": "false",
+                "stripeType": "1",
+                "whyThisAdLandingLink": "https://adreasons.yandex-team.ru/?hitlogid=3706828863562133924",
+                "pageLang": "1",
+                "subDesignId": "1000696000",
+                "sspId": "",
+                "commonRtbVisibilityProb": "100",
+                "detailedDeviceType": "16",
+                "configId": 396,
+                "userRegion": "RU",
+                "userGroup": "40",
+                "productType": "direct",
+                "isYandexPage": "1",
+                "uniformat": true,
+                "commonRtbVisibility": "1",
+                "reloadTimeout": "29",
+                "externalDSP": "0",
+                "impId": "81",
+                "linkHead": "https://yandex.ru/an/count/WPWejI_zOoVX2La50LKC00EML1v4emTH1i7aTxpUS8VhTx8wZbvdhv2JzKLoTF_1x3yqbZ20ZbD5cZJ1qWL1E92KU1u80OCP7EplyArsyDBPHicRBNDiqqYVsPJj-dOwRIGIGa4_IDOQIDQadoGWwWqIITOagdN8YaGYIGPLQSVcJwbKAfKNuF1iTjZe47mXygZYukfuus36m44yiu7hTp294aHoN8NHKSDuI1SkMWrxSqWNBbeDsoRDzacZfMco7p8qBYMjMD432Fi0iZa1w1ymc6ioChCps18bLHYqzvV9c9JpenIn2zmUNTTdo4sPHcKJnzuAGKcDqjjY76WrqMAGAVDWCbdFWqBMKz3f6B67CSDqSHAemu0hQ7KTndkBC45KgcUBmNIV7rYeKOiomKnJRrdMtFrlf82iwxgEfSqpKXGR--Z6t_M13KM2m3qQxW8wEzFalMBzPhxoDw4iRMHqEKuG4FmXctpsDZu-SFw0Xs7yieq2MJOICxDvnece4yM19gjGSsyCzUK7n86SpiA6o18LNZJKCuu0~2",
+                "designId": "7745257",
+                "isYandex": "0",
+                "syntheticMatch": "",
+                "stripeAnimation": "0",
+                "stationaryConnection": "1",
+                "showAdTune": "",
+                "bidReqIdStr": "3706828863699759524",
+                "itsConfig": {},
+                "flags": {
+                    "VAS_SHOW_AD_LABEL_FOR_IN_BANNER": "TRUE",
+                    "DISABLE_COUNT_REDIRECT_INAPP": "TRUE",
+                    "VAS_USE_MULTIROLL_CONTROLLER_WATCHED_TIME_OFFSET": "TRUE",
+                    "VAS_RETRY_ON_NETWORK_ERROR": "TRUE",
+                    "TIMEOUT_PREROLL_MULTIROLL_VIDEO_TIMEOUT": "10000",
+                    "TIMEOUT_PREROLL_MULTIROLL_BUFFER_EMPTY_LIMIT": "10",
+                    "TIMEOUT_PREROLL_MULTIROLL_VPAID_TIMEOUT": "10000",
+                    "TIMEOUT_PREROLL_MULTIROLL_BUFFER_FULL_TIMEOUT": "10000",
+                    "TIMEOUT_NON_PREROLL_MULTIROLL_VPAID_TIMEOUT": "10000",
+                    "TIMEOUT_NON_PREROLL_MULTIROLL_VIDEO_TIMEOUT": "10000",
+                    "TIMEOUT_NON_PREROLL_MULTIROLL_BUFFER_FULL_TIMEOUT": "10000",
+                    "TIMEOUT_NON_PREROLL_MULTIROLL_BUFFER_EMPTY_LIMIT": "10",
+                    "VAS_GRAB_LENGTH": "2048",
+                    "VAS_GET_CUSTOM_VMAP_TIMEOUT_VALUE": "6000",
+                    "VAS_SHOULD_SHOW_ACTION_BUTTON_IN_PACKSHOT": "exp",
+                    "VAS_STABLE_VERSION": "1053506",
+                    "VAS_ECOM_CTA_INCREASE_BUTTON_SIZE": "lg",
+                    "MULTIBANNER_UNIFIED_INTERFACE": "exp",
+                    "USE_BK_SIZES_FOR_VIDEO_IN_COMBO": "exp",
+                    "RR_NEW_RETURN_AFTER_CLICK_THROUGH": "TRUE",
+                    "SMART_QUEUE_EXP_BLACK_LIST": [
+                        "mail.ru",
+                        "yandex.ru/images",
+                        "yandex.ru/games",
+                        "dzen.ru",
+                        "avito.ru",
+                        "m.avito.ru",
+                        "dni.ru",
+                        "mail.yandex.ru",
+                        "razlozhi.ru",
+                        "zr.ru",
+                        "ura.news",
+                        "razlozhi.ru",
+                        "jaomix.ru"
+                    ],
+                    "SET_DEFAULT_PAGE_NUMBER": "exp",
+                    "YASTATIC_FEED_BLOCK_ID_WHITE_LIST": [
+                        "R-I-2491204-1",
+                        "R-I-2491204-2",
+                        "R-I-2491204-3",
+                        "R-I-2491204-4",
+                        "R-A-2510072-1",
+                        "R-A-588461-111",
+                        "R-A-5671574-1"
+                    ],
+                    "FS_LOOP_FIX": "exp",
+                    "NATIVE_ACTUAL_FORMAT_ON_CONTEXT_MENU": "exp",
+                    "NEW_GPT_SCRIPT": "exp",
+                    "FS_DESKTOP_DISABLE_HIT_MAIN_PAGE": "exp",
+                    "FS_REWARDED_TYPE": "exp",
+                    "VAS_IN_BANNER_SSR_EXP": "exp",
+                    "DISABLE_CLICK_CONFIRMATION": "exp",
+                    "USE_DISABLE_TIMEOUT_FOR_DOCUMENT_STRATEGY_OBSERVER": "exp",
+                    "USE_BK_SIZES_FOR_VIDEO_FLOOR_AD": "exp",
+                    "VIDEO_IN_COMBO_FULLSCREEN_USE_START_ON_VISIBILITY_OBSERVE": "exp",
+                    "DZEN_USE_SKELETON": "exp",
+                    "DEFAULT_OUTSTREAM_USE_ALTERNATIVE_VISIBILITY_STRATEGY_EXCLUDE_MRAID": "exp",
+                    "VAS_USE_HANDLE_LINK_CLICK_FOR_ADTUNE": "exp",
+                    "SSP_ADM_LOG_CUSTOM_SSP": "exp",
+                    "SAME_YANDEX_DOMAIN": "exp",
+                    "DISABLE_OPENRTB_PREP_META_BULK": "exp",
+                    "ETAG_HEADER": "exp",
+                    "ASYNC_QUEUE": {
+                        "set": [
+                            "ASYNC_QUEUE_RTB_DATA_LOAD",
+                            "ASYNC_QUEUE_RENDER_AD",
+                            "ASYNC_QUEUE__RENDER",
+                            "ASYNC_QUEUE_GRAB",
+                            "ASYNC_QUEUE_RENDER_AD_DATA_LOAD",
+                            "ASYNC_QUEUE_INIT_ASYNC_ADFOX",
+                            "ASYNC_QUEUE_METRIKA_COUNTER",
+                            "ASYNC_QUEUE_COOKIE_MATCHING_COUNTER"
+                        ],
+                        "hosts": [
+                            "all"
+                        ]
+                    },
+                    "SSP_VAST_MEDIA_WITHOUT_REDIRECT_ONLY_VAST": "exp",
+                    "FT_DISABLE_APPLOVIN_IOS_ENDCARD": "exp",
+                    "VAS_DISABLE_ASSETS_FOR_VIDEO_CREATIVE_REACH_WITH_DISCLAIMER": "exp",
+                    "SSP_FIX_XIAOMI_REQUESTS": "exp",
+                    "SSP_CUSTOM_LOG_IFA": [
+                        "45eaab16-9eaf-47a3-b76d-afb649ea5d52"
+                    ],
+                    "SSP_CUSTOM_LOG_PERCENT": 0,
+                    "SSP_CUSTOM_LOG_CFG": {
+                        "91711792": 1,
+                        "300982401": 1
+                    },
+                    "LOAD_VERSION_ASYNC": "exp",
+                    "CSR_QUERY_GIMME": "exp",
+                    "CSR_QUERY_SERVER-SIDE": "exp",
+                    "RETROFIT_LEGACY_FORMAT_WITH_UNIFORMAT": "exp",
+                    "SSP_NEW_MULTI_IMP": "exp",
+                    "SSP_VAST_FEED_WHITE_LIST": [
+                        "63904735"
+                    ],
+                    "VAS_ECOM_CTA_ADD_DOMAIN_SLIDE": "exp",
+                    "USE_YA_RU_DOMAIN_FOR_AD_REQUESTS": "FALSE",
+                    "VAS_USE_DASH_MIME_TYPE": "control",
+                    "ADSDK_SUPPORTED_VERSION_GAP": 10000,
+                    "VAS_SUBTITLES": "TRUE",
+                    "VAS_SUBTITLES_MAX_HEIGHT_PERC": "41",
+                    "ADSDKVER": "1053492",
+                    "SSP_MULTI_OK_ANDROID": {
+                        "value": "exp",
+                        "maxLength": 100
+                    },
+                    "SSP_MULTI_OK_IOS": {
+                        "value": "exp",
+                        "maxLength": 100
+                    },
+                    "SSP_MULTI_VK_ANDROID": {
+                        "value": "exp",
+                        "maxLength": 100
+                    },
+                    "VAS_ECOM_CAROUSEL_STEP_SCROLL": "ctl",
+                    "ADD_TIMER_BLINK_TO_PROMO": "ctl",
+                    "ADD_TIMER_TO_PROMO": "exp",
+                    "VAS_FULLSCREEN_HANDLE_CHANGE_ORIENTATION": "exp",
+                    "ADD_PROMOCODE_ASSET_IN_POSTER_V2": "exp",
+                    "STICKY_SCROLL_WIDGET": "exp",
+                    "STICKY_SCROLL_VIDEO_IN_COMBO": "exp",
+                    "STICKY_SCROLL_CONSTRUCTOR": "exp",
+                    "STICKY_SCROLL_MEDIA": "ctl",
+                    "IN_IMAGE_REDESIGN_VARIANT": "without-video",
+                    "IN_IMAGE_REDESIGN": "exp",
+                    "PCODEVER": "1054735"
+                },
+                "flagsMap": {
+                    "VAS_SHOW_AD_LABEL_FOR_IN_BANNER": [
+                        {
+                            "value": "TRUE",
+                            "testId": "663347"
+                        }
+                    ],
+                    "DISABLE_COUNT_REDIRECT_INAPP": [
+                        {
+                            "value": "TRUE",
+                            "testId": "720442"
+                        }
+                    ],
+                    "VAS_USE_MULTIROLL_CONTROLLER_WATCHED_TIME_OFFSET": [
+                        {
+                            "value": "TRUE",
+                            "testId": "732077"
+                        }
+                    ],
+                    "VAS_RETRY_ON_NETWORK_ERROR": [
+                        {
+                            "value": "TRUE",
+                            "testId": "756479"
+                        }
+                    ],
+                    "TIMEOUT_PREROLL_MULTIROLL_VIDEO_TIMEOUT": [
+                        {
+                            "value": "10000",
+                            "testId": "793970"
+                        }
+                    ],
+                    "TIMEOUT_PREROLL_MULTIROLL_BUFFER_EMPTY_LIMIT": [
+                        {
+                            "value": "10",
+                            "testId": "793970"
+                        }
+                    ],
+                    "TIMEOUT_PREROLL_MULTIROLL_VPAID_TIMEOUT": [
+                        {
+                            "value": "10000",
+                            "testId": "793970"
+                        }
+                    ],
+                    "TIMEOUT_PREROLL_MULTIROLL_BUFFER_FULL_TIMEOUT": [
+                        {
+                            "value": "10000",
+                            "testId": "793970"
+                        }
+                    ],
+                    "TIMEOUT_NON_PREROLL_MULTIROLL_VPAID_TIMEOUT": [
+                        {
+                            "value": "10000",
+                            "testId": "793970"
+                        }
+                    ],
+                    "TIMEOUT_NON_PREROLL_MULTIROLL_VIDEO_TIMEOUT": [
+                        {
+                            "value": "10000",
+                            "testId": "793970"
+                        }
+                    ],
+                    "TIMEOUT_NON_PREROLL_MULTIROLL_BUFFER_FULL_TIMEOUT": [
+                        {
+                            "value": "10000",
+                            "testId": "793970"
+                        }
+                    ],
+                    "TIMEOUT_NON_PREROLL_MULTIROLL_BUFFER_EMPTY_LIMIT": [
+                        {
+                            "value": "10",
+                            "testId": "793970"
+                        }
+                    ],
+                    "VAS_GRAB_LENGTH": [
+                        {
+                            "value": "2048",
+                            "testId": "808074"
+                        }
+                    ],
+                    "VAS_GET_CUSTOM_VMAP_TIMEOUT_VALUE": [
+                        {
+                            "value": "6000",
+                            "testId": "865362"
+                        }
+                    ],
+                    "VAS_SHOULD_SHOW_ACTION_BUTTON_IN_PACKSHOT": [
+                        {
+                            "value": "exp",
+                            "testId": "1034854"
+                        }
+                    ],
+                    "VAS_STABLE_VERSION": [
+                        {
+                            "value": "1053506",
+                            "testId": "1055592"
+                        }
+                    ],
+                    "VAS_ECOM_CTA_INCREASE_BUTTON_SIZE": [
+                        {
+                            "value": "lg",
+                            "testId": "1055782"
+                        }
+                    ],
+                    "MULTIBANNER_UNIFIED_INTERFACE": [
+                        {
+                            "value": "exp",
+                            "testId": "598277"
+                        }
+                    ],
+                    "USE_BK_SIZES_FOR_VIDEO_IN_COMBO": [
+                        {
+                            "value": "exp",
+                            "testId": "679407"
+                        }
+                    ],
+                    "RR_NEW_RETURN_AFTER_CLICK_THROUGH": [
+                        {
+                            "value": "TRUE",
+                            "testId": "711049"
+                        }
+                    ],
+                    "SMART_QUEUE_EXP_BLACK_LIST": [
+                        {
+                            "value": [
+                                "mail.ru",
+                                "yandex.ru/images",
+                                "yandex.ru/games",
+                                "dzen.ru",
+                                "avito.ru",
+                                "m.avito.ru",
+                                "dni.ru",
+                                "mail.yandex.ru",
+                                "razlozhi.ru",
+                                "zr.ru",
+                                "ura.news",
+                                "razlozhi.ru",
+                                "jaomix.ru"
+                            ],
+                            "testId": "715827"
+                        }
+                    ],
+                    "SET_DEFAULT_PAGE_NUMBER": [
+                        {
+                            "value": "exp",
+                            "testId": "751370"
+                        }
+                    ],
+                    "YASTATIC_FEED_BLOCK_ID_WHITE_LIST": [
+                        {
+                            "value": [
+                                "R-I-2491204-1",
+                                "R-I-2491204-2",
+                                "R-I-2491204-3",
+                                "R-I-2491204-4",
+                                "R-A-2510072-1",
+                                "R-A-588461-111",
+                                "R-A-5671574-1"
+                            ],
+                            "testId": "809616"
+                        }
+                    ],
+                    "FS_LOOP_FIX": [
+                        {
+                            "value": "exp",
+                            "testId": "853313"
+                        }
+                    ],
+                    "NATIVE_ACTUAL_FORMAT_ON_CONTEXT_MENU": [
+                        {
+                            "value": "exp",
+                            "testId": "854920"
+                        }
+                    ],
+                    "NEW_GPT_SCRIPT": [
+                        {
+                            "value": "exp",
+                            "testId": "873294"
+                        }
+                    ],
+                    "FS_DESKTOP_DISABLE_HIT_MAIN_PAGE": [
+                        {
+                            "value": "exp",
+                            "testId": "891089"
+                        }
+                    ],
+                    "FS_REWARDED_TYPE": [
+                        {
+                            "value": "exp",
+                            "testId": "922008"
+                        }
+                    ],
+                    "VAS_IN_BANNER_SSR_EXP": [
+                        {
+                            "value": "exp",
+                            "testId": "923458"
+                        }
+                    ],
+                    "DISABLE_CLICK_CONFIRMATION": [
+                        {
+                            "value": "exp",
+                            "testId": "925383"
+                        }
+                    ],
+                    "USE_DISABLE_TIMEOUT_FOR_DOCUMENT_STRATEGY_OBSERVER": [
+                        {
+                            "value": "exp",
+                            "testId": "924508"
+                        }
+                    ],
+                    "USE_BK_SIZES_FOR_VIDEO_FLOOR_AD": [
+                        {
+                            "value": "exp",
+                            "testId": "925119"
+                        }
+                    ],
+                    "VIDEO_IN_COMBO_FULLSCREEN_USE_START_ON_VISIBILITY_OBSERVE": [
+                        {
+                            "value": "exp",
+                            "testId": "930586"
+                        }
+                    ],
+                    "DZEN_USE_SKELETON": [
+                        {
+                            "value": "exp",
+                            "testId": "921829"
+                        }
+                    ],
+                    "DEFAULT_OUTSTREAM_USE_ALTERNATIVE_VISIBILITY_STRATEGY_EXCLUDE_MRAID": [
+                        {
+                            "value": "exp",
+                            "testId": "936415"
+                        }
+                    ],
+                    "VAS_USE_HANDLE_LINK_CLICK_FOR_ADTUNE": [
+                        {
+                            "value": "exp",
+                            "testId": "937258"
+                        }
+                    ],
+                    "SSP_ADM_LOG_CUSTOM_SSP": [
+                        {
+                            "value": "exp",
+                            "testId": "956583"
+                        }
+                    ],
+                    "SAME_YANDEX_DOMAIN": [
+                        {
+                            "value": "exp",
+                            "testId": "970769"
+                        }
+                    ],
+                    "DISABLE_OPENRTB_PREP_META_BULK": [
+                        {
+                            "value": "exp",
+                            "testId": "995477"
+                        }
+                    ],
+                    "ETAG_HEADER": [
+                        {
+                            "value": "exp",
+                            "testId": "1008561"
+                        }
+                    ],
+                    "ASYNC_QUEUE": [
+                        {
+                            "value": {
+                                "set": [
+                                    "ASYNC_QUEUE_RTB_DATA_LOAD",
+                                    "ASYNC_QUEUE_RENDER_AD",
+                                    "ASYNC_QUEUE__RENDER",
+                                    "ASYNC_QUEUE_GRAB",
+                                    "ASYNC_QUEUE_RENDER_AD_DATA_LOAD",
+                                    "ASYNC_QUEUE_INIT_ASYNC_ADFOX",
+                                    "ASYNC_QUEUE_METRIKA_COUNTER",
+                                    "ASYNC_QUEUE_COOKIE_MATCHING_COUNTER"
+                                ],
+                                "hosts": [
+                                    "all"
+                                ]
+                            },
+                            "testId": "1018799"
+                        }
+                    ],
+                    "SSP_VAST_MEDIA_WITHOUT_REDIRECT_ONLY_VAST": [
+                        {
+                            "value": "exp",
+                            "testId": "1027080"
+                        }
+                    ],
+                    "FT_DISABLE_APPLOVIN_IOS_ENDCARD": [
+                        {
+                            "value": "exp",
+                            "testId": "1029205"
+                        }
+                    ],
+                    "VAS_DISABLE_ASSETS_FOR_VIDEO_CREATIVE_REACH_WITH_DISCLAIMER": [
+                        {
+                            "value": "exp",
+                            "testId": "1029399"
+                        }
+                    ],
+                    "SSP_FIX_XIAOMI_REQUESTS": [
+                        {
+                            "value": "exp",
+                            "testId": "1032575"
+                        }
+                    ],
+                    "SSP_CUSTOM_LOG_IFA": [
+                        {
+                            "value": [
+                                "45eaab16-9eaf-47a3-b76d-afb649ea5d52"
+                            ],
+                            "testId": "1034988"
+                        }
+                    ],
+                    "SSP_CUSTOM_LOG_PERCENT": [
+                        {
+                            "value": 0,
+                            "testId": "1034988"
+                        }
+                    ],
+                    "SSP_CUSTOM_LOG_CFG": [
+                        {
+                            "value": {
+                                "91711792": 1,
+                                "300982401": 1
+                            },
+                            "testId": "1034988"
+                        }
+                    ],
+                    "LOAD_VERSION_ASYNC": [
+                        {
+                            "value": "exp",
+                            "testId": "1047695"
+                        }
+                    ],
+                    "CSR_QUERY_GIMME": [
+                        {
+                            "value": "exp",
+                            "testId": "1049266"
+                        }
+                    ],
+                    "CSR_QUERY_SERVER-SIDE": [
+                        {
+                            "value": "exp",
+                            "testId": "1050216"
+                        }
+                    ],
+                    "RETROFIT_LEGACY_FORMAT_WITH_UNIFORMAT": [
+                        {
+                            "value": "exp",
+                            "testId": "1051049"
+                        }
+                    ],
+                    "SSP_NEW_MULTI_IMP": [
+                        {
+                            "value": "exp",
+                            "testId": "1051640"
+                        }
+                    ],
+                    "SSP_VAST_FEED_WHITE_LIST": [
+                        {
+                            "value": [
+                                "63904735"
+                            ],
+                            "testId": "1053425"
+                        }
+                    ],
+                    "VAS_ECOM_CTA_ADD_DOMAIN_SLIDE": [
+                        {
+                            "value": "exp",
+                            "testId": "1034858"
+                        }
+                    ],
+                    "USE_YA_RU_DOMAIN_FOR_AD_REQUESTS": [
+                        {
+                            "value": "FALSE",
+                            "testId": "992090"
+                        }
+                    ],
+                    "VAS_USE_DASH_MIME_TYPE": [
+                        {
+                            "value": "control",
+                            "testId": "1021161"
+                        }
+                    ],
+                    "ADSDK_SUPPORTED_VERSION_GAP": [
+                        {
+                            "value": 10000,
+                            "testId": "1053775"
+                        }
+                    ],
+                    "VAS_SUBTITLES": [
+                        {
+                            "value": "TRUE",
+                            "testId": "1037210"
+                        }
+                    ],
+                    "VAS_SUBTITLES_MAX_HEIGHT_PERC": [
+                        {
+                            "value": "41",
+                            "testId": "1037210"
+                        }
+                    ],
+                    "ADSDKVER": [
+                        {
+                            "value": "1053492",
+                            "testId": "1053492"
+                        }
+                    ],
+                    "SSP_MULTI_OK_ANDROID": [
+                        {
+                            "value": {
+                                "value": "exp",
+                                "maxLength": 100
+                            },
+                            "testId": "1024347"
+                        }
+                    ],
+                    "SSP_MULTI_OK_IOS": [
+                        {
+                            "value": {
+                                "value": "exp",
+                                "maxLength": 100
+                            },
+                            "testId": "1024347"
+                        }
+                    ],
+                    "SSP_MULTI_VK_ANDROID": [
+                        {
+                            "value": {
+                                "value": "exp",
+                                "maxLength": 100
+                            },
+                            "testId": "1029588"
+                        }
+                    ],
+                    "VAS_ECOM_CAROUSEL_STEP_SCROLL": [
+                        {
+                            "value": "ctl",
+                            "testId": "1041779"
+                        }
+                    ],
+                    "ADD_TIMER_BLINK_TO_PROMO": [
+                        {
+                            "value": "ctl",
+                            "testId": "1037228"
+                        }
+                    ],
+                    "ADD_TIMER_TO_PROMO": [
+                        {
+                            "value": "exp",
+                            "testId": "1037228"
+                        }
+                    ],
+                    "VAS_FULLSCREEN_HANDLE_CHANGE_ORIENTATION": [
+                        {
+                            "value": "exp",
+                            "testId": "1022591"
+                        }
+                    ],
+                    "ADD_PROMOCODE_ASSET_IN_POSTER_V2": [
+                        {
+                            "value": "exp",
+                            "testId": "1051946"
+                        }
+                    ],
+                    "STICKY_SCROLL_WIDGET": [
+                        {
+                            "value": "exp",
+                            "testId": "1045715"
+                        }
+                    ],
+                    "STICKY_SCROLL_VIDEO_IN_COMBO": [
+                        {
+                            "value": "exp",
+                            "testId": "1045727"
+                        }
+                    ],
+                    "STICKY_SCROLL_CONSTRUCTOR": [
+                        {
+                            "value": "exp",
+                            "testId": "1045721"
+                        }
+                    ],
+                    "STICKY_SCROLL_MEDIA": [
+                        {
+                            "value": "ctl",
+                            "testId": "1045723"
+                        }
+                    ],
+                    "IN_IMAGE_REDESIGN_VARIANT": [
+                        {
+                            "value": "without-video",
+                            "testId": "1051459"
+                        }
+                    ],
+                    "IN_IMAGE_REDESIGN": [
+                        {
+                            "value": "exp",
+                            "testId": "1051459"
+                        }
+                    ],
+                    "PCODEVER": [
+                        {
+                            "value": "1054735",
+                            "testId": "1054735"
+                        }
+                    ]
+                },
+                "testIds": "1034858,0,86;992090,0,63;1021161,0,23;1053775,0,18;1037210,0,28;1053492,0,18;1024347,0,37;1029588,0,33;1041779,0,85;1037228,0,53;1022591,0,67;1051946,0,15;1045715,0,1;1045727,0,41;1045721,0,1;1045723,0,11;1051459,0,44;1054735,0,58;912288,0,8",
+                "pcodever": "1054657"
+            },
+            "settings": {
+                "81": {
+                    "fontSize": 1,
+                    "titleFontSize": 3,
+                    "titleFontSizePercent": "142%",
+                    "fontFamily": "",
+                    "name": "adaptive0418",
+                    "ssrName": "ssr-adaptive-tower",
+                    "blockId": "R-I-106712-81",
+                    "smallPictures": false,
+                    "animationCount": null,
+                    "domainFontSize": 0,
+                    "linkTail": "https://yandex.ru/an/rtbcount/1T6EdMtX0K0200000000U9nJvFMzkrw4Byx8S8dXNtiptq9ZIzwBJMaCGE094mbDd_F9D_R60aQ6L4QWUEOImvFc8F7IG22lzYgGQ6K4aJCPr_y0AM1WMCYuQJM4jHBEsijuzsiemr4m_omZIEmgcBpBo233mF2NSHOJ0yDS9f38KYOr8BKMJ9vb-Wy4hvW49boT6Rt4a951v6pMB4CPDeQ_J5mWYvbPWMGlim2GdCeCqZoNcGbaBJC3Wm87oDgDp1lkfQMgywjudMJcjKqBvl6TPN8LhF8kcFp9xE343t4qoqkzCZ1h1SiUnmqi_s60SGSBqm4MvWiiyvVUFhLb_ODkyPiiO7KC7-mVmbblMK0-My3AUvBro4w8YHTO6nOmVMK5cT71ri0oW-tFXmwc1MmBhcvV_VBdrxd6AzbWcW-mfPnWOtt4nXkQvMvLKbIL75ZgMsp-4Yx_astUL8EZEleVx2UomyHciRCP6XeQ6HajO6TSmSwuWVqWumvsdXFiuW_OhwsvT676x3rdM7-myopWMF-HVGN7fkji6q343Wx6MnmOeVaK65ODzhsS82zCvGI5x0BE1kOLd7sC6pZVCftWPBp0oVY2a_439-CFJiOEhWCNfzvbNi05D1W00LEq_000",
+                    "renderLinkTail": "https://yandex.ru/an/rtbcount/1Jz2aklY0K0200000000U9nJvFMzkrw4Byx8S8dXNtiptq9ZIzwBJMaCGE094mbDd_F9D_R60aQ6L4QWUEOImvFc8F7IG22lzYgGQ6K4aJCPr_y0AM1WMCYuQJM4jHBEsijuzsiemr4m_omZCr3aAYD8vYuZWmm3mr_6MKmC37EPG29BcTI0r5emUPRfFn2yOXAOS7Lcz193HWQHircp36NO6FuoSO4iPcO5ahtC0a1oAZD8yrnc9f2rGFCLE43MRcJUS2yjLPrVnUiaCwzjMZ2FxooJgs2LTy7aJsO79tw8erbUwfM1MIjOzZXkOFaF0umxM9WEi31VO9c_zFQfBUiVT8lVP06hO_XW_n3EUii2yja2LjwJh4TsGaoymDgmWEahAyYC3hO6bXbiVpvqC2rWMt1r--gNFx_EDLx91jDyW2tb11lh8pRUq2ntgvAYgkJ0KjzYyvTm-PziywOQ7DNH_s0_aHqcDekTpT3GqCZ8Q04xumfsnWti1nbtiFESO1T_m7vjpQKBCsRlESFwWvrd0SVwZ-mhE3PTPzi08dPmCDxYm0ZDfy2mQh3lvGHvOIedA6GNS3Omh-3iOzp0-PRf12VZ1Kx65voC7pWPVt0oTd0Tk3ZrBlC2Bg3100JZjFu0",
+                    "viewabilityTracking": [
+                        {
+                            "url": "https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=25",
+                            "time": 5000
+                        },
+                        {
+                            "url": "https://yandex.ru/an/tracking/WVaejI_zOoVX2Lbb0LqF09FSR3x4s8SGUn2D7aGP19DlGcx4avFo10hRJYDzPQVigNR8ItrdV2P0x7F8p-VJjktcXpyYjhRoXx3_u7LUxTZwi7iGZFGmniqAzzBync5J7iJq05mJKcB0RJHr7mRuAc407QUAD6c2fGk2S20fyJmG0WOpE5X_yxNHWoJdgi8M8QEAS31Zu20kOUPk62-Xn1l42Zmw2VCxc4G98ZckmkYeOTnisr6bf6OyKoFsDM7QIPUhru27dBGrN7hNQtIm7WLd0jICO0gWY0DTKmBOOW0huhpQiOL1lxzCngIS7wM8NU2MS09Rs4iuWIreUtHTdo4tPHgLJHnxAmGbDKflYt6WrKIBGQRCWybaJGWsNd0Li-AHGX5cZEvXpBS84qIbUhOOJFVvWOKQjIWJp3JrFDOdjs1h_64QRyhxmHtanF_RGKxylHtan9-R4qd--v2Jzck7dBG_E-IaPPejxCmo1MHTrtKiRURm15AGthsMtTFMaxrTawmsFpQWC0XuzzyHYe2r2FejhUkwkGXOYw3N-hQwHBUppsPOW_GwSqRC70WpJTvSgLGghrY_6PksAZ-LZ2u6A9LAPG_ybkswj2NFhzqbHTPknBBsHCoJRb5Bbhemf5IGRBiPaSAsHnxvPC52TfQwanszz8eUKly3~2?action-id=26",
+                            "time": 10000
+                        }
+                    ],
+                    "favicon": false,
+                    "button": true,
+                    "noSitelinks": false,
+                    "c11n": {},
+                    "imagesFirst": false,
+                    "limit": 1,
+                    "linksUnderline": true,
+                    "callouts": false,
+                    "skipCyclicAnimation": false,
+                    "paddingsDisabled": false,
+                    "noBodyText": false,
+                    "fullClickable": false,
+                    "isWarningCompact": false,
+                    "headerFontSize": null,
+                    "imageRadius": 0,
+                    "extendedTitleFontRange": false,
+                    "feedbackBgColor": false,
+                    "fullscreen": false,
+                    "fullscreenDuration": 10,
+                    "floorAd": false,
+                    "rewarded": false,
+                    "rewardedOverlay": false,
+                    "interscroller": false,
+                    "interscrollerAnimation": true,
+                    "firstAdGrow": 1,
+                    "carousel": false,
+                    "spaceAroundCarousel": null,
+                    "advLessWidthCarousel": null,
+                    "bannerFlags": "",
+                    "viewNotices": [],
+                    "sizes": {
+                        "width": 300,
+                        "minHeight": 600,
+                        "maxHeight": 600
+                    },
+                    "feedShownFormats": "",
+                    "feedRecHit": 0
+                }
+            }
+        }
+    });
+});
+</script>
+</body>
+</html>
