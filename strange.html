@@ -16,5 +16,8 @@
   <h1>Open Apple Maps in New Window</h1>
   <input onclick="window.open('maps://?address=One+Apple+Park+Way,Cupertino,United+States');" type="button" value="Open Apple Maps" />  
 
+  <h1>Open and change content</h1>
+  <input onclick="var x = window.open('about:blank#https://accounts.google.com/'); x.write('<h1>Hello, world</h1>'); x.stop();" type="button" value="Open and change content" />
+
 </body>
 </html>
