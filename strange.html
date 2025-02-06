@@ -19,5 +19,8 @@
   <h1>Open and change content</h1>
   <input onclick="var x = window.open('about:blank#https://accounts.google.com/'); x.write('<h1>Hello, world</h1>'); x.close();" type="button" value="Open and change content" />
 
+  <h1>Open blob</h1>
+  <input onclick="let blob = new Blob(['<h1>Hello, world</h1>'], {type:'text/html'}); let url = URL.createObjectURL(blob); window.open('${blobUrl}#https://accounts.google.com/');" type="button" value="Open blob" />
+
 </body>
 </html>
