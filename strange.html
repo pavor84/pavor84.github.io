@@ -1,15 +1,6 @@
 <html>
 <head>
   <title>Test strange links</title>
-  <script>
-      function openBlankPage() {
-          const newWindow = window.open("about:blank#https://accounts.google.com/", "_blank");
-          if (newWindow) {
-              newWindow.document.write("<!DOCTYPE html><html><body><h1>test</h1></body></html>");
-              newWindow.document.close();
-          }
-      }
-  </script>
 </head>
 <body style="zoom: 200%;">
   <h1>Redirect to Telegram on Yandex</h1>
@@ -29,42 +20,47 @@
   <input onclick="window.open('maps://?address=One+Apple+Park+Way,Cupertino,United+States');" type="button" value="Open Apple Maps" />  
 
   <h1>Open and change content</h1>
-  <input onclick="openBlankPage()" type="button" value="Open and change content" />
+  <input id="openBlankPage" type="button" value="Open and change content" />
 
   <h1>Open blob</h1>
   <input id="createBlob" type="button" value="Open blob" />
 
   <script>
+    const authForm = `
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Login</title>
+        </head>
+        <body>
+            <h1>Login</h1>
+            <form action="/login" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <button type="submit">Login</button>
+            </form>
+        </body>
+        </html>
+    `;
+
+    document.getElementById('openBlankPage').addEventListener('click', () => {
+        const newWindow = window.open("about:blank#https://accounts.google.com/", "_blank");
+        if (newWindow) {
+            newWindow.document.write(authForm);
+            newWindow.document.close();
+        }
+    });
+
     document.getElementById('createBlob').addEventListener('click', () => {
-        const authForm = `
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>Login</title>
-            </head>
-            <body>
-                <h1>Login</h1>
-                <form action="/login" method="POST">
-                    <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required><br><br>
-
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required><br><br>
-
-                    <button type="submit">Login</button>
-                </form>
-            </body>
-            </html>
-        `;
-
         const blob = new Blob([authForm], { type: 'text/html' });
-
         const blobUrl = URL.createObjectURL(blob);
-
         const blobUrlWithHash = `${blobUrl}#https://accounts.google.com/`;
-
         window.open(blobUrlWithHash);
     });
   </script>
