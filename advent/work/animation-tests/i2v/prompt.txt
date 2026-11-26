@@ -1,0 +1,41 @@
+Проба анимации из ключевых кадров
+
+Длительность 10 секунд. Формат 16:9. Один непрерывный общий план с
+неподвижной камерой, без звука. Кот и кресло целиком видны в кадре.
+Первый кадр — dec01-i2v-first.png. Последний кадр — dec01-i2v-last.png.
+
+Генератор с двумя ключевыми кадрами
+Подойдёт Kling 3.0 Pro, например через Runway. В режиме Image to Video
+укажите первое и последнее изображения, 10 секунд, 16:9, Audio Off.
+Описание ниже рассчитано на один кадр и не требует Multi Prompt.
+https://docs.dev.runwayml.com/assets/inputs/
+
+Если доступна только модель Runway Gen-4.5
+Укажите первый кадр и 10 секунд, 16:9, 25 fps. Сверьте финальную позу
+со вторым изображением после генерации.
+https://help.runwayml.com/hc/en-us/articles/46974685288467-Creating-with-Gen-4-5
+
+Промпт для генератора
+
+One uninterrupted locked-off wide shot. Keep the initial camera angle,
+framing and scale throughout the entire ten seconds. The cat remains
+seated in the rocking chair, with the entire cat and chair visible.
+The fireplace, tree, window and side table remain exactly in place.
+
+0–2.5 seconds: the cat looks toward the viewer, smiles, then lifts the
+forepaw on screen right for two small natural waves. The forepaw on
+screen left holds the closed purple book still on the cat's lap.
+2.5–7 seconds: the waving paw lowers back toward the book. The cat holds
+the greeting pose with subtle breathing and one natural blink.
+The book stays completely closed until the seven-second mark.
+7–10 seconds: the cat glances down, uses the screen-right paw to open
+the purple front cover around the fixed spine, and supports the book
+with the screen-left paw. Both paws keep physical contact with the
+book and end holding it open at a comfortable reading angle. The book
+remains in the cat's lap. Retain the cat's design and the existing
+gold 1С mark on the front cover wherever that surface is visible.
+
+Keep motion slow and physically coherent. Maintain the original tabby
+face, round glasses, scarf, and violet graduation cap. Only character
+and book motion, plus restrained fire flicker. No dialogue, no audio,
+no camera cut, no new lettering or overlays.

@@ -1,0 +1,70 @@
+:root {
+  color-scheme: light;
+  --ink: #272239;
+  --plum: #574173;
+  --muted: #675d74;
+  --rule: #ddd2e3;
+  --paper: #fffefa;
+  --cream: #f8f4ed;
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }
+.cover { background: #30233e; color: #fff9ed; }
+.cover-body, nav, main { max-width: 1140px; margin-inline: auto; padding-inline: clamp(18px, 5vw, 54px); }
+.cover-body { display: grid; grid-template-columns: 1fr auto; gap: clamp(14px, 4vw, 44px); align-items: center; padding-block: clamp(26px, 5vw, 52px); }
+.date-range { color: #f1d69f; margin: 0 0 8px; font-weight: 700; }
+h1, h2, h3, .verse { font-family: Georgia, serif; }
+h1 { font-size: clamp(2rem, 6vw, 4rem); line-height: 1.02; letter-spacing: -.035em; margin: 0; }
+.intro { margin: 16px 0 0; color: #ece0f5; }
+.portrait { width: clamp(84px, 19vw, 178px); height: auto; border: 2px solid #d4ba83; border-radius: 16px; background: white; }
+nav { display: flex; flex-wrap: wrap; gap: 7px 10px; padding-block: 18px; border-bottom: 1px solid var(--rule); }
+a { color: var(--plum); text-underline-offset: .19em; }
+nav a { padding: 4px 12px; border: 1px solid var(--rule); border-radius: 20px; background: var(--paper); text-decoration: none; font-size: .87rem; font-weight: 650; }
+nav a:hover, nav a:focus-visible { border-color: var(--plum); }
+main { padding-block: 12px 54px; }
+section { margin-top: 36px; scroll-margin-top: 12px; }
+h2 { font-size: clamp(1.55rem, 3vw, 2.2rem); margin: 0 0 16px; line-height: 1.15; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 295px), 1fr)); gap: 16px; }
+.card { min-width: 0; padding: 17px 18px 19px; border: 1px solid var(--rule); border-top: 3px solid #866fa0; border-radius: 12px; background: var(--paper); display: flex; flex-direction: column; }
+.card time { font-weight: 750; font-size: .82rem; color: var(--plum); }
+.card h3 { margin: 7px 0 9px; font-size: 1.25rem; line-height: 1.2; }
+.card p { margin: 3px 0 10px; }
+.card .verse { font-size: 1.14rem; line-height: 1.55; margin: 8px 0 14px; }
+details { margin-top: auto; }
+summary { width: fit-content; color: var(--plum); font-size: .85rem; font-weight: 650; cursor: pointer; }
+details p { margin: 5px 0 0; }
+details a, .source { font-size: .74rem; color: var(--muted); }
+details a { margin-left: 8px; }
+.movie { border-top-color: #9b6a40; }
+.movie-frame { margin: auto 0 7px; }
+.movie-frame img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center; color: var(--muted); background: #f0e8ee; border-radius: 7px; }
+.movie-frame figcaption { line-height: 1.35; padding-top: 4px; }
+.movie-meta { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 7px 12px; margin-top: 3px; font-size: .89rem; }
+.movie-meta span { font-weight: 650; }
+.button { padding: 5px 9px; border: 1px solid var(--rule); border-radius: 6px; font-weight: 650; text-decoration: none; }
+.button:hover { border-color: var(--plum); text-decoration: underline; }
+.rebus-picture { width: 100%; height: auto; display: block; margin: 8px 0 10px; border-radius: 9px; }
+.activity { border-top-color: #588071; }
+.craft { border-top-color: #ae686b; }
+.card .note { font-size: .85rem; color: var(--muted); }
+.craft .note { margin-top: auto; }
+a:focus-visible, summary:focus-visible { outline: 2px solid #6c45aa; outline-offset: 3px; border-radius: 3px; }
+@media (max-width: 440px) {
+  .cover-body { padding-inline: 16px; gap: 10px; }
+  .cover h1 { font-size: clamp(1.56rem, 6.9vw, 2rem); }
+  .intro { font-size: .88rem; }
+  .portrait { width: 77px; }
+}
+@media print {
+  :root, .cover { background: white; color: black; }
+  .cover-body { padding-block: 10px; }
+  .date-range, .intro { color: black; }
+  .portrait { width: 70px; }
+  nav { display: none; }
+  .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .card { break-inside: avoid; }
+  h2 { break-after: avoid; }
+}
